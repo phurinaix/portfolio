@@ -27,6 +27,14 @@ class App extends Component {
               </Switch>
             </Layout>
           </BrowserRouter>
+          <div className="hero"> 
+            <div className="cube"></div>
+            <div className="cube"></div>
+            <div className="cube"></div>
+            <div className="cube"></div>
+            <div className="cube"></div>
+            <div className="cube"></div>
+          </div>
       </React.Fragment>
     );
   }

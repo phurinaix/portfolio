@@ -23,7 +23,7 @@ const Navigation = () => {
                         <LinkContainer to="/profile/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
                         <LinkContainer to="/profile/contact"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
                     </Nav>
-                    <Nav className="text-center link">
+                    <Nav className="text-center link social-contact">
                         <Nav.Link href="https://www.facebook.com/phurinat.puekkham.1" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></Nav.Link>
                         <Nav.Link href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></Nav.Link>
                         <Nav.Link href="#"><FontAwesomeIcon icon={ faGoogle }/></Nav.Link>

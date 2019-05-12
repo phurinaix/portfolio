@@ -15,10 +15,13 @@
     /* animation: animate 0.5s linear infinite;     */
 }
 .toggle-button{
-    background-color: white;
+    background-color: #ede5aa;
 }
 .link a:hover {
     color: white !important;
+}
+.social-contact {
+    display: flex;
 }
 
 @keyframes animate {
@@ -35,22 +38,8 @@
         text-shadow: -1.5px 1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
     }
 }
-/* .link a {
-    margin: 0 10px;
-} */
-/* .link a p {
-    margin: 0;
-    padding: 0;
-    transition: 2s;
-    display: none;
+@media only screen and (max-width: 994px) {
+    .social-contact {
+        display: none;
+    }
 }
-.link a:hover svg {
-    display: none;
-}
-.link a:hover p {
-    display: block;
-} */
-/* .home:hover {
-    content: "Home";
-    background: white !important;
-} */
