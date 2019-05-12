@@ -15,10 +15,10 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="toggle-button"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto text-center link">
-                        <LinkContainer to="/"><Nav.Link>HOME</Nav.Link></LinkContainer>
-                        <LinkContainer to="/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
-                        <LinkContainer to="/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
-                        <LinkContainer to="/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
+                        <LinkContainer to="/profile/"><Nav.Link>HOME</Nav.Link></LinkContainer>
+                        <LinkContainer to="/profile/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
+                        <LinkContainer to="/profile/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
+                        <LinkContainer to="/profile/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
                         {/* <FontAwesomeIcon icon={ faHome }/>
                         <FontAwesomeIcon icon={ faUser }/>
                         <FontAwesomeIcon icon={ faBrain }/>
