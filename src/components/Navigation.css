@@ -1,0 +1,55 @@
+.link a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin: 0 10px;
+    color: #08FDD8 !important;
+}
+.navbar-header {
+    background-color: #181818;
+}
+.navbar-logo {
+    font-family: 'Monoton', cursive;
+    font-size: 1em;
+    color: white !important;
+    /* animation: animate 0.5s linear infinite;     */
+}
+.toggle-button{
+    background-color: white;
+}
+.link a:hover {
+    color: white !important;
+}
+
+@keyframes animate {
+    0%, 100% {
+        text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
+    }
+    25% {
+        text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+    }
+    50% {
+        text-shadow: 1.5px -1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+    }
+    75% {
+        text-shadow: -1.5px 1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+    }
+}
+/* .link a {
+    margin: 0 10px;
+} */
+/* .link a p {
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+    display: none;
+}
+.link a:hover svg {
+    display: none;
+}
+.link a:hover p {
+    display: block;
+} */
+/* .home:hover {
+    content: "Home";
+    background: white !important;
+} */

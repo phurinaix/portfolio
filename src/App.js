@@ -1,15 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Skills from './components/Skills';
+import Work from './components/Work';
+import Error from './components/Error';
+import Layout from './components/Layout';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <h1 className="App-title">PORTFOLIO</h1>
-          <h2 className="App-portfolio-name">PHURINAT PUEKKHAM</h2>
-      </header>
-    </div>
+    <React.Fragment>
+        <BrowserRouter>
+          <Navigation />
+          <Layout>
+          <Switch>
+            <Route path="/" component={Home} exact/>
+            <Route path="/about" component={About} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/work" component={Work} />
+            <Route component={Error} />
+          </Switch>
+          </Layout>
+        </BrowserRouter>
+    </React.Fragment>
   );
 }
 

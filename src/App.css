@@ -1,28 +1,27 @@
 .App {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  /* background-color: #111111; */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 150px;
+  padding: 20px;
+  /* color: white; */
 }
 
-.App-link {
-  color: #61dafb;
+.App-title {
+  font-size: 1.5em;
+  font-weight: lighter;
+  letter-spacing: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-portfolio-name {
+  font-size: 1.2em;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.App-intro {
+  font-size: large;
 }

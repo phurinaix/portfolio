@@ -1,0 +1,42 @@
+
+h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1000;
+    animation: animate 0.5s linear infinite;
+}
+h4 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: -1000;
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
+    }
+    25% {
+        text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+    }
+    50% {
+        text-shadow: 1.5px -1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+    }
+    75% {
+        text-shadow: -1.5px 1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+    }
+}
