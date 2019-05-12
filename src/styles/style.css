@@ -1,0 +1,43 @@
+.loading-bar {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading-text {
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: white !important;
+}
+.progress {
+    height: 4px;
+    background: #746c03;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: 0.4s linear;
+}
+
+.progress-striped .progress-bar {
+    background-color: #f3e536;
+    width: 100%;
+    animation: progressAnimationStrike 1s;
+}
+
+@keyframes progressAnimationStrike {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .loading-bar {
+        width: 60%;
+    }
+}

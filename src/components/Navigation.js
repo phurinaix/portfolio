@@ -9,7 +9,7 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="navbar-header">
             <Container>
-                <LinkContainer to="/">
+                <LinkContainer to="/profile/">
                     <Navbar.Brand className="navbar-logo">PHURINAT</Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="toggle-button"/>

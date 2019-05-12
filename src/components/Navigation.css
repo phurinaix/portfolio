@@ -2,7 +2,8 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
     margin: 0 10px;
-    color: #08FDD8 !important;
+    font-weight: bolder;
+    color: #f3e536 !important;
 }
 .navbar-header {
     background-color: #181818;
@@ -10,7 +11,7 @@
 .navbar-logo {
     font-family: 'Monoton', cursive;
     font-size: 1em;
-    color: white !important;
+    color: #fff1bc !important;
     /* animation: animate 0.5s linear infinite;     */
 }
 .toggle-button{
