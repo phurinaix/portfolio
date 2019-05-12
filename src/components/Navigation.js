@@ -1,8 +1,10 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faHome, faUser, faBrain, faTv } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faBrain, faTv } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons"
+
 import './Navigation.css';
 
 const Navigation = () => {
@@ -14,15 +16,17 @@ const Navigation = () => {
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="toggle-button"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto text-center link">
+                    <Nav className="mr-auto text-center link">
                         <LinkContainer to="/profile/"><Nav.Link>HOME</Nav.Link></LinkContainer>
                         <LinkContainer to="/profile/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
                         <LinkContainer to="/profile/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
                         <LinkContainer to="/profile/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
-                        {/* <FontAwesomeIcon icon={ faHome }/>
-                        <FontAwesomeIcon icon={ faUser }/>
-                        <FontAwesomeIcon icon={ faBrain }/>
-                        <FontAwesomeIcon icon={ faTv }/> */}
+                        <LinkContainer to="/profile/contact"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
+                    </Nav>
+                    <Nav className="text-center link">
+                        <Nav.Link href="https://www.facebook.com/phurinat.puekkham.1" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></Nav.Link>
+                        <Nav.Link href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></Nav.Link>
+                        <Nav.Link href="#"><FontAwesomeIcon icon={ faGoogle }/></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

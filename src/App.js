@@ -5,6 +5,7 @@ import Home from './containers/Home/Home';
 import About from './containers/About/About';
 import Skills from './containers/Skills/Skills';
 import Work from './containers/Work/Work';
+import Contact from './containers/Contact/Contact';
 import ErrorPage from './containers/ErrorPage/ErrorPage';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
@@ -21,6 +22,7 @@ class App extends Component {
                 <Route path="/profile/about" component={About} />
                 <Route path="/profile/skills" component={Skills} />
                 <Route path="/profile/work" component={Work} />
+                <Route path="/profile/contact" component={Contact} />
                 <Route component={ErrorPage} />
               </Switch>
             </Layout>

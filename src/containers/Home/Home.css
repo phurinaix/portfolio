@@ -1,29 +1,35 @@
-
-h2 {
-    color: #fff;
+h2, h4 {
+    color: #ede5aa;
     font-family: 'Open Sans', sans-serif;
-    font-size: 5em;
     font-weight: bolder;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     z-index: -1000;
+    transform: translate(-50%, -50%);
     animation: animate 0.5s linear infinite;
 }
+h2 {
+    font-size: 5em;
+    top: 50%;
+}
 h4 {
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
     font-size: 2em;
+    top: 40%;
+}
+.contact-button {
+    font-family: 'Open Sans', sans-serif;
+    border-color: #f3e536 !important;
+    background-color: #0f0f49 !important;
+    color: #f3e536 !important;
+    font-weight: bolder;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 62%;
     transform: translate(-50%, -50%);
-    z-index: -1000;
-    animation: animate 0.5s linear infinite;
+}
+.contact-button:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
 }
 
 @keyframes animate {

@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { ButtonToolbar, Button } from 'react-bootstrap';
-import { LinkContainer } from "react-router-bootstrap";
-import './Home.css';
+import '../Home/Home.css';
 import '../../styles/style.css';
 
-class Home extends Component {
+class Contact extends Component {
     state = {
         isLoading: true
     }
@@ -26,20 +24,12 @@ class Home extends Component {
                             </div>                       
                         </div> 
                     </div>
-                :
-                    <React.Fragment>
-                        <h4>PHURINAT PUEKKHAM</h4>
-                        <h2>PORTFOLIO</h2>
-                        <ButtonToolbar>
-                            <LinkContainer to="/profile/contact">
-                                <Button variant="outline-warning" className="contact-button">CONTACT ME</Button>
-                            </LinkContainer>
-                        </ButtonToolbar>
-                    </React.Fragment>
+                : 
+                    <h2>Contact</h2>
                 }
             </React.Fragment>
         );
     }
 }
 
-export default Home;
+export default Contact;

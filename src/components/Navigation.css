@@ -3,15 +3,15 @@
     font-size: 0.8em;
     margin: 0 10px;
     font-weight: bolder;
-    color: #f3e536 !important;
+    color: #e8eb27 !important;
 }
 .navbar-header {
-    background-color: #181818;
+    background-color: #0a0a2b;
 }
 .navbar-logo {
     font-family: 'Monoton', cursive;
-    font-size: 1em;
-    color: #fff1bc !important;
+    font-size: 1.3em;
+    color: #ede5aa !important;
     /* animation: animate 0.5s linear infinite;     */
 }
 .toggle-button{
