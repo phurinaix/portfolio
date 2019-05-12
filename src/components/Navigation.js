@@ -2,7 +2,6 @@ import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faBrain, faTv } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons"
 
 import './Navigation.css';

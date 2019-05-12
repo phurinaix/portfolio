@@ -27,7 +27,7 @@ class Home extends Component {
                         </div> 
                     </div>
                 :
-                    <React.Fragment>
+                    <div className="home-section">
                         <h4>PHURINAT PUEKKHAM</h4>
                         <h2>PORTFOLIO</h2>
                         <ButtonToolbar>
@@ -35,7 +35,7 @@ class Home extends Component {
                                 <Button variant="outline-warning" className="contact-button">CONTACT ME</Button>
                             </LinkContainer>
                         </ButtonToolbar>
-                    </React.Fragment>
+                    </div>
                 }
             </React.Fragment>
         );

@@ -1,10 +1,13 @@
+.home-section {
+    height: 90vh;
+}
 h2, h4 {
     color: #ede5aa;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     position: absolute;
     left: 50%;
-    z-index: -1000;
+    /* z-index: -1000; */
     transform: translate(-50%, -50%);
     animation: animate 0.5s linear infinite;
 }

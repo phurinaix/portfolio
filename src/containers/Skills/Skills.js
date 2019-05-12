@@ -24,8 +24,10 @@ class Skills extends Component {
                             </div>                       
                         </div> 
                     </div>
-                : 
-                    <h2>Skills</h2>
+                :
+                    <div className="skills-section">
+                        <h2>Skills</h2>
+                    </div>
                 }
             </React.Fragment>
         );
