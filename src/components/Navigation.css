@@ -4,6 +4,7 @@
     margin: 0 10px;
     font-weight: bolder;
     color: #e8eb27 !important;
+    letter-spacing: 1px;
 }
 .navbar-header {
     background-color: rgb(10,10,43);

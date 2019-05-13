@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { Button } from 'react-bootstrap';
 import '../Home/Home.css';
 import '../../styles/style.css';
+import CatImage from '../../assets/img/cat.jpg';
+import Pdf from '../../assets/pdf/resume.pdf';
 
 class About extends Component {
     state = {
@@ -25,8 +28,18 @@ class About extends Component {
                             </div>                       
                         </div> 
                     </div>
-                : 
-                    <h2>About</h2>
+                :
+                    <div className="about-section text-center">
+                        <img src={CatImage} width="200px"/><br/><br/><br/>
+                        <div className="typewriter">
+                            <div className="typewriter-text">
+                                <h3>Hello, my name is Phurinat Puekkham.</h3>
+                            </div>
+                        </div>
+                        <p>I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.</p>
+                        <p>I love being a web developer.</p>
+                        <Button href = {Pdf} target = "_blank">See Resume</Button>
+                    </div>
                 }
             </React.Fragment>
         );

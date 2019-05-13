@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WorkCard from '../../components/WorkCard';
+import ProjectCard from '../../components/ProjectCard';
 import '../Home/Home.css';
 import '../../styles/style.css';
 import SoftwareImage from '../../assets/img/software.jpg';
@@ -9,7 +10,8 @@ import BlockchainImage from '../../assets/img/blockchain.jpg';
 
 class Work extends Component {
     state = {
-        isLoading: true
+        isLoading: true,
+        projectType: ""
     }
     componentDidMount () {
         setTimeout(() => { 
@@ -18,7 +20,11 @@ class Work extends Component {
             }));
         }, 1000);
     }
+    projectHandle = (projectType) => {
+        this.setState({ projectType });
+    }
     render() {
+        console.log(this.state.projectType);
         return (
             <React.Fragment>
                 {this.state.isLoading ? 
@@ -32,9 +38,17 @@ class Work extends Component {
                 : 
                     <div className="work-section text-center">
                         <div className="row justify-content-center">
-                            <WorkCard title="SOFTWARE PROJECT" text="Web Application and Desktop Application" image={SoftwareImage}/>
-                            <WorkCard title="DESIGN PROJECT" text="Poster Design" image={DesignImage}/>
-                            <WorkCard title="BLOCKCHAIN PROJECT" text="Bitcoin and Ethereum" image={BlockchainImage}/>
+                            {this.state.projectType === "" ?
+                                <React.Fragment>
+                                    <WorkCard title="SOFTWARE PROJECT" text="Web Application and Desktop Application" image={SoftwareImage} click={this.projectHandle}/>
+                                    <WorkCard title="DESIGN PROJECT" text="Poster Design" image={DesignImage} click={this.projectHandle}/>
+                                    <WorkCard title="BLOCKCHAIN PROJECT" text="Bitcoin and Ethereum" image={BlockchainImage} click={this.projectHandle}/>
+                                </React.Fragment>
+                            :
+                                <div>
+                                    
+                                </div>
+                            }
                         </div>
                     </div>
                 }

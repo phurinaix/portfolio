@@ -36,11 +36,11 @@
     }
 }
 
-.skills-section, .work-section {
+.skills-section, .work-section, .about-section {
     width: 100%;
     margin-top: 100px;
     /* height: 90vh; */
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* background-color: rgb(0, 0, 0); */
     /* overflow: scroll; */
 }
 .workcard {
@@ -63,14 +63,64 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 0.8em;
 }
+.about-section h3, .about-section p {
+    font-family: 'Open Sans', sans-serif;
+    color: #ede5aa;
+    letter-spacing: 2px;
+}
+.about-section a {
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background-color: #0f0f49;
+    color: #f3e536;
+    cursor: pointer;
+    z-index: 100;
+}
+.about-section a:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
+}
+.typewriter {
+	display: inline-block;
+}
 
+.typewriter-text h3{
+    /* display: inline-block; */
+  	overflow: hidden;
+    /* animation: typing 3s steps(30, end), blink .5s step-end infinite; */
+    white-space: nowrap;
+    border-right: 4px solid orange;
+    /* box-sizing: border-box; */
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
 
 /* Media Query */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .loading-bar {
         width: 60%;
     }
-    .work-section {
+    .work-section, .about-section {
         margin-top: 20px;
+    }
+    .typewriter-text h3 {
+        font-size: 1.2em;
     }
 }
