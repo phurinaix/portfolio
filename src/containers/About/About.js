@@ -30,7 +30,7 @@ class About extends Component {
                     </div>
                 :
                     <div className="about-section text-center">
-                        <img src={CatImage} width="200px"/><br/><br/><br/>
+                        <img src={CatImage} width="200px" alt=""/><br/><br/><br/>
                         <div className="typewriter">
                             <div className="typewriter-text">
                                 <h3>Hello, my name is Phurinat Puekkham.</h3>

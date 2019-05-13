@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import WorkCard from '../../components/WorkCard';
-import ProjectCard from '../../components/ProjectCard';
+// import ProjectCard from '../../components/ProjectCard';
 import '../Home/Home.css';
 import '../../styles/style.css';
 import SoftwareImage from '../../assets/img/software.jpg';
