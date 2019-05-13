@@ -9,7 +9,7 @@ body {
   background-color: #0f0f49;
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: scroll;
   font-family: 'Montserrat', sans-serif;
 }
 
