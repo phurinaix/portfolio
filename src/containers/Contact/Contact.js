@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import ContactForm from '../../components/ContactForm';
+import ContactBox from '../../components/ContactBox';
+import FacebookCode from '../../assets/img/qrcode/facebook.png';
+import LinkedinCode from '../../assets/img/qrcode/linkedin.png';
+import FacebookLogo from '../../assets/img/icon/facebook.svg';
+import LinkedinLogo from '../../assets/img/icon/linkedin.svg';
 import '../Home/Home.css';
 import '../../styles/style.css';
 
 class Contact extends Component {
     state = {
-        isLoading: true
+        isLoading: true,
+        socials: [
+            { name: 'Facebook', qrcode: FacebookCode, logo: FacebookLogo },
+            { name: 'Linkedin', qrcode: LinkedinCode, logo: LinkedinLogo },
+        ]
     }
     componentDidMount () {
         setTimeout(() => { 
@@ -25,7 +35,18 @@ class Contact extends Component {
                         </div> 
                     </div>
                 : 
-                    <h2>Contact</h2>
+                    <div className="contact-section text-center">
+                        <div className="row justify-content-center">
+                            <div className="col-md-8">
+                                <ContactForm />
+                            </div>
+                            <div className="col-md-4">
+                                {this.state.socials.map((social, index) => {
+                                    return <ContactBox key={index} qrcode={social.qrcode} title={social.name} logo={social.logo} />
+                                })}
+                            </div>
+                        </div>
+                    </div>
                 }
             </React.Fragment>
         );

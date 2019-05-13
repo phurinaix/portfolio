@@ -36,7 +36,7 @@
     }
 }
 
-.skills-section, .work-section, .about-section {
+.skills-section, .work-section, .about-section, .contact-section {
     width: 100%;
     margin-top: 100px;
     /* height: 90vh; */
@@ -47,8 +47,18 @@
     position: relative;
     margin-top: 10px;
     background-color: rgba(189, 193, 236, 0.6);
-    padding: 50px 10px;
+    padding: 30px 10px;
     z-index: 100;
+}
+.skills-section h3 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px rgb(31, 31, 31);
+    letter-spacing: 2px;
 }
 .skills-section p {
     font-family: 'Open Sans', sans-serif;
@@ -91,6 +101,61 @@
     z-index: 100;
 }
 .about-section a:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
+}
+.contact-section {
+    position: relative;
+    margin-top: 10px;
+    /* background-color: rgba(189, 193, 236, 0.6); */
+    padding: 50px 10px;
+    z-index: 100;
+}
+.contact-section form h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    color: #ede5aa;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.contact-section form p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    color: #ede5aa;
+    letter-spacing: 2px;
+}
+.contact-section form {
+    font-family: 'Open Sans', sans-serif !important;
+}
+.contact-section form input, .contact-section form textarea{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff !important;
+    border: 1px solid rgb(6, 10, 37);
+    letter-spacing: 2px;
+}
+.contact-section form input:focus, .contact-section form textarea:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contactBox-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+.contactBox-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+}
+.contact-section form button {
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background-color: #0f0f49;
+    color: #f3e536;
+    cursor: pointer;
+    z-index: 100;
+}
+.contact-section form button:hover {
     background-color: #e8eb27 !important;
     color: #111 !important;
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ProgressBar from '../../components/ProgressBar';
-import '../Home/Home.css';
 import '../../styles/style.css';
 import Html from '../../assets/img/icon/html.svg';
 import Css from '../../assets/img/icon/css.svg';
@@ -45,6 +44,7 @@ class Skills extends Component {
                     </div>
                 :
                     <div className="skills-section">
+                        <h3>SKILLS</h3>
                         {this.state.skills.map((skill, index) => {
                             return <ProgressBar key={index} name={skill.name} number={skill.number} logo={skill.logo}/>
                         })}

@@ -6,7 +6,7 @@ const ProgressBar = (props) => {
         <React.Fragment>
             <div className="row justify-content-center my-3">
                 <div className="col-md-1" style={{ top: '-10px'}}>
-                    <img src={props.logo}/>
+                    <img src={props.logo} alt=""/>
                 </div>
                 <div className="col-md-2">
                     <p>{props.name}</p>
