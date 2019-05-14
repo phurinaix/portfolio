@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import '../Home/Home.css';
 import '../../styles/style.css';
-import CatImage from '../../assets/img/cat.jpg';
+// import CatImage from '../../assets/img/cat.jpg';
+import StudentImage from '../../assets/img/student.png';
 import Pdf from '../../assets/pdf/resume.pdf';
 
 class About extends Component {
@@ -30,7 +31,7 @@ class About extends Component {
                     </div>
                 :
                     <div className="about-section text-center">
-                        <img src={CatImage} width="200px" alt=""/><br/><br/><br/>
+                        <img src={StudentImage} alt=""/><br/><br/><br/>
                         <div className="typewriter">
                             <div className="typewriter-text">
                                 <h3>Hello, my name is Phurinat Puekkham.</h3>

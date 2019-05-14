@@ -8,6 +8,8 @@ import Reactjs from '../../assets/img/icon/react.svg';
 import Nodejs from '../../assets/img/icon/nodejs.svg';
 import Php from '../../assets/img/icon/php.svg';
 import Python from '../../assets/img/icon/python.svg';
+import Docker from '../../assets/img/icon/docker.svg';
+import Git from '../../assets/img/icon/git.svg';
 import Photoshop from '../../assets/img/icon/photoshop.svg';
 
 class Skills extends Component {
@@ -16,11 +18,13 @@ class Skills extends Component {
         skills: [
             {name: 'HTML', number: 90, logo: Html},
             {name: 'CSS', number: 70, logo: Css},
-            {name: 'JAVASCRIPT', number: 70, logo: Js},
+            {name: 'JAVASCRIPT', number: 80, logo: Js},
             {name: 'REACT', number: 60, logo: Reactjs},
             {name: 'NODE.JS', number: 60, logo: Nodejs},
             {name: 'PHP', number: 60, logo: Php},
             {name: 'PYTHON', number: 50, logo: Python},
+            {name: 'Docker', number: 60, logo: Docker},
+            {name: 'Git', number: 70, logo: Git},
             {name: 'Photoshop', number: 70, logo: Photoshop}
         ]
     }

@@ -4,7 +4,7 @@ import '../styles/style.css';
 const ProgressBar = (props) => {
     return (
         <React.Fragment>
-            <div className="row justify-content-center my-3">
+            <div className="row justify-content-center my-2">
                 <div className="col-md-1" style={{ top: '-10px'}}>
                     <img src={props.logo} alt=""/>
                 </div>
