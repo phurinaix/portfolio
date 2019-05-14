@@ -3,8 +3,11 @@ import ContactForm from '../../components/ContactForm';
 import ContactBox from '../../components/ContactBox';
 import FacebookCode from '../../assets/img/qrcode/facebook.png';
 import LinkedinCode from '../../assets/img/qrcode/linkedin.png';
+// import GithubCode from '../../assets/img/qrcode/github.png';
 import FacebookLogo from '../../assets/img/icon/facebook.svg';
 import LinkedinLogo from '../../assets/img/icon/linkedin.svg';
+// import GithubLogo from '../../assets/img/icon/github.svg';
+
 import '../Home/Home.css';
 import '../../styles/style.css';
 
@@ -13,7 +16,8 @@ class Contact extends Component {
         isLoading: true,
         socials: [
             { name: 'Facebook', qrcode: FacebookCode, logo: FacebookLogo },
-            { name: 'Linkedin', qrcode: LinkedinCode, logo: LinkedinLogo },
+            { name: 'Linkedin', qrcode: LinkedinCode, logo: LinkedinLogo }
+            // { name: 'Github', qrcode: GithubCode, logo: GithubLogo },
         ]
     }
     componentDidMount () {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn, faGoogle } from "@fortawesome/free-brands-svg-icons"
+import { faFacebookF, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 import './Navigation.css';
 
@@ -25,7 +25,7 @@ const Navigation = () => {
                     <Nav className="text-center link social-contact">
                         <Nav.Link href="https://www.facebook.com/phurinat.puekkham.1" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></Nav.Link>
                         <Nav.Link href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></Nav.Link>
-                        <Nav.Link href="#"><FontAwesomeIcon icon={ faGoogle }/></Nav.Link>
+                        <Nav.Link href="https://github.com/phurinaix" target="_blank"><FontAwesomeIcon icon={ faGithub }/></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
