@@ -30,6 +30,7 @@ import softwareImage19 from '../../assets/img/software/19.jpg';
 import softwareImage20 from '../../assets/img/software/20.png';
 import softwareImage21 from '../../assets/img/software/21.jpg';
 import softwareImage22 from '../../assets/img/software/22.jpg';
+import softwareImage23 from '../../assets/img/software/23.jpg';
 import designImage1 from '../../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../../assets/img/design/geniusPen.jpg';
@@ -42,7 +43,6 @@ import blockchainImage2 from '../../assets/img/blockchain/2.jpg';
 
 class Work extends Component {
     state = {
-        isLoading: true,
         projectType: "",
         imageList: {
             software: [
@@ -85,6 +85,14 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phurinaix/devMePlease-java',
                     description: 'Java desktop application'
+                },
+                {
+                    image: softwareImage23,
+                    topic: 'Folder Locked',
+                    technologies: 'PHP + MySQL + HTML/CSS/JS',
+                    link: '',
+                    github: 'github.com/phpinproject/piyaproject',
+                    description: 'Website for keep files'
                 },
                 {
                     image: softwareImage15,

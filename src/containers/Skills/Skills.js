@@ -15,7 +15,6 @@ import Photoshop from '../../assets/img/icon/photoshop.svg';
 
 class Skills extends Component {
     state = {
-        isLoading: true,
         skills: [
             {name: 'HTML', number: 80, logo: Html},
             {name: 'CSS', number: 70, logo: Css},

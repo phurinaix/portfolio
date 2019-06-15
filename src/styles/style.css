@@ -123,6 +123,9 @@ a {
     cursor: pointer;
     animation: fadeIn ease 0.5s;
 }
+.workcard img {
+    height: 159px;
+}
 .workcard:hover {
     background-color: #f7f1a4 !important;    
 }
@@ -194,11 +197,12 @@ a {
 /* --------------------End Project-------------------------*/
 
 .about-section {
+    position: relative;
     background-color: #e2e1e0;
     width: 100%;
     margin-top: 80px;
     animation: fadeIn ease 0.3s;
-    z-index: 1000;
+    z-index: 100;
 }
 .about-section h3, .about-section p {
     font-family: 'Open Sans', sans-serif;
@@ -221,6 +225,7 @@ a {
 .contact-section {
     position: relative;
     margin-top: 10px;
+    margin-bottom: 50px;
     background-color: #e2e1e0;
     padding: 50px 10px;
     z-index: 100;
@@ -422,6 +427,9 @@ a {
     .work-section, .about-section {
         margin-top: 20px;
     }
+    .workcard img {
+        height: 326px;
+    }
     .typewriter-text h3 {
         font-size: 1.2em;
     }
@@ -429,6 +437,16 @@ a {
         text-align: center;
     }
     .icon-bar {
+        display: none;
+    }
+    .project-topic-content h5 {
+        font-size: 0.8em;
+    }
+    .project-topic-content p {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+    }
+    .skill-name {
         display: none;
     }
 }

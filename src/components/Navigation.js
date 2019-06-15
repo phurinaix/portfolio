@@ -19,7 +19,7 @@ const Navigation = () => {
                         <LinkContainer to="/"><Nav.Link>HOME</Nav.Link></LinkContainer>
                         <LinkContainer to="/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
                         <LinkContainer to="/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
-                        <LinkContainer to="/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
+                        <LinkContainer to="/portfolio"><Nav.Link>PORTFOLIO</Nav.Link></LinkContainer>
                         <LinkContainer to="/contact"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
                     </Nav>
                     <Nav className="text-center link social-contact">

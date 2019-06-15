@@ -8,10 +8,6 @@ import StudentImage from '../../assets/img/student.png';
 import Pdf from '../../assets/pdf/resume.pdf';
 
 class About extends Component {
-    state = {
-        isLoading: true
-    }
-    
     render() {
         const { isLoading } = this.props;
         return (

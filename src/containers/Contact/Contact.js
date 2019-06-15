@@ -14,7 +14,6 @@ import '../../styles/style.css';
 
 class Contact extends Component {
     state = {
-        isLoading: true,
         socials: [
             // { 
             //     name: 'Facebook',
@@ -34,7 +33,6 @@ class Contact extends Component {
                 qrcode: LinkedinCode,
                 logo: LinkedinLogo
             }
-            // { name: 'Github', qrcode: GithubCode, logo: GithubLogo },
         ]
     }
     render() {

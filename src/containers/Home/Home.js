@@ -6,9 +6,6 @@ import './Home.css';
 import '../../styles/style.css';
 
 class Home extends Component {
-    state = {
-        isLoading: true
-    }
     render() {
         const { isLoading } = this.props;
         return (
