@@ -10,17 +10,17 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="navbar-header">
             <Container>
-                <LinkContainer to="/profile/">
+                <LinkContainer to="/">
                     <Navbar.Brand className="navbar-logo">PHURINAT</Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="toggle-button"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto text-center link">
-                        <LinkContainer to="/profile/"><Nav.Link>HOME</Nav.Link></LinkContainer>
-                        <LinkContainer to="/profile/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
-                        <LinkContainer to="/profile/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
-                        <LinkContainer to="/profile/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
-                        <LinkContainer to="/profile/contact"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
+                        <LinkContainer to="/"><Nav.Link>HOME</Nav.Link></LinkContainer>
+                        <LinkContainer to="/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
+                        <LinkContainer to="/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
+                        <LinkContainer to="/work"><Nav.Link>WORK</Nav.Link></LinkContainer>
+                        <LinkContainer to="/contact"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
                     </Nav>
                     <Nav className="text-center link social-contact">
                         <Nav.Link href="https://www.facebook.com/phurinat.puekkham.1" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></Nav.Link>
