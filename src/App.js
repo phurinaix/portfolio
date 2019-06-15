@@ -9,6 +9,8 @@ import Contact from './containers/Contact/Contact';
 import ErrorPage from './containers/ErrorPage/ErrorPage';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faGithub, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
 
 class App extends Component {
   render() {
@@ -27,6 +29,14 @@ class App extends Component {
               </Switch>
             </Layout>
           </BrowserRouter>
+          <div className="icon-bar">
+            {/* <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  */}
+            <a href="https://www.facebook.com/phurinat.puekkham.1" className="facebook" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></a>
+            <a href="https://github.com/phurinaix" className="github" target="_blank"><FontAwesomeIcon icon={ faGithub }/></a> 
+            {/* <a href="#" className="google" target="_blank"><FontAwesomeIcon icon={ faGooglePlus }/></a>  */}
+            <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
+            {/* <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> */}
+          </div>
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>

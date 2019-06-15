@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import withLoading from '../withLoading';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import './Home.css';
@@ -8,17 +9,11 @@ class Home extends Component {
     state = {
         isLoading: true
     }
-    componentDidMount () {
-        setTimeout(() => { 
-            this.setState(prevState => ({
-                isLoading: !prevState.isLoading,
-            }));
-        }, 1000);
-    }
     render() {
+        const { isLoading } = this.props;
         return (
             <React.Fragment>
-                {this.state.isLoading ? 
+                {isLoading ? 
                     <div className="loading-bar">
                         <p className="loading-text">LOADING ...</p>
                         <div className="progress progress-striped">
@@ -31,7 +26,7 @@ class Home extends Component {
                         <h4>PHURINAT PUEKKHAM</h4>
                         <h2>PORTFOLIO</h2>
                         <ButtonToolbar>
-                            <LinkContainer to="/profile/contact">
+                            <LinkContainer to="/contact">
                                 <Button variant="outline-warning" className="contact-button">CONTACT ME</Button>
                             </LinkContainer>
                         </ButtonToolbar>
@@ -42,4 +37,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withLoading(Home);

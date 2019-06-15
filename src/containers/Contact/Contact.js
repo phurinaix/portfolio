@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import withLoading from '../withLoading';
 import ContactForm from '../../components/ContactForm';
 import ContactBox from '../../components/ContactBox';
 import FacebookCode from '../../assets/img/qrcode/facebook.png';
 import LinkedinCode from '../../assets/img/qrcode/linkedin.png';
-// import GithubCode from '../../assets/img/qrcode/github.png';
-import FacebookLogo from '../../assets/img/icon/facebook.svg';
+import GithubCode from '../../assets/img/qrcode/github.png';
+// import FacebookLogo from '../../assets/img/icon/facebook.svg';
 import LinkedinLogo from '../../assets/img/icon/linkedin.svg';
-// import GithubLogo from '../../assets/img/icon/github.svg';
+import GithubLogo from '../../assets/img/icon/github.svg';
 
 import '../Home/Home.css';
 import '../../styles/style.css';
@@ -15,22 +16,32 @@ class Contact extends Component {
     state = {
         isLoading: true,
         socials: [
-            { name: 'Facebook', qrcode: FacebookCode, logo: FacebookLogo },
-            { name: 'Linkedin', qrcode: LinkedinCode, logo: LinkedinLogo }
+            // { 
+            //     name: 'Facebook',
+            //     link: 'https://www.facebook.com/phurinat.puekkham.1',
+            //     qrcode: FacebookCode,
+            //     logo: FacebookLogo
+            // },
+            { 
+                name: 'Github',
+                link: 'https://github.com/phurinaix',
+                qrcode: GithubCode,
+                logo: GithubLogo
+            },
+            { 
+                name: 'Linkedin',
+                link: 'https://www.linkedin.com/in/phurinat-puekkham-333a9615a/',
+                qrcode: LinkedinCode,
+                logo: LinkedinLogo
+            }
             // { name: 'Github', qrcode: GithubCode, logo: GithubLogo },
         ]
     }
-    componentDidMount () {
-        setTimeout(() => { 
-            this.setState(prevState => ({
-                isLoading: !prevState.isLoading,
-            }));
-        }, 1000);
-    }
     render() {
+        const { isLoading } = this.props;
         return (
             <React.Fragment>
-                {this.state.isLoading ? 
+                {isLoading ? 
                     <div className="loading-bar">
                         <p className="loading-text">LOADING ...</p>
                         <div className="progress progress-striped">
@@ -46,7 +57,7 @@ class Contact extends Component {
                             </div>
                             <div className="col-md-4">
                                 {this.state.socials.map((social, index) => {
-                                    return <ContactBox key={index} qrcode={social.qrcode} title={social.name} logo={social.logo} />
+                                    return <a href={social.link} target="_blank" key={index}><ContactBox qrcode={social.qrcode} title={social.name} logo={social.logo} /></a>
                                 })}
                             </div>
                         </div>
@@ -57,4 +68,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default withLoading(Contact);

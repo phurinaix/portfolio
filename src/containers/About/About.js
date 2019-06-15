@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
+import withLoading from '../withLoading';
 import '../Home/Home.css';
 import '../../styles/style.css';
 // import CatImage from '../../assets/img/cat.jpg';
@@ -11,17 +12,11 @@ class About extends Component {
         isLoading: true
     }
     
-    componentDidMount () {
-        setTimeout(() => { 
-            this.setState(prevState => ({
-                isLoading: !prevState.isLoading,
-            }));
-        }, 1000);
-    }
     render() {
+        const { isLoading } = this.props;
         return (
             <React.Fragment>
-                {this.state.isLoading ? 
+                {isLoading ? 
                     <div className="loading-bar">
                         <p className="loading-text">LOADING ...</p>
                         <div className="progress progress-striped">
@@ -30,8 +25,8 @@ class About extends Component {
                         </div> 
                     </div>
                 :
-                    <div className="about-section text-center">
-                        <img src={StudentImage} alt=""/><br/><br/><br/>
+                    <div className="about-section text-center py-5 px-2">
+                        {/* <img src={StudentImage} alt=""/><br/><br/><br/> */}
                         <div className="typewriter">
                             <div className="typewriter-text">
                                 <h3>Hello, my name is Phurinat Puekkham.</h3>
@@ -39,6 +34,7 @@ class About extends Component {
                         </div>
                         <p>I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.</p>
                         <p>I love being a web developer.</p>
+                        <br/>
                         <Button href = {Pdf} target = "_blank">See Resume</Button>
                     </div>
                 }
@@ -47,4 +43,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default withLoading(About);
