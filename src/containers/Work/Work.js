@@ -34,6 +34,11 @@ import designImage1 from '../../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../../assets/img/design/geniusPen.jpg';
 import designImage4 from '../../assets/img/design/debate.jpg';
+import designImageFull1 from '../../assets/img/design/tuPoster1_full.jpg';
+import designImageFull2 from '../../assets/img/design/tuPoster2_full.jpg';
+import designImageFull3 from '../../assets/img/design/geniusPen_full.jpg';
+import designImageFull4 from '../../assets/img/design/debate_full.jpg';
+import blockchainImage2 from '../../assets/img/blockchain/2.jpg';
 
 class Work extends Component {
     state = {
@@ -101,23 +106,34 @@ class Work extends Component {
             design: [
                 {
                     image: designImage1,
+                    imageFull: designImageFull1,
                     topic: 'Thammasat University Poster',
                     description: 'Thammasat University Pattaya Campus poster'
                 },
                 {
                     image: designImage2,
+                    imageFull: designImageFull2,
                     topic: 'Thammasat University Poster',
                     description: 'Thammasat University Pattaya Campus poster'
                 },
                 {
                     image: designImage3,
+                    imageFull: designImageFull3,
                     topic: 'Advertisement Poster',
                     description: 'The poster for advertise a genius pen'
                 },
                 {
                     image: designImage4,
+                    imageFull: designImageFull4,
                     topic: 'Debating Poster',
                     description: 'The poster for debating activity'
+                }
+            ],
+            blockchain: [
+                {
+                    image: blockchainImage2,
+                    topic: 'A secure and trusted publishing systems for university diplomas and transcripts',
+                    description: 'Graduation project'
                 }
             ]
         }
@@ -148,7 +164,7 @@ class Work extends Component {
                                 </React.Fragment>
                             :
                                 <ProjectBoard 
-                                    type={this.state.projectType}
+                                    projectType={this.state.projectType}
                                     images={this.state.imageList}
                                 />
                             }

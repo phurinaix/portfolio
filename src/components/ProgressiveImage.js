@@ -33,7 +33,7 @@ class ProgressiveImage extends Component {
   
     style = loading => {
       return {
-        transition: '0.5s filter linear',
+        transition: '0.6s filter linear',
         filter: `${loading ? 'blur(10px)' : ''}`,
       }
     }
