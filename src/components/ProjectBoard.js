@@ -29,7 +29,7 @@ class ProjectBoard extends Component {
                         {images.software.map((element,index) => {
                             return (
                                 <div className="row project-card my-3 p-4" key={index}>
-                                    <div className="col-md-5">
+                                    <div className="col-md-5 project-card-image">
                                         <ProgressiveImage image={element.image} alt="projects" classStyle="w-100"/>
                                     </div>
                                     <div className="col-md-7 p-3 project-topic-content software-project-topic">
@@ -61,7 +61,7 @@ class ProjectBoard extends Component {
                         {images.design.map((element,index) => {
                             return (
                                 <div className="row project-card my-3 p-4" key={index}>
-                                    <div className="col-md-3 project-card-image" onClick={() => this.openLightbox(element.imageFull)}>
+                                    <div className="col-md-3 project-card-image-view project-card-image" onClick={() => this.openLightbox(element.imageFull)}>
                                         <ProgressiveImage image={element.image} alt="projects" classStyle="w-100"/>
                                     </div>
                                     <div className="col-md-9 p-3 project-topic-content">
@@ -85,7 +85,7 @@ class ProjectBoard extends Component {
                         {images.blockchain.map((element,index) => {
                             return (
                                 <div className="row project-card my-3 p-4" key={index}>
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 project-card-image">
                                         <ProgressiveImage image={element.image} alt="projects" classStyle="w-100"/>
                                     </div>
                                     <div className="col-md-9 p-3 project-topic-content">

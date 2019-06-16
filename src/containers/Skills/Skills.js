@@ -30,7 +30,7 @@ class Skills extends Component {
     }
     render() {
         return (
-            <div className="skills-section">
+            <div className="skills-section mb-3">
                 <h3>SKILLS</h3>
                 {this.state.skills.map((skill, index) => {
                     return <ProgressBar key={index} name={skill.name} number={skill.number} logo={skill.logo}/>

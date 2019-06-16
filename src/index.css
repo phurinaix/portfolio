@@ -13,6 +13,10 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-overflow-y: scroll;
+  -moz-overflow-y: scroll;
+  -webkit-overflow-x: hidden;
+  -moz-overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
   animation: changeColor 60s infinite;
 }

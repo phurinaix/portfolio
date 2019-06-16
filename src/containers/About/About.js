@@ -12,9 +12,10 @@ class About extends Component {
         return (
             <div className="about-section text-center py-5 px-2">
                 {/* <img src={StudentImage} alt=""/><br/><br/><br/> */}
+                <h3>ABOUT ME</h3>
                 <div className="typewriter">
                     <div className="typewriter-text">
-                        <h3>Hello, my name is Phurinat Puekkham.</h3>
+                        <p>Hello, my name is Phurinat Puekkham.</p>
                     </div>
                 </div>
                 <p>I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.</p>
