@@ -37,12 +37,12 @@ class App extends Component {
             <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
             {/* <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> */}
           </div>
+          {/* <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
-          <div className="cube"></div>
-          <div className="cube"></div>
+          <div className="cube"></div> */}
       </React.Fragment>
     );
   }
