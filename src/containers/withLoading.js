@@ -15,7 +15,20 @@ const withLoading = (WrappedComponent) => {
 
         render() {
             return (
-                <WrappedComponent isLoading={this.state.isLoading}/>
+                <React.Fragment>
+                    {   
+                        this.state.isLoading ? 
+                        <div className="loading-bar">
+                            <p className="loading-text">LOADING ...</p>
+                            <div className="progress progress-striped">
+                                <div className="progress-bar" >
+                                </div>                       
+                            </div> 
+                        </div>
+                        :
+                        <WrappedComponent />
+                    }
+                </React.Fragment>
             )
         }
     }

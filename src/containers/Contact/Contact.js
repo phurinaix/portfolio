@@ -36,32 +36,19 @@ class Contact extends Component {
         ]
     }
     render() {
-        const { isLoading } = this.props;
         return (
-            <React.Fragment>
-                {isLoading ? 
-                    <div className="loading-bar">
-                        <p className="loading-text">LOADING ...</p>
-                        <div className="progress progress-striped">
-                            <div className="progress-bar" >
-                            </div>                       
-                        </div> 
+            <div className="contact-section text-center">
+                <div className="row justify-content-center">
+                    <div className="col-md-8">
+                        <ContactForm />
                     </div>
-                : 
-                    <div className="contact-section text-center">
-                        <div className="row justify-content-center">
-                            <div className="col-md-8">
-                                <ContactForm />
-                            </div>
-                            <div className="col-md-4">
-                                {this.state.socials.map((social, index) => {
-                                    return <a href={social.link} target="_blank" key={index}><ContactBox qrcode={social.qrcode} title={social.name} logo={social.logo} /></a>
-                                })}
-                            </div>
-                        </div>
+                    <div className="col-md-4">
+                        {this.state.socials.map((social, index) => {
+                            return <a href={social.link} target="_blank" key={index}><ContactBox qrcode={social.qrcode} title={social.name} logo={social.logo} /></a>
+                        })}
                     </div>
-                }
-            </React.Fragment>
+                </div>
+            </div>
         );
     }
 }

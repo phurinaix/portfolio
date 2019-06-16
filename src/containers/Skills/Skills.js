@@ -29,26 +29,13 @@ class Skills extends Component {
         ]
     }
     render() {
-        const { isLoading } = this.props;
         return (
-            <React.Fragment>
-                {isLoading ? 
-                    <div className="loading-bar">
-                        <p className="loading-text">LOADING ...</p>
-                        <div className="progress progress-striped">
-                            <div className="progress-bar" >
-                            </div>                       
-                        </div> 
-                    </div>
-                :
-                    <div className="skills-section">
-                        <h3>SKILLS</h3>
-                        {this.state.skills.map((skill, index) => {
-                            return <ProgressBar key={index} name={skill.name} number={skill.number} logo={skill.logo}/>
-                        })}
-                    </div>
-                }
-            </React.Fragment>
+            <div className="skills-section">
+                <h3>SKILLS</h3>
+                {this.state.skills.map((skill, index) => {
+                    return <ProgressBar key={index} name={skill.name} number={skill.number} logo={skill.logo}/>
+                })}
+            </div>
         );
     }
 }

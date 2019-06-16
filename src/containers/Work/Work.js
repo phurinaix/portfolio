@@ -9,28 +9,29 @@ import DesignImage from '../../assets/img/design.jpg';
 import BlockchainImage from '../../assets/img/blockchain.jpg';
 import ProjectBoard from '../../components/ProjectBoard';
 import softwareImage1 from '../../assets/img/software/1.jpg';
-import softwareImage2 from '../../assets/img/software/2.jpg';
-import softwareImage3 from '../../assets/img/software/3.jpg';
-import softwareImage4 from '../../assets/img/software/4.jpg';
+// import softwareImage2 from '../../assets/img/software/2.jpg';
+// import softwareImage3 from '../../assets/img/software/3.jpg';
+// import softwareImage4 from '../../assets/img/software/4.jpg';
 import softwareImage5 from '../../assets/img/software/5.jpg';
-import softwareImage6 from '../../assets/img/software/6.jpg';
-import softwareImage7 from '../../assets/img/software/7.jpg';
-import softwareImage8 from '../../assets/img/software/8.jpg';
-import softwareImage9 from '../../assets/img/software/9.jpg';
-import softwareImage10 from '../../assets/img/software/10.jpg';
+// import softwareImage6 from '../../assets/img/software/6.jpg';
+// import softwareImage7 from '../../assets/img/software/7.jpg';
+// import softwareImage8 from '../../assets/img/software/8.jpg';
+// import softwareImage9 from '../../assets/img/software/9.jpg';
+// import softwareImage10 from '../../assets/img/software/10.jpg';
 import softwareImage11 from '../../assets/img/software/11.jpg';
-import softwareImage12 from '../../assets/img/software/12.jpg';
-import softwareImage13 from '../../assets/img/software/13.jpg';
-import softwareImage14 from '../../assets/img/software/14.jpg';
+// import softwareImage12 from '../../assets/img/software/12.jpg';
+// import softwareImage13 from '../../assets/img/software/13.jpg';
+// import softwareImage14 from '../../assets/img/software/14.jpg';
 import softwareImage15 from '../../assets/img/software/15.jpg';
-import softwareImage16 from '../../assets/img/software/16.jpg';
-import softwareImage17 from '../../assets/img/software/17.jpg';
-import softwareImage18 from '../../assets/img/software/18.jpg';
-import softwareImage19 from '../../assets/img/software/19.jpg';
+// import softwareImage16 from '../../assets/img/software/16.jpg';
+// import softwareImage17 from '../../assets/img/software/17.jpg';
+// import softwareImage18 from '../../assets/img/software/18.jpg';
+// import softwareImage19 from '../../assets/img/software/19.jpg';
 import softwareImage20 from '../../assets/img/software/20.png';
 import softwareImage21 from '../../assets/img/software/21.jpg';
 import softwareImage22 from '../../assets/img/software/22.jpg';
 import softwareImage23 from '../../assets/img/software/23.jpg';
+import softwareImage24 from '../../assets/img/software/24.jpg';
 import designImage1 from '../../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../../assets/img/design/geniusPen.jpg';
@@ -58,7 +59,7 @@ class Work extends Component {
                     image: softwareImage11,
                     topic: 'Room Secret Chat',
                     technologies: 'Node.js + Express + Socket.io + HTML/CSS/JS',
-                    link: 'shrouded-waters-54693.herokuapp.com',
+                    link: 'room-secret-chat.herokuapp.com',
                     github: 'github.com/phurinaix/Room-Secret-Chat',
                     description: 'Web chat application'
                 },
@@ -67,11 +68,11 @@ class Work extends Component {
                     topic: 'Thammasat University Website',
                     technologies: 'PHP + MySQL + HTML/CSS/JS',
                     link: '',
-                    github: 'github.com',
+                    github: 'github.com/phurinaix/university-website',
                     description: 'Thammasat University website'
                 },
                 {
-                    image: softwareImage5,
+                    image: softwareImage24,
                     topic: 'The Million Years Stone Park',
                     technologies: 'PHP + MySQL + HTML/CSS/JS',
                     link: '',
@@ -150,36 +151,23 @@ class Work extends Component {
         this.setState({ projectType });
     }
     render() {
-        const { isLoading } = this.props;
         return (
-            <React.Fragment>
-                {isLoading ? 
-                    <div className="loading-bar">
-                        <p className="loading-text">LOADING ...</p>
-                        <div className="progress progress-striped">
-                            <div className="progress-bar" >
-                            </div>                       
-                        </div> 
+                <div className="work-section text-center">
+                    <div className="row justify-content-center">
+                        {this.state.projectType === "" ?
+                            <React.Fragment>
+                                <WorkCard title="SOFTWARE PROJECT" text="Web Application and Desktop Application" image={SoftwareImage} click={this.projectHandle}/>
+                                <WorkCard title="DESIGN PROJECT" text="Poster Design" image={DesignImage} click={this.projectHandle}/>
+                                <WorkCard title="BLOCKCHAIN PROJECT" text="Bitcoin and Ethereum" image={BlockchainImage} click={this.projectHandle}/>
+                            </React.Fragment>
+                        :
+                            <ProjectBoard 
+                                projectType={this.state.projectType}
+                                images={this.state.imageList}
+                            />
+                        }
                     </div>
-                : 
-                    <div className="work-section text-center">
-                        <div className="row justify-content-center">
-                            {this.state.projectType === "" ?
-                                <React.Fragment>
-                                    <WorkCard title="SOFTWARE PROJECT" text="Web Application and Desktop Application" image={SoftwareImage} click={this.projectHandle}/>
-                                    <WorkCard title="DESIGN PROJECT" text="Poster Design" image={DesignImage} click={this.projectHandle}/>
-                                    <WorkCard title="BLOCKCHAIN PROJECT" text="Bitcoin and Ethereum" image={BlockchainImage} click={this.projectHandle}/>
-                                </React.Fragment>
-                            :
-                                <ProjectBoard 
-                                    projectType={this.state.projectType}
-                                    images={this.state.imageList}
-                                />
-                            }
-                        </div>
-                    </div>
-                }
-            </React.Fragment>
+                </div>
         );
     }
 }
