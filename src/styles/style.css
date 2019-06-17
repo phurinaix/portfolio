@@ -527,6 +527,17 @@ a {
     .contact-section form input, .contact-section form textarea {
         font-size: 0.7em;
     }
+    .project-body {
+        padding: 0 !important;
+    }
+    .software-project-card {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+    .software-project-card img {
+        width: 100% !important;
+    }
     .project-header h3 {
         font-size: 1em;
     }

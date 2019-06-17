@@ -41,10 +41,10 @@ class ProjectBoard extends Component {
                             <h3>{projectType}</h3>
                         </div>
                         {/* <div className="px-5 pb-5 row justify-content-center"> */}
-                        <div className="px-5 pb-5">
+                        <div className="px-5 pb-5 project-body">
                             {images.software.map((element,index) => {
                                 return (
-                                    <div className="project-card" key={index}>
+                                    <div className="project-card software-project-card" key={index}>
                                     {/* // <div className="project-card col-lg-3 col-md-5 m-4 p-0" key={index}> */}
                                         <div className="row my-3 px-4 pt-4">
                                             <div className="col-md-5 project-card-image">
