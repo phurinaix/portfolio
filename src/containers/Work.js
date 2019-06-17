@@ -1,54 +1,56 @@
 import React, { Component } from 'react';
-import WorkCard from '../../components/WorkCard';
+import WorkCard from '../components/WorkCard';
 // import ProjectCard from '../../components/ProjectCard';
-import withLoading from '../withLoading';
-import '../Home/Home.css';
-import '../../styles/style.css';
-import SoftwareImage from '../../assets/img/software.jpg';
-import DesignImage from '../../assets/img/design.jpg';
-import BlockchainImage from '../../assets/img/blockchain.jpg';
-import ProjectBoard from '../../components/ProjectBoard';
-import softwareImage1 from '../../assets/img/software/1.jpg';
-import softwareImage2 from '../../assets/img/software/2.jpg';
-import softwareImage3 from '../../assets/img/software/3.jpg';
-import softwareImage4 from '../../assets/img/software/4.jpg';
-import softwareImage6 from '../../assets/img/software/6.jpg';
-import softwareImage7 from '../../assets/img/software/7.jpg';
-import softwareImage8 from '../../assets/img/software/8.jpg';
-import softwareImage9 from '../../assets/img/software/9.jpg';
-import softwareImage10 from '../../assets/img/software/10.jpg';
-import softwareImage11 from '../../assets/img/software/11.jpg';
-import softwareImage12 from '../../assets/img/software/12.jpg';
-import softwareImage13 from '../../assets/img/software/13.jpg';
-import softwareImage14 from '../../assets/img/software/14.jpg';
-import softwareImage15 from '../../assets/img/software/15.jpg';
-import softwareImage16 from '../../assets/img/software/16.jpg';
-import softwareImage17 from '../../assets/img/software/17.jpg';
-import softwareImage18 from '../../assets/img/software/18.jpg';
-import softwareImage19 from '../../assets/img/software/19.jpg';
-import softwareImage20 from '../../assets/img/software/20.png';
-import softwareImage21 from '../../assets/img/software/21.jpg';
-import softwareImage22 from '../../assets/img/software/22.jpg';
-import softwareImage23 from '../../assets/img/software/23.jpg';
-import softwareImage24 from '../../assets/img/software/24.jpg';
-import softwareImage25 from '../../assets/img/software/25.jpg';
-import softwareImage26 from '../../assets/img/software/26.jpg';
-import softwareImage27 from '../../assets/img/software/27.jpg';
-import softwareImage28 from '../../assets/img/software/28.jpg';
-import softwareImage29 from '../../assets/img/software/29.jpg';
-import softwareImage30 from '../../assets/img/software/30.jpg';
-import softwareImage31 from '../../assets/img/software/31.jpg';
-import softwareImage32 from '../../assets/img/software/32.jpg';
-import designImage1 from '../../assets/img/design/tuPoster1.jpg';
-import designImage2 from '../../assets/img/design/tuPoster2.jpg';
-import designImage3 from '../../assets/img/design/geniusPen.jpg';
-import designImage4 from '../../assets/img/design/debate.jpg';
-import designImageFull1 from '../../assets/img/design/tuPoster1_full.jpg';
-import designImageFull2 from '../../assets/img/design/tuPoster2_full.jpg';
-import designImageFull3 from '../../assets/img/design/geniusPen_full.jpg';
-import designImageFull4 from '../../assets/img/design/debate_full.jpg';
-import blockchainImage2 from '../../assets/img/blockchain/2.jpg';
-import blockchainImage1 from '../../assets/img/blockchain/blockchain.jpg';
+import withLoading from './withLoading';
+import SoftwareImage from '../assets/img/software.jpg';
+import DesignImage from '../assets/img/design.jpg';
+import BlockchainImage from '../assets/img/blockchain.jpg';
+import ProjectBoard from '../components/ProjectBoard';
+import softwareImage1 from '../assets/img/software/1.jpg';
+import softwareImage2 from '../assets/img/software/2.jpg';
+import softwareImage3 from '../assets/img/software/3.jpg';
+import softwareImage4 from '../assets/img/software/4.jpg';
+import softwareImage6 from '../assets/img/software/6.jpg';
+import softwareImage7 from '../assets/img/software/7.jpg';
+import softwareImage8 from '../assets/img/software/8.jpg';
+import softwareImage9 from '../assets/img/software/9.jpg';
+import softwareImage10 from '../assets/img/software/10.jpg';
+import softwareImage11 from '../assets/img/software/11.jpg';
+import softwareImage12 from '../assets/img/software/12.jpg';
+import softwareImage13 from '../assets/img/software/13.jpg';
+import softwareImage14 from '../assets/img/software/14.jpg';
+import softwareImage15 from '../assets/img/software/15.jpg';
+import softwareImage16 from '../assets/img/software/16.jpg';
+import softwareImage17 from '../assets/img/software/17.jpg';
+import softwareImage18 from '../assets/img/software/18.jpg';
+import softwareImage19 from '../assets/img/software/19.jpg';
+import softwareImage20 from '../assets/img/software/20.png';
+import softwareImage21 from '../assets/img/software/21.jpg';
+import softwareImage22 from '../assets/img/software/22.jpg';
+import softwareImage23 from '../assets/img/software/23.jpg';
+import softwareImage24 from '../assets/img/software/24.jpg';
+import softwareImage25 from '../assets/img/software/25.jpg';
+import softwareImage26 from '../assets/img/software/26.jpg';
+import softwareImage27 from '../assets/img/software/27.jpg';
+import softwareImage28 from '../assets/img/software/28.jpg';
+import softwareImage29 from '../assets/img/software/29.jpg';
+import softwareImage30 from '../assets/img/software/30.jpg';
+import softwareImage31 from '../assets/img/software/31.jpg';
+import softwareImage32 from '../assets/img/software/32.jpg';
+import softwareImage33 from '../assets/img/software/33.jpg';
+import softwareImage34 from '../assets/img/software/34.jpg';
+import softwareImage35 from '../assets/img/software/35.jpg';
+import softwareImage36 from '../assets/img/software/36.jpg';
+import designImage1 from '../assets/img/design/tuPoster1.jpg';
+import designImage2 from '../assets/img/design/tuPoster2.jpg';
+import designImage3 from '../assets/img/design/geniusPen.jpg';
+import designImage4 from '../assets/img/design/debate.jpg';
+import designImageFull1 from '../assets/img/design/tuPoster1_full.jpg';
+import designImageFull2 from '../assets/img/design/tuPoster2_full.jpg';
+import designImageFull3 from '../assets/img/design/geniusPen_full.jpg';
+import designImageFull4 from '../assets/img/design/debate_full.jpg';
+import blockchainImage2 from '../assets/img/blockchain/2.jpg';
+import blockchainImage1 from '../assets/img/blockchain/blockchain.jpg';
 
 class Work extends Component {
     state = {
@@ -130,7 +132,7 @@ class Work extends Component {
                     description: 'Website for keep files',
                     detail: '',
                     images: [
-                        softwareImage23
+                        softwareImage23, softwareImage33, softwareImage34, softwareImage35, softwareImage36
                     ]
                 },
                 {

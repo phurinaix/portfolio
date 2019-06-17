@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import ProgressBar from '../../components/ProgressBar';
-import withLoading from '../withLoading';
-import '../../styles/style.css';
-import Html from '../../assets/img/icon/html.svg';
-import Css from '../../assets/img/icon/css.svg';
-import Js from '../../assets/img/icon/javascript.svg';
-import Reactjs from '../../assets/img/icon/react.svg';
-import Nodejs from '../../assets/img/icon/nodejs.svg';
-import Php from '../../assets/img/icon/php.svg';
-import Python from '../../assets/img/icon/python.svg';
-import Docker from '../../assets/img/icon/docker.svg';
-import Git from '../../assets/img/icon/git.svg';
-import Photoshop from '../../assets/img/icon/photoshop.svg';
+import ProgressBar from '../components/ProgressBar';
+import withLoading from './withLoading';
+import Html from '../assets/img/icon/html.svg';
+import Css from '../assets/img/icon/css.svg';
+import Js from '../assets/img/icon/javascript.svg';
+import Reactjs from '../assets/img/icon/react.svg';
+import Nodejs from '../assets/img/icon/nodejs.svg';
+import Php from '../assets/img/icon/php.svg';
+import Python from '../assets/img/icon/python.svg';
+import Docker from '../assets/img/icon/docker.svg';
+import Git from '../assets/img/icon/git.svg';
+import Photoshop from '../assets/img/icon/photoshop.svg';
 
 class Skills extends Component {
     state = {

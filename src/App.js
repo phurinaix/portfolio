@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Home from './containers/Home/Home';
-import About from './containers/About/About';
-import Skills from './containers/Skills/Skills';
-import Work from './containers/Work/Work';
-import Contact from './containers/Contact/Contact';
-import ErrorPage from './containers/ErrorPage/ErrorPage';
+import Home from './containers/Home';
+import About from './containers/About';
+import Skills from './containers/Skills';
+import Work from './containers/Work';
+import Contact from './containers/Contact';
+import ErrorPage from './containers/ErrorPage';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

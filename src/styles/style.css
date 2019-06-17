@@ -1,7 +1,24 @@
 a {
     text-decoration: none !important;
 }
-
+h2, h4 {
+    color: #ede5aa;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    /* z-index: -1000; */
+    transform: translate(-50%, -50%);
+    animation: animate 0.5s linear infinite;
+}
+h2 {
+    font-size: 5em;
+    top: 50%;
+}
+h4 {
+    font-size: 2em;
+    top: 40%;
+}
 /* Navigation */
 .navbar-link a{
     font-family: 'Open Sans', sans-serif;
@@ -102,7 +119,7 @@ a {
     background: #007bb5;
     color: white;
 }
-  
+
   
 @keyframes progressAnimationStrike {
     from {
@@ -113,6 +130,26 @@ a {
     }
 }
 
+/* Home page */
+.home-section {
+    height: 90vh;
+}
+@keyframes animate {
+    0%, 100% {
+        text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
+    }
+    25% {
+        text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+    }
+    50% {
+        text-shadow: 1.5px -1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+    }
+    75% {
+        text-shadow: -1.5px 1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+    }
+}
+
+/* Skill page */
 .skills-section, .contact-section {
     width: 100%;
     margin-top: 100px;
@@ -386,6 +423,21 @@ a {
 .contact-card-social:hover {
     background-color: rgb(188, 209, 255);
 }
+.contact-button {
+    font-family: 'Open Sans', sans-serif;
+    border-color: #f3e536 !important;
+    background-color: #0f0f49 !important;
+    color: #f3e536 !important;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+}
+.contact-button:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
+}
 
 .typewriter {
 	display: inline-block;
@@ -582,6 +634,15 @@ a {
     }
     .skill-name {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 3em;
+    }
+    h4 {
+        font-size: 1em;
     }
 }
 

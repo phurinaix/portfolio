@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import withLoading from '../withLoading';
-import ContactForm from '../../components/ContactForm';
-import ContactBox from '../../components/ContactBox';
-import FacebookCode from '../../assets/img/qrcode/facebook.png';
-import LinkedinCode from '../../assets/img/qrcode/linkedin.png';
-import GithubCode from '../../assets/img/qrcode/github.png';
+import withLoading from './withLoading';
+import ContactForm from '../components/ContactForm';
+import ContactBox from '../components/ContactBox';
+import FacebookCode from '../assets/img/qrcode/facebook.png';
+import LinkedinCode from '../assets/img/qrcode/linkedin.png';
+import GithubCode from '../assets/img/qrcode/github.png';
 // import FacebookLogo from '../../assets/img/icon/facebook.svg';
-import LinkedinLogo from '../../assets/img/icon/linkedin.svg';
-import GithubLogo from '../../assets/img/icon/github.svg';
-
-import '../Home/Home.css';
-import '../../styles/style.css';
+import LinkedinLogo from '../assets/img/icon/linkedin.svg';
+import GithubLogo from '../assets/img/icon/github.svg';
 
 class Contact extends Component {
     state = {

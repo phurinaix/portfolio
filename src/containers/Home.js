@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import withLoading from '../withLoading';
+import withLoading from './withLoading';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
-import './Home.css';
-import '../../styles/style.css';
 
 class Home extends Component {
     render() {

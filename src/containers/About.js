@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import withLoading from '../withLoading';
-import '../Home/Home.css';
-import '../../styles/style.css';
-// import CatImage from '../../assets/img/cat.jpg';
-import StudentImage from '../../assets/img/student.png';
-import Pdf from '../../assets/pdf/resume.pdf';
+import withLoading from './withLoading';
+import Pdf from '../assets/pdf/resume.pdf';
 
 class About extends Component {
     render() {
