@@ -32,6 +32,11 @@ import softwareImage21 from '../../assets/img/software/21.jpg';
 import softwareImage22 from '../../assets/img/software/22.jpg';
 import softwareImage23 from '../../assets/img/software/23.jpg';
 import softwareImage24 from '../../assets/img/software/24.jpg';
+import softwareImage25 from '../../assets/img/software/25.jpg';
+import softwareImage26 from '../../assets/img/software/26.jpg';
+import softwareImage27 from '../../assets/img/software/27.jpg';
+import softwareImage28 from '../../assets/img/software/28.jpg';
+import softwareImage29 from '../../assets/img/software/29.jpg';
 import designImage1 from '../../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../../assets/img/design/geniusPen.jpg';
@@ -57,7 +62,7 @@ class Work extends Component {
                     github: 'github.com/phurinaix/profile',
                     description: 'Portfolio website',
                     images: [
-                        softwareImage22
+                        softwareImage22, softwareImage25, softwareImage26, softwareImage27, softwareImage28, softwareImage29
                     ]
                 },
                 {

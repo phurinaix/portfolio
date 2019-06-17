@@ -1,6 +1,37 @@
 a {
     text-decoration: none !important;
 }
+
+/* Navigation */
+.navbar-link a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin: 0 10px;
+    font-weight: bolder;
+    color: #e8eb27 !important;
+    letter-spacing: 1px;
+}
+.navbar-header {
+    background-color: rgb(10,10,43);
+    z-index: 100;
+}
+.navbar-logo {
+    font-family: 'Monoton', cursive;
+    font-size: 1.3em;
+    color: #ede5aa !important;
+}
+.navbar-toggle-button{
+    background-color: #ede5aa;
+}
+.navbar-link a:hover {
+    color: white !important;
+}
+.active-link {
+    color: white;
+    border: 1px solid yellow;
+}
+
+/* Loading Bar */
 .loading-bar {
     width: 20%;
     position: absolute;
@@ -27,7 +58,7 @@ a {
 .progress-striped .progress-bar {
     background-color: #f3e536;
     width: 100%;
-    animation: progressAnimationStrike 1s;
+    animation: progressAnimationStrike 0.8s;
 }
 
 /* Social sidebar */
@@ -49,7 +80,7 @@ a {
 }
   
 .icon-bar a:hover {
-    background-color: #000;
+    background-color: rgb(15, 15, 15);
 }
 
 .facebook {
@@ -503,6 +534,12 @@ a {
 }
 
 /* Media Query */
+@media only screen and (min-width: 994px) {
+    .navbar-header {
+        height: 10vh;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .loading-bar {
         width: 60%;

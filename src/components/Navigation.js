@@ -1,8 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import './Navigation.css';
 
@@ -10,24 +8,17 @@ const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="navbar-header">
             <Container>
-                <LinkContainer to="/">
-                    <Navbar.Brand className="navbar-logo">PHURINAT</Navbar.Brand>
+                <LinkContainer to="/" activeClassName="" exact={true}>
+                    <Nav.Link className="navbar-logo">PHURINAT</Nav.Link>
                 </LinkContainer>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" className="toggle-button"/>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggle-button"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto text-center link">
-                        <LinkContainer to="/"><Nav.Link>HOME</Nav.Link></LinkContainer>
-                        <LinkContainer to="/about"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
-                        <LinkContainer to="/skills"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
-                        <LinkContainer to="/portfolio"><Nav.Link>PORTFOLIO</Nav.Link></LinkContainer>
-                        <LinkContainer to="/contact"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
-                    </Nav>
-                    <Nav className="text-center link social-contact">
-                        {/* <Nav.Link href="https://www.facebook.com/phurinat.puekkham.1" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></Nav.Link>
-                        <Nav.Link href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></Nav.Link>
-                        <Nav.Link href="https://github.com/phurinaix" target="_blank"><FontAwesomeIcon icon={ faGithub }/></Nav.Link> */}
-                        {/* <Nav.Link>THAI</Nav.Link>
-                        <Nav.Link>ENGLISH</Nav.Link> */}
+                    <Nav className="ml-auto text-center navbar-link">
+                        <LinkContainer to="/" activeClassName="active-link" exact={true}><Nav.Link>HOME</Nav.Link></LinkContainer>
+                        <LinkContainer to="/about" activeClassName="active-link"><Nav.Link>ABOUT</Nav.Link></LinkContainer>
+                        <LinkContainer to="/skills" activeClassName="active-link"><Nav.Link>SKILLS</Nav.Link></LinkContainer>
+                        <LinkContainer to="/portfolio" activeClassName="active-link"><Nav.Link>PORTFOLIO</Nav.Link></LinkContainer>
+                        <LinkContainer to="/contact" activeClassName="active-link"><Nav.Link>CONTACT</Nav.Link></LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

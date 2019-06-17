@@ -9,11 +9,11 @@ const withLoading = (WrappedComponent) => {
             this.props = nextProps;
         }
         componentDidMount () {
-            // setTimeout(() => { 
+            setTimeout(() => { 
                 this.setState(prevState => ({
                     isLoading: !prevState.isLoading,
                 }));
-            // }, 1000);
+            }, 800);
         }
 
         render() {
