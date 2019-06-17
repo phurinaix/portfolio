@@ -12,7 +12,6 @@ import softwareImage1 from '../../assets/img/software/1.jpg';
 import softwareImage2 from '../../assets/img/software/2.jpg';
 import softwareImage3 from '../../assets/img/software/3.jpg';
 import softwareImage4 from '../../assets/img/software/4.jpg';
-import softwareImage5 from '../../assets/img/software/5.jpg';
 import softwareImage6 from '../../assets/img/software/6.jpg';
 import softwareImage7 from '../../assets/img/software/7.jpg';
 import softwareImage8 from '../../assets/img/software/8.jpg';
@@ -61,6 +60,7 @@ class Work extends Component {
                     link: 'phurinaix.github.io',
                     github: 'github.com/phurinaix/profile',
                     description: 'Portfolio website',
+                    detail: 'The idea behind this project was to create a showcase of everything I\'ve worked on and display the information about me',
                     images: [
                         softwareImage22, softwareImage25, softwareImage26, softwareImage27, softwareImage28, softwareImage29
                     ]
@@ -73,6 +73,7 @@ class Work extends Component {
                     link: 'room-secret-chat.herokuapp.com',
                     github: 'github.com/phurinaix/Room-Secret-Chat',
                     description: 'Web chat application',
+                    detail: 'Web application for communicate with each other',
                     images: [
                         softwareImage12, softwareImage13, softwareImage14
                     ]
@@ -85,6 +86,7 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phurinaix/university-website',
                     description: 'Thammasat University website',
+                    detail: '',
                     images: [
                         softwareImage2, softwareImage3, softwareImage4
                     ]
@@ -97,6 +99,7 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/peterparkers/transportation-and-parking',
                     description: 'The Million Years Stone Park',
+                    detail: '',
                     images: [
                         softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10
                     ]
@@ -109,6 +112,7 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phurinaix/devMePlease-java',
                     description: 'Java desktop application',
+                    detail: '',
                     images: [
                         softwareImage21
                     ]
@@ -121,6 +125,7 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phpinproject/piyaproject',
                     description: 'Website for keep files',
+                    detail: '',
                     images: [
                         softwareImage23
                     ]
@@ -133,6 +138,7 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phurinaix/pattaya-food',
                     description: 'Pattaya Food Restaurant & Bar',
+                    detail: '',
                     images: [
                         softwareImage15
                     ]
@@ -145,6 +151,7 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phurinaix/Cubetrainer',
                     description: 'Mobile application for IOS',
+                    detail: '',
                     images: [
                         softwareImage20
                     ]

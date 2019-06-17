@@ -27,7 +27,7 @@ a {
     color: white !important;
 }
 .active-link {
-    color: white;
+    /* color: white !important; */
     border: 1px solid yellow;
 }
 

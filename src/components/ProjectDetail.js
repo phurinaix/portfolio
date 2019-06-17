@@ -3,7 +3,7 @@ import { Collapse, Carousel } from 'react-bootstrap';
 import ProgressiveImage from './ProgressiveImage';
 
 const ProjectDetail = (props) => {
-    const { link, github, technologies, description, images } = props.data;
+    const { link, github, technologies, description, detail, images } = props.data;
     return (
         <Collapse in={props.open}>
             <div id="example-collapse-text">
@@ -21,6 +21,8 @@ const ProjectDetail = (props) => {
                     <div className="project-detail-content">
                         {link && <h5><strong>Link:</strong> <a href={`https://${link}`} target="_blank">{link}</a></h5>}
                         <h5><strong>Github:</strong> <a href={`https://${github}`} target="_blank">{github}</a></h5>
+                        <h5><strong>About this project:</strong></h5>
+                        <p>{detail}</p>
                         <h5><strong>Technologies</strong></h5>
                         {/* <p>Code technologies and skills I got involved while working on this project</p> */}
                         <ul>
