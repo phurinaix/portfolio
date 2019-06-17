@@ -6,8 +6,8 @@ const ProjectDetail = (props) => {
     const { link, github, technologies, description, images } = props.data;
     return (
         <Collapse in={props.open}>
-            <div id="example-collapse-text" className="project-detail">
-                <div className="col-md-10 mx-auto p-3">
+            <div id="example-collapse-text">
+                <div className="col-md-10 mx-auto p-3 project-detail">
                     <h5>{description}</h5>
                     <Carousel>
                         {images.map((image, index) => {
@@ -18,7 +18,7 @@ const ProjectDetail = (props) => {
                             );
                         })}
                     </Carousel>
-                    <div className="">
+                    <div className="project-detail-content">
                         {link && <h5><strong>Link:</strong> <a href={`https://${link}`} target="_blank">{link}</a></h5>}
                         <h5><strong>Github:</strong> <a href={`https://${github}`} target="_blank">{github}</a></h5>
                         <h5><strong>Technologies</strong></h5>

@@ -234,6 +234,16 @@ a {
     /* padding: 20px; */
     /* border-top: 1px solid rgb(126, 126, 126); */
 }
+.project-detail h5 {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+.project-detail-content {
+    padding: 20px 0;
+}
+.project-detail-content ul li {
+    list-style: circle;
+}
 
 /* --------------------End Project-------------------------*/
 
@@ -494,7 +504,7 @@ a {
     .project-header h3 {
         font-size: 1em;
     }
-    .project-topic-content h5 {
+    .project-topic-content h5, .project-detail h5, .project-detail ul li {
         font-size: 0.8em;
     }
     .project-topic-content p {
@@ -529,7 +539,7 @@ a {
     .project-card-image {
         padding: 0;
     }
-    .project-topic-content h5 {
+    .project-topic-content h5, .project-detail h5{
         font-size: 0.8em;
     }
     .project-topic-content h6 {
@@ -538,6 +548,9 @@ a {
     .project-topic-content p {
         font-size: 0.6em;
         letter-spacing: 0;
+    }
+    .project-detail ul li {
+        font-size: 0.8em;
     }
     .stat-bar {
         height: 10px;
