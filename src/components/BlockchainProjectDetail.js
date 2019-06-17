@@ -14,6 +14,15 @@ const BlockchainProjectDetail = (props) => {
                 <div className="col-md-11 mx-auto py-4 blockchain-project-detail">
                     {/* <h1>{topic}</h1> */}
                     {/* <br/><br/> */}
+                    <h5>About this project</h5>
+                    <p>Students who are going to graduate, apply for jobs in a large number of companies for jobs, 
+                        All students must provide academic transcripts from the university they have studied for the job 
+                        application.The company confirms that the student has actually graduated from the university.
+                        Confirming the authenticity of the documents diploma and transcripts is a manual and slow process.
+                        So the students have to wait the result of this slow process.Moreover this process is also costly 
+                        and inefficient.The proposed system can help students and employers a fast and secure way of exchanging 
+                        academic credentials.It avoids forgery and brings trust to the process.
+                    </p>
                     <h5>Objectives</h5>
                     <p>The objective of this study is to improve the service quality and security of the system i.e., 
                         the registrar’s office that handles the transcript and diploma in the Thammasat university. 

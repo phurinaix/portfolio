@@ -78,7 +78,7 @@ class Work extends Component {
                     description: 'Web chat application',
                     detail: 'Web application for communicate with each other',
                     images: [
-                        softwareImage12, softwareImage13, softwareImage14
+                        softwareImage11, softwareImage12, softwareImage13, softwareImage14
                     ]
                 },
                 {
@@ -91,7 +91,7 @@ class Work extends Component {
                     description: 'Thammasat University website',
                     detail: '',
                     images: [
-                        softwareImage2, softwareImage3, softwareImage4
+                        softwareImage1, softwareImage2, softwareImage3, softwareImage4
                     ]
                 },
                 {
@@ -104,7 +104,7 @@ class Work extends Component {
                     description: 'The Million Years Stone Park',
                     detail: '',
                     images: [
-                        softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10
+                        softwareImage24, softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10
                     ]
                 },
                 {
