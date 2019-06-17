@@ -36,6 +36,9 @@ import softwareImage26 from '../../assets/img/software/26.jpg';
 import softwareImage27 from '../../assets/img/software/27.jpg';
 import softwareImage28 from '../../assets/img/software/28.jpg';
 import softwareImage29 from '../../assets/img/software/29.jpg';
+import softwareImage30 from '../../assets/img/software/30.jpg';
+import softwareImage31 from '../../assets/img/software/31.jpg';
+import softwareImage32 from '../../assets/img/software/32.jpg';
 import designImage1 from '../../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../../assets/img/design/geniusPen.jpg';
@@ -114,7 +117,7 @@ class Work extends Component {
                     description: 'Java desktop application',
                     detail: '',
                     images: [
-                        softwareImage21
+                        softwareImage21, softwareImage30, softwareImage31, softwareImage32
                     ]
                 },
                 {
@@ -138,9 +141,9 @@ class Work extends Component {
                     link: '',
                     github: 'github.com/phurinaix/pattaya-food',
                     description: 'Pattaya Food Restaurant & Bar',
-                    detail: '',
+                    detail: 'This one is the first project that I was created (11 October 2016).',
                     images: [
-                        softwareImage15
+                        softwareImage15, softwareImage16, softwareImage17, softwareImage18, softwareImage19
                     ]
                 },
                 {
