@@ -5,12 +5,15 @@ const withLoading = (WrappedComponent) => {
         state = {
             isLoading: true,
         }
+        componentWillReceiveProps(nextProps) {
+            this.props = nextProps;
+        }
         componentDidMount () {
             setTimeout(() => { 
                 this.setState(prevState => ({
                     isLoading: !prevState.isLoading,
                 }));
-            }, 800);
+            }, 1000);
         }
 
         render() {

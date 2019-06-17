@@ -9,24 +9,24 @@ import DesignImage from '../../assets/img/design.jpg';
 import BlockchainImage from '../../assets/img/blockchain.jpg';
 import ProjectBoard from '../../components/ProjectBoard';
 import softwareImage1 from '../../assets/img/software/1.jpg';
-// import softwareImage2 from '../../assets/img/software/2.jpg';
-// import softwareImage3 from '../../assets/img/software/3.jpg';
-// import softwareImage4 from '../../assets/img/software/4.jpg';
+import softwareImage2 from '../../assets/img/software/2.jpg';
+import softwareImage3 from '../../assets/img/software/3.jpg';
+import softwareImage4 from '../../assets/img/software/4.jpg';
 import softwareImage5 from '../../assets/img/software/5.jpg';
-// import softwareImage6 from '../../assets/img/software/6.jpg';
-// import softwareImage7 from '../../assets/img/software/7.jpg';
-// import softwareImage8 from '../../assets/img/software/8.jpg';
-// import softwareImage9 from '../../assets/img/software/9.jpg';
-// import softwareImage10 from '../../assets/img/software/10.jpg';
+import softwareImage6 from '../../assets/img/software/6.jpg';
+import softwareImage7 from '../../assets/img/software/7.jpg';
+import softwareImage8 from '../../assets/img/software/8.jpg';
+import softwareImage9 from '../../assets/img/software/9.jpg';
+import softwareImage10 from '../../assets/img/software/10.jpg';
 import softwareImage11 from '../../assets/img/software/11.jpg';
-// import softwareImage12 from '../../assets/img/software/12.jpg';
-// import softwareImage13 from '../../assets/img/software/13.jpg';
-// import softwareImage14 from '../../assets/img/software/14.jpg';
+import softwareImage12 from '../../assets/img/software/12.jpg';
+import softwareImage13 from '../../assets/img/software/13.jpg';
+import softwareImage14 from '../../assets/img/software/14.jpg';
 import softwareImage15 from '../../assets/img/software/15.jpg';
-// import softwareImage16 from '../../assets/img/software/16.jpg';
-// import softwareImage17 from '../../assets/img/software/17.jpg';
-// import softwareImage18 from '../../assets/img/software/18.jpg';
-// import softwareImage19 from '../../assets/img/software/19.jpg';
+import softwareImage16 from '../../assets/img/software/16.jpg';
+import softwareImage17 from '../../assets/img/software/17.jpg';
+import softwareImage18 from '../../assets/img/software/18.jpg';
+import softwareImage19 from '../../assets/img/software/19.jpg';
 import softwareImage20 from '../../assets/img/software/20.png';
 import softwareImage21 from '../../assets/img/software/21.jpg';
 import softwareImage22 from '../../assets/img/software/22.jpg';
@@ -48,68 +48,100 @@ class Work extends Component {
         imageList: {
             software: [
                 {
-                    image: softwareImage22,
+                    id: 1,
+                    previewImage: softwareImage22,
                     topic: 'Portfolio',
-                    technologies: 'React.js',
+                    technologies: ['React.js', 'Javascript ES6', 'CSS3'],
                     link: 'phurinaix.github.io',
                     github: 'github.com/phurinaix/profile',
-                    description: 'Portfolio website'
+                    description: 'Portfolio website',
+                    images: [
+                        softwareImage22
+                    ]
                 },
                 {
-                    image: softwareImage11,
+                    id: 2,
+                    previewImage: softwareImage11,
                     topic: 'Room Secret Chat',
-                    technologies: 'Node.js + Express + Socket.io + HTML/CSS/JS',
+                    technologies: ['Node.js', 'Express', 'Socket.io', 'HTML5', 'CSS3', 'Javascript'],
                     link: 'room-secret-chat.herokuapp.com',
                     github: 'github.com/phurinaix/Room-Secret-Chat',
-                    description: 'Web chat application'
+                    description: 'Web chat application',
+                    images: [
+                        softwareImage12, softwareImage13, softwareImage14
+                    ]
                 },
                 {
-                    image: softwareImage1,
+                    id: 3,
+                    previewImage: softwareImage1,
                     topic: 'Thammasat University Website',
-                    technologies: 'PHP + MySQL + HTML/CSS/JS',
+                    technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
                     link: '',
                     github: 'github.com/phurinaix/university-website',
-                    description: 'Thammasat University website'
+                    description: 'Thammasat University website',
+                    images: [
+                        softwareImage2, softwareImage3, softwareImage4
+                    ]
                 },
                 {
-                    image: softwareImage24,
+                    id: 4,
+                    previewImage: softwareImage24,
                     topic: 'The Million Years Stone Park',
-                    technologies: 'PHP + MySQL + HTML/CSS/JS',
+                    technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
                     link: '',
                     github: 'github.com/peterparkers/transportation-and-parking',
-                    description: 'The Million Years Stone Park'
+                    description: 'The Million Years Stone Park',
+                    images: [
+                        softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10
+                    ]
                 },
                 {
-                    image: softwareImage21,
+                    id: 5,
+                    previewImage: softwareImage21,
                     topic: 'Dev Me Please',
-                    technologies: 'Java + Socket + MySQL',
+                    technologies: ['Java', 'Socket', 'MySQL'],
                     link: '',
                     github: 'github.com/phurinaix/devMePlease-java',
-                    description: 'Java desktop application'
+                    description: 'Java desktop application',
+                    images: [
+                        softwareImage21
+                    ]
                 },
                 {
-                    image: softwareImage23,
+                    id: 6,
+                    previewImage: softwareImage23,
                     topic: 'Folder Locked',
-                    technologies: 'PHP + MySQL + HTML/CSS/JS',
+                    technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
                     link: '',
                     github: 'github.com/phpinproject/piyaproject',
-                    description: 'Website for keep files'
+                    description: 'Website for keep files',
+                    images: [
+                        softwareImage23
+                    ]
                 },
                 {
-                    image: softwareImage15,
+                    id: 7,
+                    previewImage: softwareImage15,
                     topic: 'Pattaya Food',
-                    technologies: 'Pure HTML/CSS/JS',
+                    technologies: ['HTML5', 'CSS3', 'Javascript'],
                     link: '',
                     github: 'github.com/phurinaix/pattaya-food',
-                    description: 'Pattaya Food Restaurant & Bar'
+                    description: 'Pattaya Food Restaurant & Bar',
+                    images: [
+                        softwareImage15
+                    ]
                 },
                 {
-                    image: softwareImage20,
+                    id: 8,
+                    previewImage: softwareImage20,
                     topic: 'Cube trainer',
-                    technologies: 'Swift',
+                    technologies: ['Swift'],
                     link: '',
                     github: 'github.com/phurinaix/Cubetrainer',
-                    description: 'Mobile application for IOS'
+                    description: 'Mobile application for IOS',
+                    images: [
+                        softwareImage20
+                    ]
                 }
             ],
             design: [
@@ -150,6 +182,9 @@ class Work extends Component {
     projectHandle = (projectType) => {
         this.setState({ projectType });
     }
+    deleteProjectType = () => {
+        this.setState({ projectType: '' });
+    }
     render() {
         return (
                 <div className="work-section text-center">
@@ -164,6 +199,7 @@ class Work extends Component {
                             <ProjectBoard 
                                 projectType={this.state.projectType}
                                 images={this.state.imageList}
+                                back={this.deleteProjectType}
                             />
                         }
                     </div>

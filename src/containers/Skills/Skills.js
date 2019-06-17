@@ -26,9 +26,12 @@ class Skills extends Component {
             {name: 'Docker', number: 50, logo: Docker},
             {name: 'Git', number: 60, logo: Git},
             {name: 'Photoshop', number: 50, logo: Photoshop}
-        ]
+        ],
+        key1: false,
+        key2: false
     }
     render() {
+        const { key1, key2 } = this.state;
         return (
             <div className="skills-section mb-3">
                 <h3>SKILLS</h3>

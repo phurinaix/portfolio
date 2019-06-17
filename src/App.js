@@ -10,7 +10,7 @@ import ErrorPage from './containers/ErrorPage/ErrorPage';
 import Layout from './components/Layout';
 import Navigation from './components/Navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faLinkedinIn, faGithub, faGooglePlus } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class App extends Component {
   render() {
@@ -20,12 +20,12 @@ class App extends Component {
             <Navigation />
             <Layout>
               <Switch>
-                <Route path="/" component={Home} exact/>
-                <Route path="/about" component={About} />
-                <Route path="/skills" component={Skills} />
-                <Route path="/portfolio" component={Work} />
-                <Route path="/contact" component={Contact} />
-                <Route component={ErrorPage} />
+                  <Route path="/" component={Home} exact/>
+                  <Route path="/about" component={About} />
+                  <Route path="/skills" component={Skills} />
+                  <Route path="/portfolio" component={Work} />
+                  <Route path="/contact" component={Contact} />
+                  <Route component={ErrorPage} />
               </Switch>
             </Layout>
           </BrowserRouter>

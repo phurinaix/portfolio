@@ -27,7 +27,7 @@ a {
 .progress-striped .progress-bar {
     background-color: #f3e536;
     width: 100%;
-    animation: progressAnimationStrike 0.8s;
+    animation: progressAnimationStrike 1s;
 }
 
 /* Social sidebar */
@@ -85,7 +85,7 @@ a {
 .skills-section, .contact-section {
     width: 100%;
     margin-top: 100px;
-    animation: fadeIn ease 0.3s;
+    animation: scaleIn ease 0.3s;
     /* height: 90vh; */
     /* background-color: rgb(0, 0, 0); */
     /* overflow: scroll; */
@@ -93,6 +93,7 @@ a {
 .work-section {
     width: 100%;
     margin-top: 50px;
+    /* animation: scaleIn ease 0.5s; */
 }
 .skills-section {
     position: relative;
@@ -124,7 +125,7 @@ a {
     background-color: #fcf9cf !important;
     z-index: 100;
     cursor: pointer;
-    animation: fadeIn ease 0.5s;
+    animation: scaleIn ease 0.5s;
 }
 .workcard img {
     height: 159px;
@@ -154,6 +155,27 @@ a {
 .project-board {
     background-color: #e2e1e0;
 }
+.project-header {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.back-btn {
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.back-btn:hover {
+    background-color: rgb(219, 219, 219);
+}
+.back-btn svg {
+    margin: auto;
+}
 .project-card {
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -170,31 +192,47 @@ a {
     color: #000000;
     font-family: 'Fredoka One', cursive;
     letter-spacing: 2px;
+    margin: 0;
 }
 .project-topic-content h5 {
     font-family: 'Open Sans', sans-serif;
-    /* font-size: 1.5em; */
     letter-spacing: 2px;
     font-weight: bolder;
 }
 .project-topic-content p {
     font-family: 'Open Sans', sans-serif;
-    /* font-size: 1.5em; */
     letter-spacing: 2px;
-    /* font-weight: bolder; */
 }
 
 .software-project-topic {
-    display: block !important;
-    text-align: left !important;
+    background-color: #fff !important;
 }
-.software-project-topic h5 {
-    font-size: 1.5em;
-    font-weight: bolder;
-    letter-spacing: 1px !important;
+/* .software-project-topic h5 {
+    font-size: 1em;
+    letter-spacing: 0;
 }
-.software-project-topic h6 {
+.software-project-topic p {
+    letter-spacing: 0;
+} */
+.toggle-btn {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.toggle-btn:hover {
+    background-color: #e9e8e8;
+}
+.toggle-btn h6 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.project-detail {
+    /* background-color: rgb(255, 252, 211); */
+    text-align: left;
+    /* padding: 20px; */
+    /* border-top: 1px solid rgb(126, 126, 126); */
 }
 
 /* --------------------End Project-------------------------*/
@@ -204,7 +242,7 @@ a {
     background-color: #e2e1e0;
     width: 100%;
     margin-top: 80px;
-    animation: fadeIn ease 0.3s;
+    animation: scaleIn ease 0.3s;
     z-index: 100;
 }
 .about-section h3 {
@@ -408,10 +446,20 @@ a {
 }
 @keyframes fadeIn{
     0% {
-      opacity:0;
+      opacity: 0;
     }
     100% {
-      opacity:1;
+      opacity: 1;
+    }
+}
+@keyframes scaleIn{
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
 }
 @keyframes blink {
@@ -443,6 +491,9 @@ a {
     .icon-bar {
         display: none;
     }
+    .project-header h3 {
+        font-size: 1em;
+    }
     .project-topic-content h5 {
         font-size: 0.8em;
     }
@@ -465,6 +516,9 @@ a {
     }
     .contact-section form input, .contact-section form textarea {
         font-size: 0.7em;
+    }
+    .project-header h3 {
+        font-size: 1em;
     }
     .project-board h3, .about-section h3, .contact-section form h3, .skills-section h3 {
         font-size: 1em;
