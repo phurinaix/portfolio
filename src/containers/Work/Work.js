@@ -41,6 +41,7 @@ import designImageFull2 from '../../assets/img/design/tuPoster2_full.jpg';
 import designImageFull3 from '../../assets/img/design/geniusPen_full.jpg';
 import designImageFull4 from '../../assets/img/design/debate_full.jpg';
 import blockchainImage2 from '../../assets/img/blockchain/2.jpg';
+import blockchainImage1 from '../../assets/img/blockchain/blockchain.jpg';
 
 class Work extends Component {
     state = {
@@ -146,24 +147,28 @@ class Work extends Component {
             ],
             design: [
                 {
+                    id: 1,
                     image: designImage1,
                     imageFull: designImageFull1,
                     topic: 'Thammasat University Poster',
                     description: 'Thammasat University Pattaya Campus poster'
                 },
                 {
+                    id: 2,
                     image: designImage2,
                     imageFull: designImageFull2,
                     topic: 'Thammasat University Poster',
                     description: 'Thammasat University Pattaya Campus poster'
                 },
                 {
+                    id: 3,
                     image: designImage3,
                     imageFull: designImageFull3,
                     topic: 'Advertisement Poster',
                     description: 'The poster for advertise a genius pen'
                 },
                 {
+                    id: 4,
                     image: designImage4,
                     imageFull: designImageFull4,
                     topic: 'Debating Poster',
@@ -172,7 +177,8 @@ class Work extends Component {
             ],
             blockchain: [
                 {
-                    image: blockchainImage2,
+                    id: 1,
+                    image: blockchainImage1,
                     topic: 'A secure and trusted publishing systems for university diplomas and transcripts',
                     description: 'Graduation project'
                 }

@@ -244,6 +244,27 @@ a {
 .project-detail-content ul li {
     list-style: circle;
 }
+.blockchain-project-detail {
+    text-align: left;
+}
+.blockchain-project-detail h1 {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+.blockchain-project-detail h5 {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.blockchain-project-detail p, .blockchain-project-detail ol li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+.blockchain-project-detail .img-description {
+    text-align: center;
+}
+.blockchain-project-detail ul li {
+    list-style: circle;
+}
 
 /* --------------------End Project-------------------------*/
 
@@ -501,6 +522,17 @@ a {
     .icon-bar {
         display: none;
     }
+    .project-body {
+        padding: 0 !important;
+    }
+    .software-project-card, .blockchain-project-card {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+    .software-project-card img, .blockchain-project-card {
+        width: 100% !important;
+    }
     .project-header h3 {
         font-size: 1em;
     }
@@ -530,13 +562,19 @@ a {
     .project-body {
         padding: 0 !important;
     }
-    .software-project-card {
+    .software-project-card, .blockchain-project-card {
         width: 95%;
         margin: 0 auto;
         padding: 0 !important;
     }
-    .software-project-card img {
+    .software-project-card img, .blockchain-project-card {
         width: 100% !important;
+    }
+    .blockchain-project-detail h5 {
+        font-size: 0.9em;
+    }
+    .blockchain-project-detail p, .blockchain-project-detail ol li {
+        font-size: 0.8em;
     }
     .project-header h3 {
         font-size: 1em;

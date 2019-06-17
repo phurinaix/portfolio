@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import ProgressiveImage from './ProgressiveImage';
 import ProjectDetail from './ProjectDetail';
+import BlockchainProjectDetail from './BlockchainProjectDetail';
 import { Lightbox } from "react-modal-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
 class ProjectBoard extends Component {
     state = {
         open: false,
         currentImage: null,
-        eventKey: [false, false, false, false, false, false, false, false]
+        eventKeySoftware: [false, false, false, false, false, false, false, false],
+        eventKeyBlockchain: [false]
     }
     closeLightbox = () => {
         this.setState({
@@ -22,11 +24,16 @@ class ProjectBoard extends Component {
             currentImage: image
         });
     }
-    toggleButton = (id) => {
-        let eventKey = [...this.state.eventKey];
-        eventKey[id] = !eventKey[id];
-        this.setState({ eventKey });
-        // () => this.setState({ eventKey[element.id - 1]: !key })
+    softwareToggleHandler = (id) => {
+        let eventKeySoftware = [...this.state.eventKeySoftware];
+        eventKeySoftware[id] = !eventKeySoftware[id];
+        this.setState({ eventKeySoftware });
+        // () => this.setState({ eventKeySoftware[element.id - 1]: !key })
+    }
+    blockchainToggleHandler = (id) => {
+        let eventKeyBlockchain = [...this.state.eventKeyBlockchain];
+        eventKeyBlockchain[id] = !eventKeyBlockchain[id];
+        this.setState({ eventKeyBlockchain });
     }
     render() {
         const { projectType, images } = this.props;
@@ -59,14 +66,14 @@ class ProjectBoard extends Component {
                                         </div>
                                         <div
                                             className="border py-3 toggle-btn" 
-                                            onClick={() => this.toggleButton(element.id - 1)}
+                                            onClick={() => this.softwareToggleHandler(element.id - 1)}
                                             aria-controls="example-collapse-text"
-                                            aria-expanded={this.state.eventKey[element.id - 1]}
+                                            aria-expanded={this.state.eventKeySoftware[element.id - 1]}
                                         >
                                             <h6>MORE DETAIL</h6>
                                         </div>
                                         <ProjectDetail 
-                                            open={this.state.eventKey[element.id - 1]}
+                                            open={this.state.eventKeySoftware[element.id - 1]}
                                             data={element}
                                         />
                                         {/* <div className="">
@@ -136,20 +143,33 @@ class ProjectBoard extends Component {
                             </div>
                             <h3>{projectType}</h3>
                         </div>
-                        <div className="px-5 pb-5">
+                        <div className="px-5 pb-5 project-body">
                             {images.blockchain.map((element,index) => {
                                 return (
-                                    <div className="row project-card my-3 p-4" key={index}>
-                                        <div className="col-md-3 project-card-image">
-                                            <ProgressiveImage image={element.image} alt="projects" classStyle="w-100"/>
-                                        </div>
-                                        <div className="col-md-9 p-3 project-topic-content">
-                                            <div className="m-auto">
-                                                <h5>{element.topic}</h5>
-                                                <p>{element.description}</p>
+                                    <div className="project-card blockchain-project-card" key={index}>
+                                        <div className="row my-3 px-4 pt-4">
+                                            <div className="col-md-3 project-card-image">
+                                                <ProgressiveImage image={element.image} alt="projects" classStyle="w-100"/>
+                                            </div>
+                                            <div className="col-md-9 p-3 project-topic-content">
+                                                <div className="m-auto">
+                                                    <h5>{element.topic}</h5>
+                                                    <p>{element.description}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        
+                                        <div
+                                            className="border py-3 toggle-btn" 
+                                            onClick={() => this.blockchainToggleHandler(element.id - 1)}
+                                            aria-controls="blockchain-collapse"
+                                            aria-expanded={this.state.eventKeyBlockchain[element.id - 1]}
+                                        >
+                                            <h6>MORE DETAIL</h6>
+                                        </div>
+                                        <BlockchainProjectDetail 
+                                            open={this.state.eventKeyBlockchain[element.id - 1]}
+                                            data={element}
+                                        />
                                     </div>
                                 )
                             })}
