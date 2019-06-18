@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setLang } from './actions/language-actions';
 import Home from './containers/Home';
 import About from './containers/About';
 import Skills from './containers/Skills';
@@ -12,12 +14,20 @@ import Navigation from './components/Navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
+// const locale = require('react-redux-i18n').I18n;
+
 class App extends Component {
+
+  handleChangeLanguage = (l) => {
+    if (this.props.l !== l) {
+      this.props.setLang(l)
+    }
+  }
   render() {
     return (
       <React.Fragment>
           <BrowserRouter>
-            <Navigation />
+            <Navigation click={this.handleChangeLanguage}/>
             <Layout>
               <Switch>
                   <Route path="/" component={Home} exact/>
@@ -30,12 +40,9 @@ class App extends Component {
             </Layout>
           </BrowserRouter>
           <div className="icon-bar">
-            {/* <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  */}
             <a href="https://www.facebook.com/phurinat.puekkham.1" className="facebook" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></a>
             <a href="https://github.com/phurinaix" className="github" target="_blank"><FontAwesomeIcon icon={ faGithub }/></a> 
-            {/* <a href="#" className="google" target="_blank"><FontAwesomeIcon icon={ faGooglePlus }/></a>  */}
             <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
-            {/* <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> */}
           </div>
           <div className="cube"></div>
           <div className="cube"></div>
@@ -48,4 +55,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => ({
+  l: state.i18n.locale
+})
+
+export default connect(mapStateToProps, { setLang })(App);

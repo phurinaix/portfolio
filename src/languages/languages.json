@@ -1,0 +1,31 @@
+{
+    "th": {
+        "navigation": {
+            "home": "หน้าหลัก",
+            "about": "เกี่ยวกับ",
+            "skills": "ทักษะ",
+            "portfolio": "ผลงาน",
+            "contact": "ติดต่อ"
+        },
+        "home": {
+            "name": "ยินดีต้อนรับสู่ ภูริณัฐ เผือกขำ",
+            "portfolio": "เว็บพอร์ตโฟลิโอ",
+            "contact": "ติดต่อฉัน"
+        }
+        
+    },
+    "en": {
+        "navigation": {
+            "home": "HOME",
+            "about": "ABOUT",
+            "skills": "SKILLS",
+            "portfolio": "PORTFOLIO",
+            "contact": "CONTACT"
+        },
+        "home": {
+            "name": "PHURINAT PUEKKHAM",
+            "portfolio": "PORTFOLIO",
+            "contact": "CONTACT ME"
+        }
+    }
+}
