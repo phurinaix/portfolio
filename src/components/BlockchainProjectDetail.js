@@ -7,13 +7,10 @@ import systemWorkflowImg from '../assets/img/blockchain/system_workflow.jpg'
 import applicationImg from '../assets/img/blockchain/application.jpg';
 
 const BlockchainProjectDetail = (props) => {
-    const { id, topic } = props.data;
     return (
         <Collapse in={props.open}>
             <div id="blockchain-collapse">
                 <div className="col-md-11 mx-auto py-4 blockchain-project-detail">
-                    {/* <h1>{topic}</h1> */}
-                    {/* <br/><br/> */}
                     <h5>About this project</h5>
                     <p>Students who are going to graduate, apply for jobs in a large number of companies for jobs, 
                         All students must provide academic transcripts from the university they have studied for the job 

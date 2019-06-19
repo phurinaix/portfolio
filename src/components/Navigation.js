@@ -22,7 +22,7 @@ const Navigation = ({click}) => {
                         <LinkContainer to="/portfolio" activeClassName="active-link"><Nav.Link>{locale.t('navigation.portfolio')}</Nav.Link></LinkContainer>
                         <LinkContainer to="/contact" activeClassName="active-link"><Nav.Link>{locale.t('navigation.contact')}</Nav.Link></LinkContainer>
                     </Nav>
-                    <Nav className="ml-auto navbar-link">
+                    <Nav className="ml-auto text-center navbar-link">
                         <Nav.Link onClick={() => click('th')}>TH</Nav.Link>
                         <Nav.Link onClick={() => click('en')}>EN</Nav.Link>
                     </Nav>

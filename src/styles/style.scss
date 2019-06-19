@@ -1,0 +1,713 @@
+$white-color: #ffffff;
+
+
+a {
+    text-decoration: none !important;
+}
+h2, h4 {
+    color: #ede5aa;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    /* z-index: -1000; */
+    transform: translate(-50%, -50%);
+    animation: animate 0.5s linear infinite;
+}
+h2 {
+    font-size: 5em;
+    top: 50%;
+}
+h4 {
+    font-size: 2em;
+    top: 40%;
+}
+/* Navigation */
+.navbar-link a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    margin: 0 10px;
+    font-weight: bolder;
+    color: #e8eb27 !important;
+    letter-spacing: 1px;
+}
+.navbar-header {
+    background-color: rgb(10,10,43);
+    z-index: 100;
+}
+.navbar-logo {
+    font-family: 'Monoton', cursive;
+    font-size: 1.3em;
+    color: #ede5aa !important;
+}
+.navbar-toggle-button{
+    background-color: #ede5aa;
+}
+.navbar-link a:hover {
+    color: white !important;
+}
+.active-link {
+    /* color: white !important; */
+    border: 1px solid yellow;
+}
+
+/* Loading Bar */
+.loading-bar {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading-text {
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: white !important;
+}
+.progress {
+    height: 4px;
+    background: #746c03;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: 0.4s linear;
+}
+
+.progress-striped .progress-bar {
+    background-color: #f3e536;
+    width: 100%;
+    animation: progressAnimationStrike 0.8s;
+}
+
+/* Social sidebar */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: $white-color;
+    font-size: 20px;
+}
+  
+.icon-bar a:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+.facebook {
+    background: #3B5998;
+    color: $white-color;
+}
+
+.github {
+    background: #dd4b39;
+    color: $white-color;
+}
+
+.google {
+    background: #dd4b39;
+    color: $white-color;
+}
+  
+.linkedin {
+    background: #007bb5;
+    color: $white-color;
+}
+
+  
+@keyframes progressAnimationStrike {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Home page */
+.home-section {
+    height: 90vh;
+}
+@keyframes animate {
+    0%, 100% {
+        text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
+    }
+    25% {
+        text-shadow: 1.5px 1.5px 0 #0ff, -1.5px -1.5px 0 #f00;
+    }
+    50% {
+        text-shadow: 1.5px -1.5px 0 #0ff, -1.5px 1.5px 0 #f00;
+    }
+    75% {
+        text-shadow: -1.5px 1.5px 0 #0ff, 1.5px -1.5px 0 #f00;
+    }
+}
+
+/* Skill page */
+.skills-section, .contact-section {
+    width: 100%;
+    margin-top: 100px;
+    animation: scaleIn ease 0.3s;
+    /* height: 90vh; */
+    /* background-color: rgb(0, 0, 0); */
+    /* overflow: scroll; */
+}
+.work-section {
+    width: 100%;
+    margin-top: 50px;
+    /* animation: scaleIn ease 0.5s; */
+}
+.skills-section {
+    position: relative;
+    margin-top: 10px;
+    background-color: #e2e1e0;
+    padding: 20px 10px;
+    z-index: 100;
+}
+.skills-section h3 {
+    margin-bottom: 20px;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-size: 1.2em; */
+    color: #000000;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+    /* font-weight: bolder; */
+    text-align: center;
+    /* color: rgb(0, 2, 133);
+    text-shadow: 1px 1px rgb(31, 31, 31); */
+    letter-spacing: 2px;
+}
+.skills-section p {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+.workcard {
+    background-color: #fcf9cf !important;
+    z-index: 100;
+    cursor: pointer;
+    animation: scaleIn ease 0.5s;
+}
+.workcard img {
+    height: 159px;
+}
+.workcard:hover {
+    background-color: #f7f1a4 !important;    
+}
+.workcard:hover img{
+    filter: brightness(50%);
+}
+.workcard-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+.workcard-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+/* Project */
+.project-container {
+    width: 90%;
+    z-index: 1000;
+    animation: fadeIn ease 0.3s;
+}
+.project-board {
+    background-color: #e2e1e0;
+}
+.project-header {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.back-btn {
+    position: absolute;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    padding: 0 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.back-btn:hover {
+    background-color: rgb(219, 219, 219);
+}
+.back-btn svg {
+    margin: auto;
+}
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.project-card-image-view {
+    cursor: pointer;
+}
+.project-topic-content {
+    display: flex;
+    background-color: #f8f8f8;
+}
+.project-board h3 {
+    color: #000000;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.project-topic-content h5 {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.project-topic-content p {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+.software-project-topic {
+    background-color: #fff !important;
+}
+/* .software-project-topic h5 {
+    font-size: 1em;
+    letter-spacing: 0;
+}
+.software-project-topic p {
+    letter-spacing: 0;
+} */
+.toggle-btn {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.toggle-btn:hover {
+    background-color: #e9e8e8;
+}
+.toggle-btn h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7em;
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.project-detail {
+    /* background-color: rgb(255, 252, 211); */
+    text-align: left;
+    /* padding: 20px; */
+    /* border-top: 1px solid rgb(126, 126, 126); */
+}
+.project-detail h5 {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+.project-detail-content {
+    padding: 20px 0;
+}
+.project-detail-content ul li {
+    list-style: circle;
+}
+.blockchain-project-detail {
+    text-align: left;
+}
+.blockchain-project-detail h1 {
+    font-size: 1.8em;
+    font-weight: bolder;
+}
+.blockchain-project-detail h5 {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.blockchain-project-detail p, .blockchain-project-detail ol li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+.blockchain-project-detail .img-description {
+    text-align: center;
+}
+.blockchain-project-detail ul li {
+    list-style: circle;
+}
+
+/* --------------------End Project-------------------------*/
+
+.about-section {
+    position: relative;
+    background-color: #e2e1e0;
+    width: 100%;
+    margin-top: 80px;
+    animation: scaleIn ease 0.3s;
+    z-index: 100;
+}
+.about-section h3 {
+    color: #000000;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+}
+.about-section p {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+    letter-spacing: 2px;
+}
+.about-section a {
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background-color: #0f0f49;
+    color: #f3e536;
+    cursor: pointer;
+    z-index: 100;
+}
+.about-section a:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
+}
+.contact-section {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    background-color: #e2e1e0;
+    padding: 50px 10px;
+    z-index: 100;
+}
+.contact-section form h3 {
+    font-family: 'Fredoka One', cursive;
+    /* font-weight: bolder; */
+    color: #1b1b1b;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.contact-section form p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    color: #1b1b1b;
+    letter-spacing: 2px;
+}
+.contact-section form {
+    font-family: 'Open Sans', sans-serif !important;
+}
+.contact-section form input, .contact-section form textarea{
+    background-color: #fff;
+    color: #111 !important;
+    /* border: 1px solid rgb(6, 10, 37); */
+    letter-spacing: 2px;
+}
+.contactBox-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+}
+.contact-section form button {
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background-color: #0f0f49;
+    color: #f3e536;
+    cursor: pointer;
+    z-index: 100;
+}
+.contact-section form button:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
+}
+.contact-card-social {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.contact-card-social:hover {
+    background-color: rgb(188, 209, 255);
+}
+.contact-button {
+    font-family: 'Open Sans', sans-serif;
+    border-color: #f3e536 !important;
+    background-color: #0f0f49 !important;
+    color: #f3e536 !important;
+    font-weight: bolder;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+}
+.contact-button:hover {
+    background-color: #e8eb27 !important;
+    color: #111 !important;
+}
+
+.typewriter {
+	display: inline-block;
+}
+
+.typewriter-text p{
+    /* display: inline-block; */
+  	overflow: hidden;
+    animation: typing 3s steps(30, end), blink .5s step-end infinite;
+    white-space: nowrap;
+    border-right: 4px solid orange;
+    /* box-sizing: border-box; */
+}
+
+@-webkit-keyframes animate-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@-moz-keyframes animate-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes animate-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@-webkit-keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+@-moz-keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+@keyframes animate-height {
+    0% {
+      height: 0;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+  
+.stat-bar {
+    background-color: #c0c0c0;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+  
+.stat-bar-rating {
+    border-radius: 4px;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    text-indent: -9999px;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+  
+.stat > .stat-bar-rating {
+    background-color: #f80781;
+}
+  
+.stat-bar-rating {
+    visibility: hidden;
+    width: 0;
+    -webkit-animation: animate-width;
+    -moz-animation: animate-width;
+    animation: animate-width;
+    animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    -webkit-animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    -moz-animation-timing-function: cubic-bezier(0.35, 0.95, 0.67, 0.99);
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+  
+.stat-bar:nth-of-type(1) .stat-bar-rating {
+    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
+}
+
+  
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+@keyframes fadeIn{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes scaleIn{
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 994px) {
+    .navbar-header {
+        height: 10vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .loading-bar {
+        width: 60%;
+    }
+    .work-section, .about-section {
+        margin-top: 20px;
+    }
+    .workcard img {
+        height: 326px;
+    }
+    .typewriter-text h3 {
+        font-size: 1.2em;
+    }
+    .skills-section .row {
+        text-align: center;
+    }
+    .icon-bar {
+        display: none;
+    }
+    .project-body {
+        padding: 0 !important;
+    }
+    .software-project-card, .blockchain-project-card {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+    .software-project-card img, .blockchain-project-card {
+        width: 100% !important;
+    }
+    .project-header h3 {
+        font-size: 1em;
+    }
+    .project-topic-content h5, .project-detail h5, .project-detail ul li {
+        font-size: 0.8em;
+    }
+    .project-topic-content p {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+    }
+    .skill-name {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 3em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .about-section p {
+        font-size: 0.9em;
+        letter-spacing: 1px;        
+    }
+    .workcard img {
+        height: 230px;
+    }
+    .contact-section form input, .contact-section form textarea {
+        font-size: 0.7em;
+    }
+    .project-body {
+        padding: 0 !important;
+    }
+    .software-project-card, .blockchain-project-card {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 !important;
+    }
+    .software-project-card img, .blockchain-project-card {
+        width: 100% !important;
+    }
+    .blockchain-project-detail h5 {
+        font-size: 0.9em;
+    }
+    .blockchain-project-detail p, .blockchain-project-detail ol li {
+        font-size: 0.8em;
+    }
+    .project-header h3 {
+        font-size: 1em;
+    }
+    .project-board h3, .about-section h3, .contact-section form h3, .skills-section h3 {
+        font-size: 1em;
+    }
+    .project-card {
+        padding: 0 !important;
+    }
+    .project-card-image {
+        padding: 0;
+    }
+    .project-topic-content h5, .project-detail h5{
+        font-size: 0.8em;
+    }
+    .project-topic-content h6 {
+        font-size: 0.7em;
+    }
+    .project-topic-content p {
+        font-size: 0.6em;
+        letter-spacing: 0;
+    }
+    .project-detail ul li {
+        font-size: 0.8em;
+    }
+    .stat-bar {
+        height: 10px;
+        margin-top: 10px;
+    }
+    .skills-section img {
+        width: 30px;
+        margin-top: 10px;
+    }
+}

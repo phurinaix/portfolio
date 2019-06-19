@@ -1,9 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Collapse, Carousel } from 'react-bootstrap';
 import ProgressiveImage from './ProgressiveImage';
 
+const locale = require('react-redux-i18n').I18n;
+
 const ProjectDetail = (props) => {
-    const { link, github, technologies, description, detail, images } = props.data;
+    const { link, github, technologies, description, detail } = props.data;
+    const { images } = props;
+    const technologiesList = Object.values(technologies);
     return (
         <Collapse in={props.open}>
             <div id="example-collapse-text">
@@ -21,12 +26,12 @@ const ProjectDetail = (props) => {
                     <div className="project-detail-content">
                         {link && <h5><strong>Link:</strong> <a href={`https://${link}`} target="_blank">{link}</a></h5>}
                         <h5><strong>Github:</strong> <a href={`https://${github}`} target="_blank">{github}</a></h5>
-                        <h5><strong>About this project:</strong></h5>
+                        <h5><strong>{locale.t('portfolio.aboutProject')}:</strong></h5>
                         <p>{detail}</p>
-                        <h5><strong>Technologies</strong></h5>
+                        <h5><strong>{locale.t('portfolio.technologies')}</strong></h5>
                         {/* <p>Code technologies and skills I got involved while working on this project</p> */}
                         <ul>
-                            {technologies.map((technology, index) => {
+                            {technologiesList.map((technology, index) => {
                                 return (<li key={index}>{technology}</li>)
                             })}
                         </ul>
@@ -38,4 +43,4 @@ const ProjectDetail = (props) => {
     );
 }
 
-export default ProjectDetail;
+export default connect()(ProjectDetail);

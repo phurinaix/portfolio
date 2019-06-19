@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 // import { LinkContainer } from "react-router-bootstrap";
 import ProgressiveImage from './ProgressiveImage';
-import '../styles/style.css';
+
 
 const WorkCard = (props) => {
     return (

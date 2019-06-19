@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import '../styles/style.css';
 import ProgressiveImage from './ProgressiveImage';
 
 const ContactBox = (props) => {

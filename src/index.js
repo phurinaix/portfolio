@@ -6,7 +6,9 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import languages from './languages/languages.json';
+// import languages from './languages/languages.json';
+import languages from './languages/languages.js';
+
 
 syncTranslationWithStore(store)
 store.dispatch(loadTranslations(languages));

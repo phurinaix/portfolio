@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WorkCard from '../components/WorkCard';
 // import ProjectCard from '../../components/ProjectCard';
 import withLoading from './withLoading';
+import { connect } from 'react-redux';
 import SoftwareImage from '../assets/img/software.jpg';
 import DesignImage from '../assets/img/design.jpg';
 import BlockchainImage from '../assets/img/blockchain.jpg';
@@ -52,155 +53,78 @@ import designImageFull4 from '../assets/img/design/debate_full.jpg';
 import blockchainImage2 from '../assets/img/blockchain/2.jpg';
 import blockchainImage1 from '../assets/img/blockchain/blockchain.jpg';
 
+const locale = require('react-redux-i18n').I18n;
+
 class Work extends Component {
     state = {
         projectType: "",
-        imageList: {
-            software: [
-                {
-                    id: 1,
-                    previewImage: softwareImage22,
-                    topic: 'Portfolio',
-                    technologies: ['React.js', 'Javascript ES6', 'CSS3'],
-                    link: 'phurinaix.github.io',
-                    github: 'github.com/phurinaix/profile',
-                    description: 'Portfolio website',
-                    detail: 'The idea behind this project was to create a showcase of everything I\'ve worked on and display the information about me',
-                    images: [
-                        softwareImage22, softwareImage25, softwareImage26, softwareImage27, softwareImage28, softwareImage29
-                    ]
-                },
-                {
-                    id: 2,
-                    previewImage: softwareImage11,
-                    topic: 'Room Secret Chat',
-                    technologies: ['Node.js', 'Express', 'Socket.io', 'HTML5', 'CSS3', 'Javascript'],
-                    link: 'room-secret-chat.herokuapp.com',
-                    github: 'github.com/phurinaix/Room-Secret-Chat',
-                    description: 'Web chat application',
-                    detail: 'Web application for communicate with each other',
-                    images: [
-                        softwareImage11, softwareImage12, softwareImage13, softwareImage14
-                    ]
-                },
-                {
-                    id: 3,
-                    previewImage: softwareImage1,
-                    topic: 'Thammasat University Website',
-                    technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-                    link: '',
-                    github: 'github.com/phurinaix/university-website',
-                    description: 'Thammasat University website',
-                    detail: '',
-                    images: [
-                        softwareImage1, softwareImage2, softwareImage3, softwareImage4
-                    ]
-                },
-                {
-                    id: 4,
-                    previewImage: softwareImage24,
-                    topic: 'The Million Years Stone Park',
-                    technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-                    link: '',
-                    github: 'github.com/peterparkers/transportation-and-parking',
-                    description: 'The Million Years Stone Park',
-                    detail: '',
-                    images: [
-                        softwareImage24, softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10
-                    ]
-                },
-                {
-                    id: 5,
-                    previewImage: softwareImage21,
-                    topic: 'Dev Me Please',
-                    technologies: ['Java', 'Socket', 'MySQL'],
-                    link: '',
-                    github: 'github.com/phurinaix/devMePlease-java',
-                    description: 'Java desktop application',
-                    detail: '',
-                    images: [
-                        softwareImage21, softwareImage30, softwareImage31, softwareImage32
-                    ]
-                },
-                {
-                    id: 6,
-                    previewImage: softwareImage23,
-                    topic: 'Folder Locked',
-                    technologies: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Javascript'],
-                    link: '',
-                    github: 'github.com/phpinproject/piyaproject',
-                    description: 'Website for keep files',
-                    detail: '',
-                    images: [
-                        softwareImage23, softwareImage33, softwareImage34, softwareImage35, softwareImage36
-                    ]
-                },
-                {
-                    id: 7,
-                    previewImage: softwareImage15,
-                    topic: 'Pattaya Food',
-                    technologies: ['HTML5', 'CSS3', 'Javascript'],
-                    link: '',
-                    github: 'github.com/phurinaix/pattaya-food',
-                    description: 'Pattaya Food Restaurant & Bar',
-                    detail: 'This one is the first project that I was created (11 October 2016).',
-                    images: [
-                        softwareImage15, softwareImage16, softwareImage17, softwareImage18, softwareImage19
-                    ]
-                },
-                {
-                    id: 8,
-                    previewImage: softwareImage20,
-                    topic: 'Cube trainer',
-                    technologies: ['Swift'],
-                    link: '',
-                    github: 'github.com/phurinaix/Cubetrainer',
-                    description: 'Mobile application for IOS',
-                    detail: '',
-                    images: [
-                        softwareImage20
-                    ]
-                }
-            ],
-            design: [
-                {
-                    id: 1,
-                    image: designImage1,
-                    imageFull: designImageFull1,
-                    topic: 'Thammasat University Poster',
-                    description: 'Thammasat University Pattaya Campus poster'
-                },
-                {
-                    id: 2,
-                    image: designImage2,
-                    imageFull: designImageFull2,
-                    topic: 'Thammasat University Poster',
-                    description: 'Thammasat University Pattaya Campus poster'
-                },
-                {
-                    id: 3,
-                    image: designImage3,
-                    imageFull: designImageFull3,
-                    topic: 'Advertisement Poster',
-                    description: 'The poster for advertise a genius pen'
-                },
-                {
-                    id: 4,
-                    image: designImage4,
-                    imageFull: designImageFull4,
-                    topic: 'Debating Poster',
-                    description: 'The poster for debating activity'
-                }
-            ],
-            blockchain: [
-                {
-                    id: 1,
-                    image: blockchainImage1,
-                    topic: 'A secure and trusted publishing systems for university diplomas and transcripts',
-                    description: 'Graduation project'
-                }
-            ]
-        }
+        softwarePreviewImage: [
+            softwareImage22,
+            softwareImage11,
+            softwareImage1,
+            softwareImage24,
+            softwareImage21,
+            softwareImage23,
+            softwareImage15,
+            softwareImage20
+        ],
+        designPreviewImage: [
+            designImage1,
+            designImage2,
+            designImage3,
+            designImage4
+        ],
+        blockchainPreviewImage: [
+            blockchainImage1
+        ],
+        softwareImages: [
+            { 
+                id: "1",
+                images: [softwareImage22, softwareImage25, softwareImage26, softwareImage27, softwareImage28, softwareImage29]
+            },
+            {
+                id: "2",
+                images: [softwareImage11, softwareImage12, softwareImage13, softwareImage14]
+            },
+            {
+                id: "3",
+                images: [softwareImage1, softwareImage2, softwareImage3, softwareImage4]
+            },
+            {
+                id: "4",
+                images: [softwareImage24, softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10]
+            },
+            {
+                id: "5",
+                images: [softwareImage21, softwareImage30, softwareImage31, softwareImage32]
+            },
+            {
+                id: "6",
+                images: [softwareImage23, softwareImage33, softwareImage34, softwareImage35, softwareImage36]
+            },
+            {
+                id: "7",
+                images: [softwareImage15, softwareImage16, softwareImage17, softwareImage18, softwareImage19]
+            },
+            {
+                id: "8",
+                images: [softwareImage20]
+            }
+        ],
+        designImages: [
+            {
+                image: designImageFull1
+            },
+            {
+                image: designImageFull2
+            },
+            {
+                image: designImageFull3
+            },
+            {
+                image: designImageFull4
+            }
+        ]
     }
     projectHandle = (projectType) => {
         this.setState({ projectType });
@@ -212,16 +136,26 @@ class Work extends Component {
         return (
                 <div className="work-section text-center">
                     <div className="row justify-content-center">
+                        {/* <h6>{JSON.stringify(locale.t('portfolio.projectList.software.0'))}</h6>
+                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.1'))}</h6>
+                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.2'))}</h6>
+                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.3'))}</h6>
+                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.4'))}</h6> */}
                         {this.state.projectType === "" ?
                             <React.Fragment>
-                                <WorkCard title="SOFTWARE PROJECT" text="Web Application and Desktop Application" image={SoftwareImage} click={this.projectHandle}/>
-                                <WorkCard title="DESIGN PROJECT" text="Poster Design" image={DesignImage} click={this.projectHandle}/>
-                                <WorkCard title="BLOCKCHAIN PROJECT" text="Bitcoin and Ethereum" image={BlockchainImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project1')} text="Web Application and Desktop Application" image={SoftwareImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project2')} text="Poster Design" image={DesignImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project3')} text="Bitcoin and Ethereum" image={BlockchainImage} click={this.projectHandle}/>
                             </React.Fragment>
                         :
                             <ProjectBoard 
                                 projectType={this.state.projectType}
-                                images={this.state.imageList}
+                                softwarePreviewImage={this.state.softwarePreviewImage}
+                                designPreviewImage={this.state.designPreviewImage}
+                                blockchainPreviewImage={this.state.blockchainPreviewImage}
+                                softwareImages={this.state.softwareImages}
+                                designImages={this.state.designImages}
+                                projects={locale.t('portfolio.projectList')}
                                 back={this.deleteProjectType}
                             />
                         }
@@ -231,4 +165,4 @@ class Work extends Component {
     }
 }
 
-export default withLoading(Work);
+export default connect()(withLoading(Work));

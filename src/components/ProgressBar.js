@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/style.css';
 // import ProgressiveImage from 'react-progressive-image';
 import ProgressiveImage from './ProgressiveImage';
 
