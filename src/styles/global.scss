@@ -1,5 +1,6 @@
-$white-color: #ffffff;
-
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_placeholders.scss';
 
 a {
     text-decoration: none !important;
@@ -153,44 +154,22 @@ h4 {
 }
 
 /* Skill page */
-.skills-section, .contact-section {
-    width: 100%;
-    margin-top: 100px;
-    animation: scaleIn ease 0.3s;
-    /* height: 90vh; */
-    /* background-color: rgb(0, 0, 0); */
-    /* overflow: scroll; */
-}
 .work-section {
     width: 100%;
     margin-top: 50px;
-    /* animation: scaleIn ease 0.5s; */
 }
 .skills-section {
-    position: relative;
-    margin-top: 10px;
-    background-color: #e2e1e0;
+    @include section(10px, 20px, $grey-color);
     padding: 20px 10px;
-    z-index: 100;
 }
 .skills-section h3 {
+    @include far-text($black-color, $font-secondary, normal);
     margin-bottom: 20px;
-    /* font-family: 'Open Sans', sans-serif; */
-    /* font-size: 1.2em; */
-    color: #000000;
-    font-family: 'Fredoka One', cursive;
-    letter-spacing: 2px;
-    /* font-weight: bolder; */
     text-align: center;
-    /* color: rgb(0, 2, 133);
-    text-shadow: 1px 1px rgb(31, 31, 31); */
-    letter-spacing: 2px;
 }
 .skills-section p {
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(0, 0, 0);
+    @include far-text($black-color, $font-primary, normal);
     font-size: 0.9em;
-    letter-spacing: 2px;
 }
 .workcard {
     background-color: #fcf9cf !important;
@@ -208,12 +187,12 @@ h4 {
     filter: brightness(50%);
 }
 .workcard-title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-primary;
     font-weight: bolder;
     font-size: 0.9em;
 }
 .workcard-text {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-primary;
     font-size: 0.8em;
 }
 
@@ -227,7 +206,7 @@ h4 {
     background-color: #e2e1e0;
 }
 .project-header {
-    background-color: #fff;
+    background-color: $white-color;
     position: relative;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -248,7 +227,7 @@ h4 {
     margin: auto;
 }
 .project-card {
-    background-color: #fff;
+    background-color: $white-color;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -260,19 +239,14 @@ h4 {
     background-color: #f8f8f8;
 }
 .project-board h3 {
-    color: #000000;
-    font-family: 'Fredoka One', cursive;
-    letter-spacing: 2px;
-    margin: 0;
+    @include far-text($black-color, $font-secondary, normal);
 }
 .project-topic-content h5 {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
-    font-weight: bolder;
+    @include far-text($black-color, $font-primary, bolder);
+
 }
 .project-topic-content p {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 2px;
+    @include far-text($black-color, $font-primary, normal);
 }
 
 .software-project-topic {
@@ -293,11 +267,8 @@ h4 {
     background-color: #e9e8e8;
 }
 .toggle-btn h6 {
-    font-family: 'Open Sans', sans-serif;
+    @include far-text($black-color, $font-primary, bolder);
     font-size: 0.7em;
-    margin: 0;
-    letter-spacing: 2px;
-    font-weight: bolder;
 }
 .project-detail {
     /* background-color: rgb(255, 252, 211); */
@@ -307,7 +278,7 @@ h4 {
 }
 .project-detail h5 {
     font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-primary;
 }
 .project-detail-content {
     padding: 20px 0;
@@ -327,7 +298,7 @@ h4 {
     font-size: 1.4em;
 }
 .blockchain-project-detail p, .blockchain-project-detail ol li {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-primary;
     font-size: 1.1em;
 }
 .blockchain-project-detail .img-description {
@@ -340,84 +311,61 @@ h4 {
 /* --------------------End Project-------------------------*/
 
 .about-section {
-    position: relative;
-    background-color: #e2e1e0;
+    @include section(80px, 20px, $grey-color);
     width: 100%;
-    margin-top: 80px;
-    animation: scaleIn ease 0.3s;
-    z-index: 100;
 }
 .about-section h3 {
-    color: #000000;
-    font-family: 'Fredoka One', cursive;
-    letter-spacing: 2px;
+    @include far-text($black-color, $font-secondary, normal);
 }
 .about-section p {
-    font-family: 'Open Sans', sans-serif;
-    color: #111111;
-    letter-spacing: 2px;
+    @include far-text($black-color, $font-primary, normal);
 }
 .about-section a {
-    letter-spacing: 2px;
-    font-family: 'Open Sans', sans-serif;
+    @include far-text($yellow-color, $font-primary, normal);
     position: relative;
     background-color: #0f0f49;
-    color: #f3e536;
     cursor: pointer;
     z-index: 100;
 }
 .about-section a:hover {
     background-color: #e8eb27 !important;
-    color: #111 !important;
+    color: $black-color !important;
 }
 .contact-section {
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    background-color: #e2e1e0;
+    @include section(10px, 50px, $grey-color);
     padding: 50px 10px;
-    z-index: 100;
 }
 .contact-section form h3 {
-    font-family: 'Fredoka One', cursive;
-    /* font-weight: bolder; */
-    color: #1b1b1b;
+    @include far-text($black-color, $font-secondary, normal);
     margin-bottom: 20px;
-    letter-spacing: 2px;
 }
 .contact-section form p {
-    font-family: 'Open Sans', sans-serif;
+    @include far-text($black-color, $font-primary, normal);
     font-size: 0.8em;
-    color: #1b1b1b;
-    letter-spacing: 2px;
 }
 .contact-section form {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: $font-primary !important;
 }
 .contact-section form input, .contact-section form textarea{
     background-color: #fff;
-    color: #111 !important;
+    color: $black-color !important;
     /* border: 1px solid rgb(6, 10, 37); */
     letter-spacing: 2px;
 }
 .contactBox-title {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
+    @include far-text($black-color, $font-primary, bolder);
     font-size: 0.9em;
-    letter-spacing: 2px;
 }
 .contact-section form button {
-    letter-spacing: 2px;
-    font-family: 'Open Sans', sans-serif;
+    @include far-text($yellow-color, $font-primary, bolder);    
     position: relative;
     background-color: #0f0f49;
-    color: #f3e536;
     cursor: pointer;
     z-index: 100;
 }
 .contact-section form button:hover {
     background-color: #e8eb27 !important;
-    color: #111 !important;
+    color: $black-color !important;
 }
 .contact-card-social {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -427,10 +375,10 @@ h4 {
     background-color: rgb(188, 209, 255);
 }
 .contact-button {
-    font-family: 'Open Sans', sans-serif;
-    border-color: #f3e536 !important;
+    font-family: $font-primary;
+    border-color: $yellow-color !important;
     background-color: #0f0f49 !important;
-    color: #f3e536 !important;
+    color: $yellow-color !important;
     font-weight: bolder;
     position: absolute;
     left: 50%;
@@ -439,7 +387,7 @@ h4 {
 }
 .contact-button:hover {
     background-color: #e8eb27 !important;
-    color: #111 !important;
+    color: $black-color !important;
 }
 
 .typewriter {

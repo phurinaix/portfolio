@@ -1,0 +1,15 @@
+@mixin far-text($color, $font, $weight) {
+    color: $color;
+    font-family: $font;
+    font-weight: $weight;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+@mixin section($margin-top, $margin-bottom, $background) {
+    position: relative;
+    z-index: 100;
+    margin-top: $margin-top;
+    background-color: $background;
+    animation: scaleIn ease 0.3s;
+}
