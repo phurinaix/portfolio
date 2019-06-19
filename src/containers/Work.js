@@ -156,6 +156,7 @@ class Work extends Component {
                                 softwareImages={this.state.softwareImages}
                                 designImages={this.state.designImages}
                                 projects={locale.t('portfolio.projectList')}
+                                projectsDetailTopic={locale.t('portfolio.detailTopic')}
                                 back={this.deleteProjectType}
                             />
                         }

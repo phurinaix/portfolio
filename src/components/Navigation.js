@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 // import { setLang } from '../actions/language-actions';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
+import ReactCountryFlag from "react-country-flag";
 
 const locale = require('react-redux-i18n').I18n;
 
@@ -23,8 +24,26 @@ const Navigation = ({click}) => {
                         <LinkContainer to="/contact" activeClassName="active-link"><Nav.Link>{locale.t('navigation.contact')}</Nav.Link></LinkContainer>
                     </Nav>
                     <Nav className="ml-auto text-center navbar-link">
-                        <Nav.Link onClick={() => click('th')}>TH</Nav.Link>
-                        <Nav.Link onClick={() => click('en')}>EN</Nav.Link>
+                        <Nav.Link onClick={() => click('th')}>
+                            <ReactCountryFlag 
+                                styleProps={{
+                                    width: '30px',
+                                    height: '20px'
+                                }}
+                                code="th"
+                                svg
+                            />
+                        </Nav.Link>
+                        <Nav.Link onClick={() => click('en')}>
+                            <ReactCountryFlag 
+                                styleProps={{
+                                    width: '30px',
+                                    height: '20px'
+                                }}
+                                code="us"
+                                svg
+                            />
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

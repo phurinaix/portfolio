@@ -7,7 +7,7 @@ a {
 }
 h2, h4 {
     color: #ede5aa;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-primary;
     font-weight: bolder;
     position: absolute;
     left: 50%;
@@ -25,7 +25,7 @@ h4 {
 }
 /* Navigation */
 .navbar-link a{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-primary;
     font-size: 0.8em;
     margin: 0 10px;
     font-weight: bolder;
@@ -37,7 +37,7 @@ h4 {
     z-index: 100;
 }
 .navbar-logo {
-    font-family: 'Monoton', cursive;
+    font-family: $font-logo;
     font-size: 1.3em;
     color: #ede5aa !important;
 }
@@ -163,7 +163,7 @@ h4 {
     padding: 20px 10px;
 }
 .skills-section h3 {
-    @include far-text($black-color, $font-secondary, normal);
+    @include far-text($black-color, $font-primary, bold);
     margin-bottom: 20px;
     text-align: center;
 }
@@ -239,7 +239,7 @@ h4 {
     background-color: #f8f8f8;
 }
 .project-board h3 {
-    @include far-text($black-color, $font-secondary, normal);
+    @include far-text($black-color, $font-primary, bolder);
 }
 .project-topic-content h5 {
     @include far-text($black-color, $font-primary, bolder);
@@ -283,6 +283,9 @@ h4 {
 .project-detail-content {
     padding: 20px 0;
 }
+.project-detail-content p{
+    font-family: $font-primary;
+}
 .project-detail-content ul li {
     list-style: circle;
 }
@@ -294,12 +297,14 @@ h4 {
     font-weight: bolder;
 }
 .blockchain-project-detail h5 {
+    font-family: $font-primary;
     font-weight: bold;
     font-size: 1.4em;
 }
 .blockchain-project-detail p, .blockchain-project-detail ol li {
     font-family: $font-primary;
     font-size: 1.1em;
+    font-weight: lighter;
 }
 .blockchain-project-detail .img-description {
     text-align: center;
@@ -315,7 +320,7 @@ h4 {
     width: 100%;
 }
 .about-section h3 {
-    @include far-text($black-color, $font-secondary, normal);
+    @include far-text($black-color, $font-primary, normal);
 }
 .about-section p {
     @include far-text($black-color, $font-primary, normal);
@@ -336,7 +341,7 @@ h4 {
     padding: 50px 10px;
 }
 .contact-section form h3 {
-    @include far-text($black-color, $font-secondary, normal);
+    @include far-text($black-color, $font-primary, bolder);
     margin-bottom: 20px;
 }
 .contact-section form p {

@@ -25,8 +25,10 @@ const languages = {
                 project3: "ด้านบล็อกเช็น"
             },
             moreDetail: 'ดูข้อมูลเพิ่มเติม',
-            aboutProject: 'เกี่ยวกับโปรเจค',
-            technologies: 'เทคโนโลยีที่ใช้',
+            detailTopic: {
+                aboutProject: 'เกี่ยวกับโปรเจค',
+                technologies: 'เทคโนโลยีที่ใช้'
+            },
             projectList: {
                 software: [
                     {
@@ -128,7 +130,41 @@ const languages = {
                     {
                         id: "1",
                         topic: "A secure and trusted publishing systems for university diplomas and transcripts",
-                        description: "Graduation project"
+                        description: "Graduation project",
+                        detail: {
+                            aboutProjectTopic: "เกี่ยวกับโปรเจค",
+                            objectivesTopic: "Objectives",
+                            significanceTopic: "Significance of the research",
+                            currentSystemTopic: "The current system",
+                            proposedSystemTopic: "Proposed system overview",
+                            systemWorkflowTopic: "System workflow",
+                            appliationTopic: "Application",
+                            aboutProject: `นักเรียน who are going to graduate, apply for jobs in a large number of companies 
+                                        for jobs, All students must provide academic transcripts from the university they have 
+                                        studied for the job application.The company confirms that the student has actually graduated 
+                                        from the university. Confirming the authenticity of the documents diploma and transcripts 
+                                        is a manual and slow process. So the students have to wait the result of this slow process.
+                                        Moreover this process is also costly and inefficient.The proposed system can help students 
+                                        and employers a fast and secure way of exchanging academic credentials.It avoids forgery and 
+                                        brings trust to the process.`,
+                            objectives: `The objective of this study is to improve the service quality and security of the system i.e., 
+                                        the registrar’s office that handles the transcript and diploma in the Thammasat university. 
+                                        It will also avoid transcript and diploma fraud.Moreover, it delivers the student credentials 
+                                        to employers in a fast and efficient manner.`,
+                            significance: `For any university providing copies of diplomas and transcripts is a major service. 
+                                        Providing these document in a fast manner and securely are a vital requirement for any school. 
+                                        Moreover, preventing transcript fraud and diploma fraud are also an important requirement. 
+                                        Transcript fraud is the alteration of a transcript issued by a legitimate school or university or the 
+                                        forgery of completely fake transcripts. Transcript fraud is a growing problem for both educational 
+                                        institutions and employers. Providing a secure solution is a worthy objective for the universities.`,
+                            currentSystem: `The current system is slow, inefficient and based on manual control of various steps.`,
+                            proposedSystem: `This System is a program that helps to certify student transcripts that are efficient, fast 
+                                        and more secure. It reduce the time and procedure of checking the academic transcript of the 
+                                        university by an employer or a third party.`,
+                            systemWorkflow: ["Add issuer step", "Request credentials step", "Create credentials step", "Issue credentials step", "Verification step"],
+                            application: `It will be difficult without an interface to interact with user. So the developer created 
+                                        an interface to interact with user and use third-party application.`
+                        }
                     }
                 ]
             }
@@ -171,8 +207,10 @@ const languages = {
                 project3: "BLOCKCHAIN PROJECT"
             },
             moreDetail: 'MORE DETAIL',
-            aboutProject: 'About this project',
-            technologies: 'Technologies',
+            detailTopic: {
+                aboutProject: 'About this project',
+                technologies: 'Technologies'
+            },
             projectList: {
                 software: [
                     {
@@ -274,7 +312,41 @@ const languages = {
                     {
                         id: "1",
                         topic: "A secure and trusted publishing systems for university diplomas and transcripts",
-                        description: "Graduation project"
+                        description: "Graduation project",
+                        detail: {
+                            aboutProjectTopic: "About this project",
+                            objectivesTopic: "Objectives",
+                            significanceTopic: "Significance of the research",
+                            currentSystemTopic: "The current system",
+                            proposedSystemTopic: "Proposed system overview",
+                            systemWorkflowTopic: "System workflow",
+                            appliationTopic: "Application",
+                            aboutProject: `Students who are going to graduate, apply for jobs in a large number of companies 
+                                        for jobs, All students must provide academic transcripts from the university they have 
+                                        studied for the job application.The company confirms that the student has actually graduated 
+                                        from the university. Confirming the authenticity of the documents diploma and transcripts 
+                                        is a manual and slow process. So the students have to wait the result of this slow process.
+                                        Moreover this process is also costly and inefficient.The proposed system can help students 
+                                        and employers a fast and secure way of exchanging academic credentials.It avoids forgery and 
+                                        brings trust to the process.`,
+                            objectives: `The objective of this study is to improve the service quality and security of the system i.e., 
+                                        the registrar’s office that handles the transcript and diploma in the Thammasat university. 
+                                        It will also avoid transcript and diploma fraud.Moreover, it delivers the student credentials 
+                                        to employers in a fast and efficient manner.`,
+                            significance: `For any university providing copies of diplomas and transcripts is a major service. 
+                                        Providing these document in a fast manner and securely are a vital requirement for any school. 
+                                        Moreover, preventing transcript fraud and diploma fraud are also an important requirement. 
+                                        Transcript fraud is the alteration of a transcript issued by a legitimate school or university or the 
+                                        forgery of completely fake transcripts. Transcript fraud is a growing problem for both educational 
+                                        institutions and employers. Providing a secure solution is a worthy objective for the universities.`,
+                            currentSystem: `The current system is slow, inefficient and based on manual control of various steps.`,
+                            proposedSystem: `This System is a program that helps to certify student transcripts that are efficient, fast 
+                                        and more secure. It reduce the time and procedure of checking the academic transcript of the 
+                                        university by an employer or a third party.`,
+                            systemWorkflow: ["Add issuer step", "Request credentials step", "Create credentials step", "Issue credentials step", "Verification step"],
+                            application: `It will be difficult without an interface to interact with user. So the developer created 
+                                        an interface to interact with user and use third-party application.`
+                        }
                     }
                 ]
             }

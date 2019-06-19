@@ -38,7 +38,7 @@ class ProjectBoard extends Component {
         this.setState({ eventKeyBlockchain });
     }
     render() {
-        const { projectType, softwarePreviewImage, designPreviewImage, blockchainPreviewImage, softwareImages, designImages, projects } = this.props;
+        const { projectType, softwarePreviewImage, designPreviewImage, blockchainPreviewImage, softwareImages, designImages, projects, projectsDetailTopic } = this.props;
         const type = projectType.toLowerCase();
         if (type === 'software project' || type === "ด้านซอฟต์แวร์") {
             const projectList = Object.values(projects['software']);
@@ -78,6 +78,7 @@ class ProjectBoard extends Component {
                                         <ProjectDetail 
                                             open={this.state.eventKeySoftware[parseInt(element.id) - 1]}
                                             data={element}
+                                            topic={projectsDetailTopic}
                                             images={softwareImages[index].images}
                                         />
                                     </div>
