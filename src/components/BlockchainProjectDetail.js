@@ -8,53 +8,44 @@ import applicationImg from '../assets/img/blockchain/application.jpg';
 
 const BlockchainProjectDetail = (props) => {
     const { detail } = props.data;
+    const systemWorkflowList = Object.values(detail.systemWorkflow);
     return (
         <Collapse in={props.open}>
             <div id="blockchain-collapse">
                 <div className="col-md-11 mx-auto py-4 blockchain-project-detail">
                     <h5>{detail.aboutProjectTopic}</h5>
                     <p>{detail.aboutProject}</p>
-                    <h5>Objectives</h5>
-                    <p>The objective of this study is to improve the service quality and security of the system i.e., 
-                        the registrar’s office that handles the transcript and diploma in the Thammasat university. 
-                        It will also avoid transcript and diploma fraud.Moreover, 
-                        it delivers the student credentials to employers in a fast and efficient manner.
-                    </p>
-                    <h5>Significance of the research</h5>
-                    <p>For any university providing copies of diplomas and transcripts is a major service. 
-                        Providing these document in a fast manner and securely are a vital requirement for any school. 
-                        Moreover, preventing transcript fraud and diploma fraud are also an important requirement. 
-                        Transcript fraud is the alteration of a transcript issued by a legitimate school or university 
-                        or the forgery of completely fake transcripts. Transcript fraud is a growing problem for both educational 
-                        institutions and employers. Providing a secure solution is a worthy objective for the universities.
-                    </p>
-                    <h5>The current system</h5>
-                    <p>The current system is slow, inefficient and based on manual control of various steps.</p>
+                    <h5>{detail.objectivesTopic}</h5>
+                    <p>{detail.objectives}</p>
+                    <h5>{detail.significanceTopic}</h5>
+                    <p>{detail.significance}</p>
+                    <h5>{detail.currentSystemTopic}</h5>
+                    <p>{detail.currentSystem}</p>
                     <ProgressiveImage image={principleCurrentImg} alt="current system" classStyle="w-100"/>
                     <p className="img-description"><small>Picture of the current system</small></p>
 
-                    <h5>Proposed system overview</h5>
-                    <p>This System is a program that helps to certify student transcripts 
-                        that are efficient, fast and more secure. It reduce the time and procedure of checking 
-                        the academic transcript of the university by an employer or a third party.
-                    </p>
+                    <h5>{detail.proposedSystemTopic}</h5>
+                    <p>{detail.proposedSystem}</p>
                     <ProgressiveImage image={principleImg} alt="proposed system" classStyle="w-100"/>
                     <p className="img-description"><small>Picture of proposed system overview</small></p>
 
-                    <h5>System workflow</h5>
+                    <h5>{detail.systemWorkflowTopic}</h5>
                     <ProgressiveImage image={systemWorkflowImg} alt="system workflow" classStyle="w-100"/>
                     <p className="img-description"><small>Picture of system workflow</small></p>
                     <ol>
+                    {systemWorkflowList.map((system, index) => (
+                        <li key={index}>{system}</li>
+                    ))}
+                    </ol>
+                    {/* <ol>
                         <li>Add issuer step</li>
                         <li>Request credentials step</li>
                         <li>Create credentials step</li>
                         <li>Issue credentials step</li>
                         <li>Verification step</li>
-                    </ol>
-                    <h5>Application</h5>
-                    <p>It will be difficult without an interface to interact with user. 
-                        So the developer created an interface to interact with user and use third-party application.
-                    </p>
+                    </ol> */}
+                    <h5>{detail.applicationTopic}</h5>
+                    <p>{detail.application}</p>
                     <ProgressiveImage image={applicationImg} alt="application" classStyle="w-100"/>
                     <p className="img-description"><small>All application that used in this system</small></p>
 
