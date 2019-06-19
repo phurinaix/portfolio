@@ -22,8 +22,8 @@ const ProjectDetail = (props) => {
                         })}
                     </Carousel>
                     <div className="project-detail-content">
-                        {link && <h5><strong>Link:</strong> <a href={`https://${link}`} target="_blank">{link}</a></h5>}
-                        <h5><strong>Github:</strong> <a href={`https://${github}`} target="_blank">{github}</a></h5>
+                        {link && <h5><strong>Link:</strong> <a href={`https://${link}`} target="_blank" rel="noopener noreferrer">{link}</a></h5>}
+                        <h5><strong>Github:</strong> <a href={`https://${github}`} target="_blank" rel="noopener noreferrer">{github}</a></h5>
                         <h5><strong>{topic.aboutProject}:</strong></h5>
                         <p>{detail}</p>
                         <h5><strong>{topic.technologies}</strong></h5>

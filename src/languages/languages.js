@@ -9,7 +9,7 @@ const languages = {
         },
         home: {
             name: "ภูริณัฐ เผือกขำ",
-            portfolio: "เว็บพอร์ตโฟลิโอ",
+            portfolio: "พอร์ตโฟลิโอ",
             contact: "ติดต่อ"
         },
         about: {

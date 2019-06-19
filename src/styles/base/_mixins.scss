@@ -13,3 +13,12 @@
     background-color: $background;
     animation: scaleIn ease 0.3s;
 }
+
+@mixin home-text($size) {
+    color: #ede5aa;
+    font-family: $font-primary;
+    font-weight: bolder;
+    text-align: center;
+    font-size: $size;
+    animation: animate 0.5s linear infinite;
+}

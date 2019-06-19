@@ -51,7 +51,7 @@ class Contact extends Component {
                     </div>
                     <div className="col-md-4">
                         {this.state.socials.map((social, index) => {
-                            return <a href={social.link} target="_blank" key={index}><ContactBox qrcode={social.qrcode} title={social.name} logo={social.logo} /></a>
+                            return <a href={social.link} target="_blank" rel="noopener noreferrer" key={index}><ContactBox qrcode={social.qrcode} title={social.name} logo={social.logo} /></a>
                         })}
                     </div>
                 </div>

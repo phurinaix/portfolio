@@ -50,7 +50,6 @@ import designImageFull1 from '../assets/img/design/tuPoster1_full.jpg';
 import designImageFull2 from '../assets/img/design/tuPoster2_full.jpg';
 import designImageFull3 from '../assets/img/design/geniusPen_full.jpg';
 import designImageFull4 from '../assets/img/design/debate_full.jpg';
-import blockchainImage2 from '../assets/img/blockchain/2.jpg';
 import blockchainImage1 from '../assets/img/blockchain/blockchain.jpg';
 
 const locale = require('react-redux-i18n').I18n;

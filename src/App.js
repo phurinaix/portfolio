@@ -40,9 +40,9 @@ class App extends Component {
             </Layout>
           </BrowserRouter>
           <div className="icon-bar">
-            <a href="https://www.facebook.com/phurinat.puekkham.1" className="facebook" target="_blank"><FontAwesomeIcon icon={ faFacebookF }/></a>
-            <a href="https://github.com/phurinaix" className="github" target="_blank"><FontAwesomeIcon icon={ faGithub }/></a> 
-            <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
+            <a href="https://www.facebook.com/phurinat.puekkham.1" className="facebook" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faFacebookF }/></a>
+            <a href="https://github.com/phurinaix" className="github" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithub }/></a> 
+            <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
           </div>
           <div className="cube"></div>
           <div className="cube"></div>

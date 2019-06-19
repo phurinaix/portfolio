@@ -13,9 +13,8 @@ const ProgressBar = (props) => {
                     <p>{props.name}</p>
                 </div>
                 <div className="col-8">
-                    {/* <Bar now={props.number}/> */}
                     <div className="stat stat-bar">
-                        <span className="stat-bar-rating" role="stat-bar" style={{width: `${props.number}%`}}>80%</span>
+                        <span className="stat-bar-rating" style={{width: `${props.number}%`}}>80%</span>
                     </div>
                 </div>
             </div>

@@ -5,24 +5,7 @@
 a {
     text-decoration: none !important;
 }
-h2, h4 {
-    color: #ede5aa;
-    font-family: $font-primary;
-    font-weight: bolder;
-    position: absolute;
-    left: 50%;
-    /* z-index: -1000; */
-    transform: translate(-50%, -50%);
-    animation: animate 0.5s linear infinite;
-}
-h2 {
-    font-size: 5em;
-    top: 50%;
-}
-h4 {
-    font-size: 2em;
-    top: 40%;
-}
+
 /* Navigation */
 .navbar-link a{
     font-family: $font-primary;
@@ -136,8 +119,15 @@ h4 {
 
 /* Home page */
 .home-section {
-    height: 90vh;
+    margin-top: 200px;
 }
+.home-section h2 {
+    @include home-text(5em);
+}
+.home-section h4 {
+    @include home-text(2em);
+}
+
 @keyframes animate {
     0%, 100% {
         text-shadow: -1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f00;
@@ -243,6 +233,7 @@ h4 {
 }
 .project-topic-content h5 {
     @include far-text($black-color, $font-primary, bolder);
+    letter-spacing: 1px;
 
 }
 .project-topic-content p {
@@ -268,6 +259,7 @@ h4 {
 }
 .toggle-btn h6 {
     @include far-text($black-color, $font-primary, bolder);
+    letter-spacing: 1px;
     font-size: 0.7em;
 }
 .project-detail {
@@ -386,10 +378,7 @@ h4 {
     background-color: #0f0f49 !important;
     color: $yellow-color !important;
     font-weight: bolder;
-    position: absolute;
-    left: 50%;
-    top: 62%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 .contact-button:hover {
     background-color: #e8eb27 !important;
@@ -545,7 +534,7 @@ h4 {
 /* Media Query */
 @media only screen and (min-width: 994px) {
     .navbar-header {
-        height: 10vh;
+        height: 75px;
     }
 }
 
