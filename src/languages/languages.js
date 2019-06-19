@@ -10,19 +10,32 @@ const languages = {
         home: {
             name: "ภูริณัฐ เผือกขำ",
             portfolio: "เว็บพอร์ตโฟลิโอ",
-            contact: "ติดต่อฉัน"
+            contact: "ติดต่อ"
         },
         about: {
-            topic: "เกี่ยวกับฉัน"
+            topic: "เกี่ยวกับผม",
+            name: 'สวัสดีผมชื่อ ภูริณัฐ เผือกขำ',
+            detail: `ผมกำลังศึกษาอยู่ชั้นปีที่ 4 คณะวิศวกรรมศาสตร์ สาชาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยธรรมศาสตร์
+                    ผมชอบศึกษาและเรียนรู้สิ่งใหม่ๆ โดยเฉพาะทางด้าน Web Developer`,
+            resume: 'ดู Resume'
         },
         skills: {
             topic: "ทักษะ ความสามารถ"
         },
         portfolio: {
             topic: {
-                project1: "ด้านซอฟต์แวร์",
-                project2: "ด้านการออกแบบ",
-                project3: "ด้านบล็อกเช็น"
+                project1: {
+                    topic: "ด้านซอฟต์แวร์",
+                    description: "เว็บแอพพลิเคชั่นและโปรแกรมเดสก์ท็อป",
+                },
+                project2: {
+                    topic: "ด้านการออกแบบ",
+                    description: "โปสเตอร์",
+                },
+                project3: {
+                    topic: "ด้านบล็อกเช็น",
+                    description: "บิตคอยและอีเทอเรียม",
+                }
             },
             moreDetail: 'ดูข้อมูลเพิ่มเติม',
             detailTopic: {
@@ -108,22 +121,22 @@ const languages = {
                     {
                         id: "1",
                         topic: "Thammasat University Poster",
-                        description: "Thammasat University Pattaya Campus poster"
+                        description: "โปสเตอร์มหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา"
                     },
                     {
                         id: "2",
                         topic: "Thammasat University Poster",
-                        description: "Thammasat University Pattaya Campus poster"
+                        description: "โปสเตอร์มหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา"
                     },
                     {
                         id: "3",
                         topic: "Advertisement Poster",
-                        description: "The poster for advertise a genius pen"
+                        description: "โปสเตอร์โฆษณาสินค้าปากกาอัจฉริยะ"
                     },
                     {
                         id: "4",
                         topic: "Debating Poster",
-                        description: "The poster for debating activity"
+                        description: "โปสเตอร์ชุมนุมปาฐกถาและโต้วาที"
                     }
                 ],
                 blockchain: [
@@ -139,6 +152,7 @@ const languages = {
                             proposedSystemTopic: "ระบบที่นำเสนอ",
                             systemWorkflowTopic: "การทำงานของระบบ",
                             applicationTopic: "แอพพลิเคชั่น",
+                            resourcesTopic: "แหล่งข้อมูล",
                             aboutProject: `สำหรับนักศึกษาที่กำลังจะจบการศึกษานั้น การสมัครงานในบริษัทคือเป้าหมายต่อไป และในการสมัครงานนั้น 
                                         นักศึกษาทุกคนก็จะเป็นที่จะต้องใช้ใบรับรองผลการศึกษาจากมหาวิทยาลัยที่ตนเองได้เรียนประกอบกับใบสมัครงานของบริษัทเพื่อยืนยันว่าตัวนักศึกษา
                                         ได้จบจากมหาวิทยาลัยนั้นจริงๆ สำหรับการขอใบรับรองจากมหาวิทยาลัยของนักศึกษานั้น ทางมหาวิทยาลัยจำเป็นจะต้องตรวจสอบเอกสารของนักศึกษา
@@ -186,16 +200,29 @@ const languages = {
             contact: "CONTACT ME"
         },
         about: {
-            topic: "ABOUT ME"
+            topic: "ABOUT ME",
+            name: 'Hello, my name is Phurinat Puekkham.',
+            detail: `I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.
+                I love being a web developer.`,
+            resume: 'See Resume'
         },
         skills: {
             topic: "SKILLS"
         },
         portfolio: {
             topic: {
-                project1: "SOFTWARE PROJECT",
-                project2: "DESIGN PROJECT",
-                project3: "BLOCKCHAIN PROJECT"
+                project1: {
+                    topic: "SOFTWARE PROJECT",
+                    description: "Web Application and Desktop Application",
+                },
+                project2: {
+                    topic: "DESIGN PROJECT",
+                    description: "Poster Design",
+                },
+                project3: {
+                    topic: "BLOCKCHAIN PROJECT",
+                    description: "Bitcoin and Ethereum",
+                }
             },
             moreDetail: 'MORE DETAIL',
             detailTopic: {
@@ -312,6 +339,7 @@ const languages = {
                             proposedSystemTopic: "Proposed system overview",
                             systemWorkflowTopic: "System workflow",
                             applicationTopic: "Application",
+                            resourcesTopic: "Resources",
                             aboutProject: `Students who are going to graduate, apply for jobs in a large number of companies 
                                         for jobs, All students must provide academic transcripts from the university they have 
                                         studied for the job application.The company confirms that the student has actually graduated 

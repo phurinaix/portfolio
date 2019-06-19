@@ -320,7 +320,8 @@ h4 {
     width: 100%;
 }
 .about-section h3 {
-    @include far-text($black-color, $font-primary, normal);
+    @include far-text($black-color, $font-primary, bolder);
+    margin-bottom: 20px;
 }
 .about-section p {
     @include far-text($black-color, $font-primary, normal);
@@ -573,7 +574,7 @@ h4 {
     .software-project-card, .blockchain-project-card {
         width: 80%;
         margin: 0 auto;
-        padding: 0 !important;
+        padding: 20px !important;
     }
     .software-project-card img, .blockchain-project-card {
         width: 100% !important;

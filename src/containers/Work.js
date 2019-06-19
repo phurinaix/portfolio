@@ -136,20 +136,17 @@ class Work extends Component {
         return (
                 <div className="work-section text-center">
                     <div className="row justify-content-center">
-                        {/* <h6>{JSON.stringify(locale.t('portfolio.projectList.software.0'))}</h6>
-                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.1'))}</h6>
-                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.2'))}</h6>
-                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.3'))}</h6>
-                        <h6>{JSON.stringify(locale.t('portfolio.projectList.software.4'))}</h6> */}
                         {this.state.projectType === "" ?
                             <React.Fragment>
-                                <WorkCard title={locale.t('portfolio.topic.project1')} text="Web Application and Desktop Application" image={SoftwareImage} click={this.projectHandle}/>
-                                <WorkCard title={locale.t('portfolio.topic.project2')} text="Poster Design" image={DesignImage} click={this.projectHandle}/>
-                                <WorkCard title={locale.t('portfolio.topic.project3')} text="Bitcoin and Ethereum" image={BlockchainImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project1.topic')} text={locale.t('portfolio.topic.project1.description')} image={SoftwareImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project2.topic')} text={locale.t('portfolio.topic.project2.description')} image={DesignImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project3.topic')} text={locale.t('portfolio.topic.project3.description')} image={BlockchainImage} click={this.projectHandle}/>
                             </React.Fragment>
                         :
                             <ProjectBoard 
                                 projectType={this.state.projectType}
+                                projectTopic={locale.t('portfolio.topic')}
+                                moreDetail={locale.t('portfolio.moreDetail')}
                                 softwarePreviewImage={this.state.softwarePreviewImage}
                                 designPreviewImage={this.state.designPreviewImage}
                                 blockchainPreviewImage={this.state.blockchainPreviewImage}

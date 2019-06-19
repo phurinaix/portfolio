@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux';
 import ProgressiveImage from './ProgressiveImage';
 import ProjectDetail from './ProjectDetail';
 import BlockchainProjectDetail from './BlockchainProjectDetail';
 import { Lightbox } from "react-modal-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-
-const locale = require('react-redux-i18n').I18n;
 
 class ProjectBoard extends Component {
     state = {
@@ -38,7 +35,7 @@ class ProjectBoard extends Component {
         this.setState({ eventKeyBlockchain });
     }
     render() {
-        const { projectType, softwarePreviewImage, designPreviewImage, blockchainPreviewImage, softwareImages, designImages, projects, projectsDetailTopic } = this.props;
+        const { projectType, projectTopic, moreDetail, softwarePreviewImage, designPreviewImage, blockchainPreviewImage, softwareImages, designImages, projects, projectsDetailTopic } = this.props;
         const type = projectType.toLowerCase();
         if (type === 'software project' || type === "ด้านซอฟต์แวร์") {
             const projectList = Object.values(projects['software']);
@@ -50,7 +47,7 @@ class ProjectBoard extends Component {
                                 <FontAwesomeIcon icon={ faAngleLeft }/>
                             </div>
                             <h1>{JSON.stringify(this.state.projects)}</h1>
-                            <h3>{locale.t('portfolio.topic.project1')}</h3>
+                            <h3>{projectTopic.project1.topic}</h3>
                         </div>
                         <div className="px-5 pb-5 project-body">
                             {projectList.map((element,index) => {
@@ -73,7 +70,7 @@ class ProjectBoard extends Component {
                                             aria-controls="example-collapse-text"
                                             aria-expanded={this.state.eventKeySoftware[parseInt(element.id) - 1]}
                                         >
-                                            <h6>{locale.t('portfolio.moreDetail')}</h6>
+                                            <h6>{moreDetail}</h6>
                                         </div>
                                         <ProjectDetail 
                                             open={this.state.eventKeySoftware[parseInt(element.id) - 1]}
@@ -105,7 +102,7 @@ class ProjectBoard extends Component {
                             <div className="back-btn" onClick={this.props.back}>
                                 <FontAwesomeIcon icon={ faAngleLeft }/>
                             </div>
-                            <h3>{locale.t('portfolio.topic.project2')}</h3>
+                            <h3>{projectTopic.project2.topic}</h3>
                         </div>
                         <div className="px-5 pb-5">
                             {projectList.map((element,index) => {
@@ -137,7 +134,7 @@ class ProjectBoard extends Component {
                             <div className="back-btn" onClick={this.props.back}>
                                 <FontAwesomeIcon icon={ faAngleLeft }/>
                             </div>
-                            <h3>{locale.t('portfolio.topic.project3')}</h3>
+                            <h3>{projectTopic.project3.topic}</h3>
                         </div>
                         <div className="px-5 pb-5 project-body">
                             {projectList.map((element,index) => {
@@ -160,7 +157,7 @@ class ProjectBoard extends Component {
                                             aria-controls="blockchain-collapse"
                                             aria-expanded={this.state.eventKeyBlockchain[parseInt(element.id) - 1]}
                                         >
-                                            <h6>{locale.t('portfolio.moreDetail')}</h6>
+                                            <h6>{moreDetail}</h6>
                                         </div>
                                         <BlockchainProjectDetail 
                                             open={this.state.eventKeyBlockchain[parseInt(element.id) - 1]}
@@ -178,4 +175,4 @@ class ProjectBoard extends Component {
     }
 }
 
-export default connect()(ProjectBoard);
+export default ProjectBoard;

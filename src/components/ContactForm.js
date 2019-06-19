@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
-import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = (props) => {
     const { topic, description, fName, fEmail, fSubject, fMessage, fSubmit } = props;
@@ -20,10 +19,6 @@ const ContactForm = (props) => {
             <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Control as="textarea" rows="6" placeholder={fMessage} />
             </Form.Group>
-            <ReCAPTCHA
-                sitekey="6LfHs6kUAAAAAMolBsG9NeXlmZgPJUBdah3sZuP6"
-                // onChange={onChange}
-            />
             <Button type="button">
                 {fSubmit}
             </Button>

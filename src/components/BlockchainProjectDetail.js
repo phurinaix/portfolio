@@ -49,7 +49,7 @@ const BlockchainProjectDetail = (props) => {
                     <ProgressiveImage image={applicationImg} alt="application" classStyle="w-100"/>
                     <p className="img-description"><small>All application that used in this system</small></p>
 
-                    <h5>Resources</h5>
+                    <h5>{detail.resourcesTopic}</h5>
                     <p>- Website for request credential source code: <small><a href="https://github.com/phurinaix/blockchain-project" target="_blank">https://github.com/phurinaix/blockchain-project</a></small></p>
                     <p>- Website to verification credential source code: <small><a href="https://github.com/phurinaix/verification-website" target="_blank">https://github.com/phurinaix/verification-website</a></small></p>
                     <p>- Tool for issues blockchain credentials to blockchain: <small><a href="https://github.com/blockchain-certificates/cert-issuer" target="_blank">https://github.com/blockchain-certificates/cert-issuer</a></small></p>

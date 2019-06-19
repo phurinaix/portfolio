@@ -14,13 +14,13 @@ class About extends Component {
                 <h3>{locale.t('about.topic')}</h3>
                 <div className="typewriter">
                     <div className="typewriter-text">
-                        <p>Hello, my name is Phurinat Puekkham.</p>
+                        <p>{locale.t('about.name')}</p>
                     </div>
                 </div>
-                <p>I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.</p>
-                <p>I love being a web developer.</p>
+                <p>{locale.t('about.detail')}</p>
+                {/* <p>I love being a web developer.</p> */}
                 <br/>
-                <Button href = {Pdf} target = "_blank">See Resume</Button>
+                <Button href = {Pdf} target = "_blank">{locale.t('about.resume')}</Button>
             </div>
         );
     }
