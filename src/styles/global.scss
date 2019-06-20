@@ -606,6 +606,15 @@ a {
     .project-body {
         padding: 0 !important;
     }
+    .home-section h2 {
+        @include home-text(2.8em);
+    }
+    .home-section h4 {
+        @include home-text(1.5em);
+    }
+    .toggle-btn h6 {
+        letter-spacing: 0;
+    }
     .software-project-card, .blockchain-project-card {
         width: 95%;
         margin: 0 auto;
@@ -633,13 +642,14 @@ a {
         padding: 0;
     }
     .project-topic-content h5, .project-detail h5{
-        font-size: 0.8em;
+        font-size: 0.9em;
+        letter-spacing: 0;
     }
     .project-topic-content h6 {
         font-size: 0.7em;
     }
     .project-topic-content p {
-        font-size: 0.6em;
+        font-size: 0.7em;
         letter-spacing: 0;
     }
     .project-detail ul li {
@@ -652,5 +662,12 @@ a {
     .skills-section img {
         width: 30px;
         margin-top: 10px;
+    }
+    .contact-section form h3, .contact-section form p{
+        letter-spacing: 0;
+    }
+    .contact-section form input, .contact-section form textarea {
+        letter-spacing: 0;
+        font-size: 0.9em;
     }
 }
