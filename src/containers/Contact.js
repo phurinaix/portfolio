@@ -83,6 +83,7 @@ class Contact extends Component {
                     toast.success("Your e-mail has been successfully sent. Thank You!", {
                         position: toast.POSITION.BOTTOM_RIGHT
                     });
+                    this._reCaptchaRef.reset();
                     this.setState({
                         name: '',
                         email: '',

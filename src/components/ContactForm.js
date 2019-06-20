@@ -26,7 +26,9 @@ const ContactForm = (props) => {
                 onChange={props.recaptchatChange}
                 // asyncScriptOnLoad={props.asyncScriptOnLoad}
             />
+            <br/>
             {props.fetching && <Spinner animation="border" />}
+            <br/>
             <Button type="submit" disabled={props.fetching}>
                 {fSubmit}
             </Button>
