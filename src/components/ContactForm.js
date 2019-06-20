@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Form, Button, Spinner } from 'react-bootstrap';
 // import ReCAPTCHA from "react-google-recaptcha";
 import Reaptcha from 'reaptcha';
@@ -67,7 +67,8 @@ class ContactForm extends Component {
                         name: '',
                         email: '',
                         subject: '',
-                        message: ''
+                        message: '',
+                        recaptcha: ''
                     });
                 } else if (status === "empty_error") {
                     toast.error("Form can not be empty", {
@@ -105,6 +106,7 @@ class ContactForm extends Component {
             <Form className="col-md-10 col-lg-9 m-auto" onSubmit={this.onSubmitHandler}>
                 <h3>{topic}</h3>
                 <p>{description}</p>
+                <br/>
                 <Form.Group controlId="formBasicName">
                     <Form.Control type="text" placeholder={fName} name="name" value={this.state.name} onChange={this.onChangeHandler} required/>
                 </Form.Group>
@@ -128,9 +130,8 @@ class ContactForm extends Component {
                     onVerify={this.recaptchaChangeHandler}
                 />
                 <br/>
-                {this.state.fetching && <Spinner animation="border" />}
+                {this.state.fetching && <Fragment><Spinner animation="border" /><br/></Fragment>}
                 <br/>
-                {/* <button onClick={() => this.captchaRef.reset()}>Reset</button> */}
                 <Button type="submit" disabled={this.state.fetching}>
                     {fSubmit}
                 </Button>
