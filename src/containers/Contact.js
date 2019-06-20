@@ -19,6 +19,8 @@ class Contact extends Component {
         email: '',
         subject: '',
         message: '',
+        recaptcha: '',
+        expired: false,
         fetching: false,
         socials: [
             { 
@@ -35,15 +37,29 @@ class Contact extends Component {
             }
         ]
     }
-    notify = () => toast.success("Your e-mail has been successfully sent. Thank You!", {
-        position: toast.POSITION.BOTTOM_RIGHT
-    });
+    _reCaptchaRef = React.createRef();
     onChangeHandler = (e) => {
         this.setState({[e.target.name]: e.target.value});
+    }
+    recaptchaChangeHandler = (value) => {
+        console.log("Captcha value:", value);
+        this.setState({ recaptcha: value });
+        // if value is null recaptcha expired
+        if (value === null) 
+        this.setState({
+            expired: "true" 
+        });
     }
     onSubmitHandler = (e) => {
         e.preventDefault();
         this.setState({ fetching: true });
+        if (!this.state.recaptcha) {
+            this.setState({ fetching: false });
+            toast.error("Please verify reCAPTCHA", {
+                position: toast.POSITION.BOTTOM_RIGHT
+            });
+            return false;
+        }
         const data = {
             name: this.state.name,
             email: this.state.email,
@@ -74,11 +90,11 @@ class Contact extends Component {
                         message: ''
                     });
                 } else if (status === "empty_error") {
-                    toast.error("Form can't be empty", {
+                    toast.error("Form can not be empty", {
                         position: toast.POSITION.BOTTOM_RIGHT
                     });
                 } else if (status === "email_error") {
-                    toast.error("Email is invalid", {
+                    toast.error("Please enter a valid email address", {
                         position: toast.POSITION.BOTTOM_RIGHT
                     });
                 } else if (status === "spam") {
@@ -117,6 +133,8 @@ class Contact extends Component {
                             email={this.state.email}
                             subject={this.state.subject}
                             message={this.state.message}
+                            ref={this._reCaptchaRef}
+                            recaptchatChange={this.recaptchaChangeHandler}
                             fetching={this.state.fetching}
                             fName={locale.t('contact.form.name')}
                             fEmail={locale.t('contact.form.email')}

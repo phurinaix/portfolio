@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Spinner } from 'react-bootstrap';
 import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = (props) => {
@@ -21,9 +21,12 @@ const ContactForm = (props) => {
                 <Form.Control as="textarea" rows="6" placeholder={fMessage} name="message" value={props.message} onChange={props.change} required/>
             </Form.Group>
             <ReCAPTCHA
+                ref={props._reCaptchaRef}
                 sitekey="6LeS0qkUAAAAAIHVnVo2kX4OVgJudz24g8HyqhAV"
-                // onChange={onChange}
+                onChange={props.recaptchatChange}
+                // asyncScriptOnLoad={props.asyncScriptOnLoad}
             />
+            {props.fetching && <Spinner animation="border" />}
             <Button type="submit" disabled={props.fetching}>
                 {fSubmit}
             </Button>
