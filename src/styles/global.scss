@@ -120,6 +120,7 @@ a {
 /* Home page */
 .home-section {
     margin-top: 200px;
+    margin-bottom: 200px;
 }
 .home-section h2 {
     @include home-text(5em);
@@ -149,7 +150,7 @@ a {
     margin-top: 50px;
 }
 .skills-section {
-    @include section(10px, 20px, $grey-color);
+    @include section(10px, 30px, $grey-color);
     padding: 20px 10px;
 }
 .skills-section h3 {
@@ -308,7 +309,7 @@ a {
 /* --------------------End Project-------------------------*/
 
 .about-section {
-    @include section(80px, 20px, $grey-color);
+    @include section(80px, 30px, $grey-color);
     width: 100%;
 }
 .about-section h3 {
@@ -330,7 +331,7 @@ a {
     color: $black-color !important;
 }
 .contact-section {
-    @include section(10px, 50px, $grey-color);
+    @include section(10px, 30px, $grey-color);
     padding: 50px 10px;
 }
 .contact-section form h3 {

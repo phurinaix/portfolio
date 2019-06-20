@@ -10,6 +10,7 @@
     position: relative;
     z-index: 100;
     margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
     background-color: $background;
     animation: scaleIn ease 0.3s;
 }
