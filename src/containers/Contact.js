@@ -51,7 +51,7 @@ class Contact extends Component {
             message: this.state.message
         };
         console.log(JSON.stringify(data));
-        fetch('http://localhost:3001/email', {
+        fetch('https://portfolio-bd5c4.firebaseapp.com/email', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
