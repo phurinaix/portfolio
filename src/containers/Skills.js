@@ -24,8 +24,8 @@ class Skills extends Component {
             {name: 'REACT', number: 70, logo: Reactjs},
             {name: 'NODE.JS', number: 70, logo: Nodejs},
             {name: 'PHP', number: 60, logo: Php},
-            {name: 'PYTHON', number: 50, logo: Python},
-            {name: 'Docker', number: 50, logo: Docker},
+            {name: 'PYTHON', number: 40, logo: Python},
+            {name: 'Docker', number: 40, logo: Docker},
             {name: 'Git', number: 60, logo: Git},
             {name: 'Photoshop', number: 50, logo: Photoshop}
         ]
