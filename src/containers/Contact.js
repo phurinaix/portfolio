@@ -8,20 +8,13 @@ import GithubCode from '../assets/img/qrcode/github.png';
 // import FacebookLogo from '../../assets/img/icon/facebook.svg';
 import LinkedinLogo from '../assets/img/icon/linkedin.svg';
 import GithubLogo from '../assets/img/icon/github.svg';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const locale = require('react-redux-i18n').I18n;
 
 class Contact extends Component {
     state = {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-        recaptcha: '',
-        expired: false,
-        fetching: false,
         socials: [
             { 
                 name: 'Github',
@@ -37,89 +30,7 @@ class Contact extends Component {
             }
         ]
     }
-    _reCaptchaRef = React.createRef();
-    onChangeHandler = (e) => {
-        this.setState({[e.target.name]: e.target.value});
-    }
-    recaptchaChangeHandler = (value) => {
-        console.log("Captcha value:", value);
-        this.setState({ recaptcha: value });
-        // if value is null recaptcha expired
-        if (value === null) 
-        this.setState({
-            expired: "true" 
-        });
-    }
-    onSubmitHandler = (e) => {
-        e.preventDefault();
-        this.setState({ fetching: true });
-        if (!this.state.recaptcha) {
-            this.setState({ fetching: false });
-            toast.error("Please verify reCAPTCHA", {
-                position: toast.POSITION.BOTTOM_RIGHT
-            });
-            return false;
-        }
-        const data = {
-            name: this.state.name,
-            email: this.state.email,
-            subject: this.state.subject,
-            message: this.state.message
-        };
-        console.log(JSON.stringify(data));
-        fetch('https://phurinat-portfolio-server.herokuapp.com/email', {
-                method: 'POST',
-                headers: {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(res => res.json())
-            .then(result => {
-                console.log(result);
-                var status = result.status;
-                this.setState({ fetching: false });
-                if (status === "success") {
-                    toast.success("Your e-mail has been successfully sent. Thank You!", {
-                        position: toast.POSITION.BOTTOM_RIGHT
-                    });
-                    this._reCaptchaRef.reset();
-                    this.setState({
-                        name: '',
-                        email: '',
-                        subject: '',
-                        message: ''
-                    });
-                } else if (status === "empty_error") {
-                    toast.error("Form can not be empty", {
-                        position: toast.POSITION.BOTTOM_RIGHT
-                    });
-                } else if (status === "email_error") {
-                    toast.error("Please enter a valid email address", {
-                        position: toast.POSITION.BOTTOM_RIGHT
-                    });
-                } else if (status === "spam") {
-                    toast.error("Too many request created from this IP, please try again after 24 hours", {
-                        position: toast.POSITION.BOTTOM_RIGHT
-                    });
-                    this.setState({
-                        name: '',
-                        email: '',
-                        subject: '',
-                        message: ''
-                    });
-                } else if (status === "error") {
-                    toast.error("Error", {
-                        position: toast.POSITION.BOTTOM_RIGHT
-                    });
-                }
-            })
-            .catch(e => {
-                toast.error("Error", {
-                    position: toast.POSITION.BOTTOM_RIGHT
-                });
-            });
-    }
+
     render() {
         return (
             <div className="contact-section text-center">
@@ -128,15 +39,6 @@ class Contact extends Component {
                         <ContactForm
                             topic={locale.t('contact.topic')}
                             description={locale.t('contact.description')}
-                            change={this.onChangeHandler}
-                            submit={this.onSubmitHandler}
-                            name={this.state.name}
-                            email={this.state.email}
-                            subject={this.state.subject}
-                            message={this.state.message}
-                            ref={this._reCaptchaRef}
-                            recaptchatChange={this.recaptchaChangeHandler}
-                            fetching={this.state.fetching}
                             fName={locale.t('contact.form.name')}
                             fEmail={locale.t('contact.form.email')}
                             fSubject={locale.t('contact.form.subject')}
