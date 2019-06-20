@@ -81,6 +81,16 @@ class Contact extends Component {
                     toast.error("Email is invalid", {
                         position: toast.POSITION.BOTTOM_RIGHT
                     });
+                } else if (status === "spam") {
+                    toast.error("Too many request created from this IP, please try again after 24 hours", {
+                        position: toast.POSITION.BOTTOM_RIGHT
+                    });
+                    this.setState({
+                        name: '',
+                        email: '',
+                        subject: '',
+                        message: ''
+                    });
                 } else if (status === "error") {
                     toast.error("Error", {
                         position: toast.POSITION.BOTTOM_RIGHT
