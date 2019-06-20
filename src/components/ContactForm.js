@@ -22,10 +22,11 @@ class ContactForm extends Component {
         console.log("Captcha value:", value);
         this.setState({ recaptcha: value });
         // if value is null recaptcha expired
-        if (value === null) 
-        this.setState({
-            expired: "true" 
-        });
+        if (value === null) {
+            this.setState({
+                expired: "true" 
+            });
+        }
     }
     onSubmitHandler = (e) => {
         e.preventDefault();
@@ -60,7 +61,8 @@ class ContactForm extends Component {
                     toast.success("Your e-mail has been successfully sent. Thank You!", {
                         position: toast.POSITION.BOTTOM_RIGHT
                     });
-                    this._reCaptchaRef.reset();
+                    // this._reCaptchaRef.reset();
+                    this.captchaRef.reset();
                     this.setState({
                         name: '',
                         email: '',
@@ -100,7 +102,7 @@ class ContactForm extends Component {
     render() {
         const { topic, description, fName, fEmail, fSubject, fMessage, fSubmit } = this.props;
         return (
-            <Form className="col-md-10 col-lg-9 m-auto" onSubmit={this.state.onSubmitHandler}>
+            <Form className="col-md-10 col-lg-9 m-auto" onSubmit={this.onSubmitHandler}>
                 <h3>{topic}</h3>
                 <p>{description}</p>
                 <Form.Group controlId="formBasicName">
@@ -128,7 +130,7 @@ class ContactForm extends Component {
                 <br/>
                 {this.state.fetching && <Spinner animation="border" />}
                 <br/>
-                <button onClick={() => this.captchaRef.reset()}>Reset</button>
+                {/* <button onClick={() => this.captchaRef.reset()}>Reset</button> */}
                 <Button type="submit" disabled={this.state.fetching}>
                     {fSubmit}
                 </Button>
