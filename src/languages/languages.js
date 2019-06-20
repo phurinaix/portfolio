@@ -47,7 +47,7 @@ const languages = {
                     {
                         id: "1",
                         topic: "Portfolio",
-                        technologies: ["React.js", "Redux", "Javascript ES6", "Sass"],
+                        technologies: ["React.js", "Redux", "Javascript ES6", "Sass", "Node.js", "Heroku"],
                         link: "phurinaix.github.io",
                         github: "github.com/phurinaix/profile",
                         description: "เว็บไซต์พอร์ตโฟลิโอ",
@@ -234,7 +234,7 @@ const languages = {
                     {
                         id: "1",
                         topic: "Portfolio",
-                        technologies: ["React.js", "Redux", "Javascript ES6", "Sass"],
+                        technologies: ["React.js", "Redux", "Javascript ES6", "Sass", "Node.js", "Heroku"],
                         link: "phurinaix.github.io",
                         github: "github.com/phurinaix/profile",
                         description: "Portfolio website",

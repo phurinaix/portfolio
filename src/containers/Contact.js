@@ -51,7 +51,7 @@ class Contact extends Component {
             message: this.state.message
         };
         console.log(JSON.stringify(data));
-        fetch('https://portfolio-bd5c4.firebaseapp.com/email', {
+        fetch('https://phurinat-portfolio-server.herokuapp.com/email', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
