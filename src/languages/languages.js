@@ -15,8 +15,10 @@ const languages = {
         about: {
             topic: "เกี่ยวกับผม",
             name: 'สวัสดีผมชื่อ ภูริณัฐ เผือกขำ',
-            detail: `ผมกำลังศึกษาอยู่ชั้นปีที่ 4 คณะวิศวกรรมศาสตร์ สาชาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยธรรมศาสตร์
-                    ผมชอบศึกษาและเรียนรู้สิ่งใหม่ๆ โดยเฉพาะทางด้าน Web Developer`,
+            detail: `ผมกำลังศึกษาอยู่ชั้นปีที่ 4 คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยธรรมศาสตร์
+                    ผมชอบศึกษาและเรียนรู้การเขียนโปรแกรมคอมพิวเตอร์ เนื่องจากช่วยฝึกตรรกะและการคิด โดยด้านที่ผมสนใจเป็นพิเศษคือ 
+                    Web Development งานอดิเรกจึงเป็นการเขียนโปรแกรมคอมพิวเตอร์ ส่วนงานอดิเรกอื่นๆนั้นก็มี เล่นหมากรุกสากล 
+                    อ่านหนังสือ เล่นเกมส์ เป็นต้น ส่วนรายละเอียดข้อมูลเพิ่มเติมสามารถดูได้จาก Resume ด้านล่างนี้ครับ`,
             resume: 'ดู Resume'
         },
         skills: {
@@ -60,7 +62,8 @@ const languages = {
                         link: "room-secret-chat.herokuapp.com",
                         github: "github.com/phurinaix/Room-Secret-Chat",
                         description: "เว็บไซต์สำหรับแชท",
-                        detail: "เว็บไซต์นี้สร้างขึ้นมาเพื่อการสื่อสารภายกับคนอื่นหลายๆคน และมีความปลอดภัยสูง เนื่องจากข้อความมีการเข้ารหัสทุกครั้ง"
+                        detail: `เว็บไซต์นี้สร้างขึ้นมาเพื่อติดต่อสื่อสาร มีฟังก์ชั่นหลักๆคือ สามารถสร้างห้องสนทนาได้ ซึ่งทุกครั้ง
+                                ที่สร้างห้องก็จะต้องใส่รหัสผ่านกับชื่อห้องด้วย และสามารถเชิญชวนบุคคลอื่นเข้ามาในห้องสนทนาได้ด้วย`
                     },
                     {
                         id: "3",
@@ -69,7 +72,9 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/university-website",
                         description: "เว็บไซต์คณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์",
-                        detail: ""
+                        detail: `เว็บไซต์คณะวิศวกรรมศาสตร์ ที่แสดงข้อมูลเกี่ยวกับมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา โดยประกอบด้วยส่วนของหน้า
+                                แอดมินและส่วนหน้าสำหรับผู้ใช้งานทั่วไป โดยส่วนหน้าแอดมินนั้น สามารถเพิ่มข้อมูลข่าวสาร กิจกรรม บุคลกร หลักสูตร ความเป็นอยู่
+                                ภายในมหาวิทยาลัยได้`
                     },
                     {
                         id: "4",
@@ -78,7 +83,8 @@ const languages = {
                         link: "",
                         github: "github.com/peterparkers/transportation-and-parking",
                         description: "เว็บไซต์แนะนำสถานที่ท่องเที่ยวอุทยานหินล้านปี",
-                        detail: ""
+                        detail: `เว็บไซต์ที่แนะนำการเดินทางไปยังอุทยานหินล้านปี ทั้งทางรถตู้ รถไฟ และรถบัส และมีฟังก์ชั่นสำหรับจองสถานที่จอดรถภายใน
+                                อุทยานด้วย ซึ่งเมื่อทำการจองเสร็จเรียบร้อยแล้วจะได้ QR Code เพื่อนำไปยืนยันเมื่อถึงสถานที่แล้ว`
                     },
                     {
                         id: "5",
@@ -87,7 +93,7 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/devMePlease-java",
                         description: "โปรแกรมจัดการไฟล์",
-                        detail: ""
+                        detail: `เป็นโปรแกรมแก้ไขไฟล์จากเครื่อง Client สามารถแก้ไข ลบ ดาวน์โหลด และส่งไปยังเครื่อง server ได้`
                     },
                     {
                         id: "6",
@@ -96,7 +102,7 @@ const languages = {
                         link: "",
                         github: "github.com/phpinproject/piyaproject",
                         description: "เว็บไซต์บริการเก็บไฟล์",
-                        detail: ""
+                        detail: "เป็นเว็บไซต์สำหรับเก็บไฟล์รูปภาพ สามารถแชร์รูปภาพได้"
                     },
                     {
                         id: "7",
@@ -105,7 +111,8 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/pattaya-food",
                         description: "เว็บไซต์แนะนำร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา",
-                        detail: "This one is the first project that I was created (11 October 2016)."
+                        detail: `เป็นโปรเจคแรกที่ผมได้ทำเมื่อตอนปี 2016่ โดยเป็นเว็บไซต์แนะนำเมนูและร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์
+                                ศูนย์พัทยา`
                     },
                     {
                         id: "8",
@@ -114,7 +121,8 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/Cubetrainer",
                         description: "แอพพลิเคชั่นสอนเล่นรูบิค",
-                        detail: ""
+                        detail: `เป็นแอพพลิเคชั่นสำหรับระบบปฏิบัติการ iOS โดยมีฟังก์ชั่นหลักๆคือ อธิบายวิธีการเล่นรูบิค จับเวลาการเล่นรูบิค เก็บสถิติเวลาการเล่น 
+                                และอธิบายสัญลักษณ์ต่างๆของรูบิค`
                     }
                 ],
                 design: [
@@ -203,7 +211,9 @@ const languages = {
             topic: "ABOUT ME",
             name: 'Hello, my name is Phurinat Puekkham.',
             detail: `I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.
-                I love being a web developer.`,
+                I like learning programming because it helps to practice logic and thinking. The special aspect that 
+                I'm interested in is Web development. My hobby is coding, play chess, play computer games and read a books.
+                For more information, please see in the resume in the button below.`,
             resume: 'See Resume'
         },
         skills: {
@@ -238,7 +248,7 @@ const languages = {
                         link: "phurinaix.github.io",
                         github: "github.com/phurinaix/profile",
                         description: "Portfolio website",
-                        detail: "The idea behind this project was to create a showcase of everything I've worked on and display the information about me"
+                        detail: "The idea behind this project was to create a showcase of everything I've worked on and display the information about me."
                     },
                     {
                         id: "2",
@@ -247,7 +257,7 @@ const languages = {
                         link: "room-secret-chat.herokuapp.com",
                         github: "github.com/phurinaix/Room-Secret-Chat",
                         description: "Web chat application",
-                        detail: "Web appliation for communicate with each other"
+                        detail: "Web appliation for communicate with each other. You can create chat room and invite friend to the room."
                     },
                     {
                         id: "3",
@@ -255,8 +265,9 @@ const languages = {
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
                         github: "github.com/phurinaix/university-website",
-                        description: "Thammasat University website",
-                        detail: ""
+                        description: `Thammasat University website`,
+                        detail: `Thammasat University website includes admin page and user page. For admin page the main function is 
+                                add, edit, delete news, activities, staff and other content.`
                     },
                     {
                         id: "4",
@@ -265,7 +276,7 @@ const languages = {
                         link: "",
                         github: "github.com/peterparkers/transportation-and-parking",
                         description: "The Million Years Stone Park",
-                        detail: ""
+                        detail: `This website introduce the million years stone park in Pattaya. The user can also book parking.`
                     },
                     {
                         id: "5",
@@ -274,7 +285,7 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/devMePlease-java",
                         description: "Java desktop application",
-                        detail: ""
+                        detail: `The client can upload the file, edit it and send the file to the server.`
                     },
                     {
                         id: "6",
@@ -283,7 +294,7 @@ const languages = {
                         link: "",
                         github: "github.com/phpinproject/piyaproject",
                         description: "Website for keep files",
-                        detail: ""
+                        detail: `Website for keep the images from user. The Users can share the images to the other.`
                     },
                     {
                         id: "7",
@@ -292,7 +303,8 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/pattaya-food",
                         description: "Pattaya Food Restaurant & Bar",
-                        detail: "This one is the first project that I was created (11 October 2016)."
+                        detail: `This one is the first project that I was created (11 October 2016). It contain 
+                                the information of store near the Thammasat university Pattaya campus.`
                     },
                     {
                         id: "8",
@@ -300,8 +312,9 @@ const languages = {
                         technologies: ["Swift"],
                         link: "",
                         github: "github.com/phurinaix/Cubetrainer",
-                        description: "Mobile application for IOS",
-                        detail: ""
+                        description: "Mobile application for iOS",
+                        detail: `The user can train to play rubik's cube with timer and user can also read the rubik's cube 
+                                information in this application.`
                     }
                 ],
                 design: [

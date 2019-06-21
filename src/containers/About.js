@@ -10,7 +10,7 @@ const locale = require('react-redux-i18n').I18n;
 class About extends Component {
     render() {
         return (
-            <div className="about-section text-center py-5 px-2">
+            <div className="about-section text-center py-5 px-4">
                 {/* <img src={StudentImage} alt=""/><br/><br/><br/> */}
                 <h3>{locale.t('about.topic')}</h3>
                 <div className="typewriter">

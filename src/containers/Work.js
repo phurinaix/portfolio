@@ -25,7 +25,7 @@ import softwareImage16 from '../assets/img/software/16.jpg';
 import softwareImage17 from '../assets/img/software/17.jpg';
 import softwareImage18 from '../assets/img/software/18.jpg';
 import softwareImage19 from '../assets/img/software/19.jpg';
-import softwareImage20 from '../assets/img/software/20.png';
+import softwareImage20 from '../assets/img/software/20.jpg';
 import softwareImage21 from '../assets/img/software/21.jpg';
 import softwareImage22 from '../assets/img/software/22.jpg';
 import softwareImage23 from '../assets/img/software/23.jpg';
@@ -42,6 +42,11 @@ import softwareImage33 from '../assets/img/software/33.jpg';
 import softwareImage34 from '../assets/img/software/34.jpg';
 import softwareImage35 from '../assets/img/software/35.jpg';
 import softwareImage36 from '../assets/img/software/36.jpg';
+import softwareImage37 from '../assets/img/software/37.jpg';
+import softwareImage38 from '../assets/img/software/38.jpg';
+import softwareImage39 from '../assets/img/software/39.jpg';
+import softwareImage40 from '../assets/img/software/40.jpg';
+import softwareImage41 from '../assets/img/software/41.jpg';
 import designImage1 from '../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../assets/img/design/geniusPen.jpg';
@@ -107,7 +112,7 @@ class Work extends Component {
             },
             {
                 id: "8",
-                images: [softwareImage20]
+                images: [softwareImage20, softwareImage37, softwareImage38, softwareImage39, softwareImage40, softwareImage41]
             }
         ],
         designImages: [

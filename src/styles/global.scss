@@ -310,7 +310,8 @@ a {
 
 .about-section {
     @include section(80px, 30px, $grey-color);
-    width: 100%;
+    // width: 100%;
+    padding: 20px;
 }
 .about-section h3 {
     @include far-text($black-color, $font-primary, bolder);
@@ -318,6 +319,9 @@ a {
 }
 .about-section p {
     @include far-text($black-color, $font-primary, normal);
+    text-align: left;
+    line-height: 2em;
+    letter-spacing: 0;
 }
 .about-section a {
     @include far-text($yellow-color, $font-primary, normal);
