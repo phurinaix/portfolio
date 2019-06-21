@@ -107,11 +107,11 @@ const languages = {
                     {
                         id: "7",
                         topic: "Pattaya Food",
-                        technologies: ["HTML5", "CSS3", "Javascript"],
+                        technologies: ["HTML5", "CSS3"],
                         link: "",
                         github: "github.com/phurinaix/pattaya-food",
                         description: "เว็บไซต์แนะนำร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา",
-                        detail: `เป็นโปรเจคแรกที่ผมได้ทำเมื่อตอนปี 2016่ โดยเป็นเว็บไซต์แนะนำเมนูและร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์
+                        detail: `เป็นโปรเจคแรกที่ผมได้ทำเมื่อตอนปี 2016 โดยเป็นเว็บไซต์แนะนำเมนูและร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์
                                 ศูนย์พัทยา`
                     },
                     {
@@ -184,7 +184,7 @@ const languages = {
         },
         contact: {
             topic: "ติดต่อ",
-            description: "ถ้าคุณมีข้อสงสัย สามารถติดต่อได้ที่อีเมลล์ phurinaix@gmail.com หรือสอบถามโดยใช้ฟอร์มด้านล่างนี้ ...",
+            description: "ถ้าคุณมีข้อสงสัย สามารถติดต่อได้ที่อีเมล phurinaix@gmail.com หรือสอบถามโดยใช้ฟอร์มด้านล่างนี้ ...",
             form: {
                 name: "ชื่อ",
                 email: "อีเมล",
@@ -299,7 +299,7 @@ const languages = {
                     {
                         id: "7",
                         topic: "Pattaya Food",
-                        technologies: ["HTML5", "CSS3", "Javascript"],
+                        technologies: ["HTML5", "CSS3"],
                         link: "",
                         github: "github.com/phurinaix/pattaya-food",
                         description: "Pattaya Food Restaurant & Bar",

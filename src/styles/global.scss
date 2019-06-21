@@ -598,6 +598,9 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .navbar-link a {
+        letter-spacing: 0;
+    }
     .about-section p {
         font-size: 0.9em;
         letter-spacing: 1px;        
@@ -639,6 +642,7 @@ a {
     }
     .project-board h3, .about-section h3, .contact-section form h3, .skills-section h3 {
         font-size: 1em;
+        letter-spacing: 0;
     }
     .project-card {
         padding: 0 !important;
