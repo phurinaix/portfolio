@@ -67,6 +67,15 @@ const languages = {
                     },
                     {
                         id: "3",
+                        topic: "Typing Game",
+                        technologies: ["Node.js", "Express", "Handlebar.js", "CSS3", "NES.css", "MySQL", "Javascript"],
+                        link: "typing-games.herokuapp.com",
+                        github: "github.com/phurinaix/typing-game",
+                        description: "เว็บไซต์เกมส์ฝึกพิมพ์",
+                        detail: `เป็นเว็บไซต์สำหรับผู้ใช้ที่ต้องการวัดระดับความเร็วในการพิมพ์ ผู้ใช้สามารถฝึกพิมพ์ได้ และยังสามารถสร้างบทความได้ด้วย`
+                    },
+                    {
+                        id: "4",
                         topic: "Thammasat University Website",
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
@@ -77,7 +86,7 @@ const languages = {
                                 ภายในมหาวิทยาลัยได้`
                     },
                     {
-                        id: "4",
+                        id: "5",
                         topic: "The Million Years Stone Park",
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
@@ -87,7 +96,7 @@ const languages = {
                                 อุทยานด้วย ซึ่งเมื่อทำการจองเสร็จเรียบร้อยแล้วจะได้ QR Code เพื่อนำไปยืนยันเมื่อถึงสถานที่แล้ว`
                     },
                     {
-                        id: "5",
+                        id: "6",
                         topic: "Dev Me Please",
                         technologies: ["Java", "Socket", "MySQL"],
                         link: "",
@@ -96,7 +105,7 @@ const languages = {
                         detail: `เป็นโปรแกรมแก้ไขไฟล์จากเครื่อง Client สามารถแก้ไข ลบ ดาวน์โหลด และส่งไปยังเครื่อง server ได้`
                     },
                     {
-                        id: "6",
+                        id: "7",
                         topic: "Folder Locked",
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
@@ -105,7 +114,7 @@ const languages = {
                         detail: "เป็นเว็บไซต์สำหรับเก็บไฟล์รูปภาพ สามารถแชร์รูปภาพได้"
                     },
                     {
-                        id: "7",
+                        id: "8",
                         topic: "Pattaya Food",
                         technologies: ["HTML5", "CSS3"],
                         link: "",
@@ -115,7 +124,7 @@ const languages = {
                                 ศูนย์พัทยา`
                     },
                     {
-                        id: "8",
+                        id: "9",
                         topic: "Cube trainer",
                         technologies: ["Swift"],
                         link: "",
@@ -261,6 +270,15 @@ const languages = {
                     },
                     {
                         id: "3",
+                        topic: "Typing Game",
+                        technologies: ["Node.js", "Express", "Handlebar.js", "CSS3", "NES.css", "MySQL", "Javascript"],
+                        link: "typing-games.herokuapp.com",
+                        github: "github.com/phurinaix/typing-game",
+                        description: "Website for practice typing",
+                        detail: `Website for practice your typing skill. The user can also create articles.`
+                    },
+                    {
+                        id: "4",
                         topic: "Thammasat University Website",
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
@@ -270,7 +288,7 @@ const languages = {
                                 add, edit, delete news, activities, staff and other content.`
                     },
                     {
-                        id: "4",
+                        id: "5",
                         topic: "The Million Years Stone Park",
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
@@ -279,7 +297,7 @@ const languages = {
                         detail: `This website introduce the million years stone park in Pattaya. The user can also book parking.`
                     },
                     {
-                        id: "5",
+                        id: "6",
                         topic: "Dev Me Please",
                         technologies: ["Java", "Socket", "MySQL"],
                         link: "",
@@ -288,7 +306,7 @@ const languages = {
                         detail: `The client can upload the file, edit it and send the file to the server.`
                     },
                     {
-                        id: "6",
+                        id: "7",
                         topic: "Folder Locked",
                         technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
                         link: "",
@@ -297,7 +315,7 @@ const languages = {
                         detail: `Website for keep the images from user. The Users can share the images to the other.`
                     },
                     {
-                        id: "7",
+                        id: "8",
                         topic: "Pattaya Food",
                         technologies: ["HTML5", "CSS3"],
                         link: "",
@@ -307,7 +325,7 @@ const languages = {
                                 the information of store near the Thammasat university Pattaya campus.`
                     },
                     {
-                        id: "8",
+                        id: "9",
                         topic: "Cube trainer",
                         technologies: ["Swift"],
                         link: "",

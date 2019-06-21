@@ -47,6 +47,10 @@ import softwareImage38 from '../assets/img/software/38.jpg';
 import softwareImage39 from '../assets/img/software/39.jpg';
 import softwareImage40 from '../assets/img/software/40.jpg';
 import softwareImage41 from '../assets/img/software/41.jpg';
+import softwareImage42 from '../assets/img/software/42.jpg';
+import softwareImage43 from '../assets/img/software/43.jpg';
+import softwareImage44 from '../assets/img/software/44.jpg';
+import softwareImage45 from '../assets/img/software/45.jpg';
 import designImage1 from '../assets/img/design/tuPoster1.jpg';
 import designImage2 from '../assets/img/design/tuPoster2.jpg';
 import designImage3 from '../assets/img/design/geniusPen.jpg';
@@ -65,6 +69,7 @@ class Work extends Component {
         softwarePreviewImage: [
             softwareImage22,
             softwareImage11,
+            softwareImage42,
             softwareImage1,
             softwareImage24,
             softwareImage21,
@@ -92,26 +97,30 @@ class Work extends Component {
             },
             {
                 id: "3",
-                images: [softwareImage1, softwareImage2, softwareImage3, softwareImage4]
+                images: [softwareImage42, softwareImage43, softwareImage44, softwareImage45]
             },
             {
                 id: "4",
-                images: [softwareImage24, softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10]
+                images: [softwareImage1, softwareImage2, softwareImage3, softwareImage4]
             },
             {
                 id: "5",
-                images: [softwareImage21, softwareImage30, softwareImage31, softwareImage32]
+                images: [softwareImage24, softwareImage6, softwareImage7, softwareImage8, softwareImage9, softwareImage10]
             },
             {
                 id: "6",
-                images: [softwareImage23, softwareImage33, softwareImage34, softwareImage35, softwareImage36]
+                images: [softwareImage21, softwareImage30, softwareImage31, softwareImage32]
             },
             {
                 id: "7",
-                images: [softwareImage15, softwareImage16, softwareImage17, softwareImage18, softwareImage19]
+                images: [softwareImage23, softwareImage33, softwareImage34, softwareImage35, softwareImage36]
             },
             {
                 id: "8",
+                images: [softwareImage15, softwareImage16, softwareImage17, softwareImage18, softwareImage19]
+            },
+            {
+                id: "9",
                 images: [softwareImage20, softwareImage37, softwareImage38, softwareImage39, softwareImage40, softwareImage41]
             }
         ],
