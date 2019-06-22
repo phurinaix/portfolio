@@ -266,7 +266,7 @@ const languages = {
                         link: "room-secret-chat.herokuapp.com",
                         github: "github.com/phurinaix/Room-Secret-Chat",
                         description: "Web chat application",
-                        detail: "Web appliation for communicate with each other. You can create chat room and invite friend to the room."
+                        detail: "Web application for communicate with each other. You can create chat room and invite friend to the room."
                     },
                     {
                         id: "3",
@@ -322,7 +322,7 @@ const languages = {
                         github: "github.com/phurinaix/pattaya-food",
                         description: "Pattaya Food Restaurant & Bar",
                         detail: `This one is the first project that I was created (11 October 2016). It contain 
-                                the information of store near the Thammasat university Pattaya campus.`
+                                the information of restaurant near the Thammasat university Pattaya campus.`
                     },
                     {
                         id: "9",
