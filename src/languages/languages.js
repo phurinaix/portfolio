@@ -222,7 +222,7 @@ const languages = {
             detail: `I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.
                 I like learning programming because it helps to practice logic and thinking. The special aspect that 
                 I'm interested in is Web development. My hobby is coding, play chess, play computer games and read a books.
-                For more information, please see in the resume in the button below.`,
+                For more information, please see in the resume by click at the button below.`,
             resume: 'See Resume'
         },
         skills: {
