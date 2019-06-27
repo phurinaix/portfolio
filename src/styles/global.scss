@@ -6,6 +6,11 @@ a {
     text-decoration: none !important;
 }
 
+@font-face {
+    font-family: 'HACKED';
+    src: url('../assets/fonts/HACKED.ttf');
+}
+
 /* Navigation */
 .navbar-link a{
     font-family: $font-primary;
@@ -123,10 +128,10 @@ a {
     margin-bottom: 200px;
 }
 .home-section h2 {
-    @include home-text(5em);
+    @include home-text(#f4f677, 7em);
 }
 .home-section h4 {
-    @include home-text(2em);
+    @include home-text(#ffffff, 3em);
 }
 
 @keyframes animate {
@@ -615,10 +620,10 @@ a {
         padding: 0 !important;
     }
     .home-section h2 {
-        @include home-text(2.8em);
+        @include home-text(#f4f677, 2.8em);
     }
     .home-section h4 {
-        @include home-text(1.5em);
+        @include home-text(#ffffff, 1.5em);
     }
     .toggle-btn h6 {
         letter-spacing: 0;

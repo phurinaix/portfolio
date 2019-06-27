@@ -15,11 +15,14 @@
     animation: scaleIn ease 0.3s;
 }
 
-@mixin home-text($size) {
-    color: #ede5aa;
-    font-family: $font-primary;
-    font-weight: bolder;
+@mixin home-text($color, $size) {
+    color: $color;
+    // color: #fff;
+    font-family: $font-cover;
+    font-weight: lighter;
+    letter-spacing: 2px;
     text-align: center;
     font-size: $size;
-    animation: animate 0.5s linear infinite;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    // animation: animate 0.5s linear infinite;
 }

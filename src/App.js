@@ -44,12 +44,12 @@ class App extends Component {
             <a href="https://github.com/phurinaix" className="github" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithub }/></a> 
             <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
           </div>
+          {/* <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
           <div className="cube"></div>
-          <div className="cube"></div>
-          <div className="cube"></div>
+          <div className="cube"></div> */}
       </React.Fragment>
     );
   }
