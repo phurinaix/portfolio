@@ -14,15 +14,13 @@ class Home extends Component {
             <div className="home-section">
                 <h4>{locale.t('home.name')}</h4>
                 <h2>{locale.t('home.portfolio')}</h2>
-                {/* <ButtonToolbar> */}
                 <div className="text-center">
                     <LinkContainer to="/contact">
                         {/* <Button variant="outline-warning" className="contact-button">{locale.t('home.contact')}</Button> */}
                         <AwesomeButton type="primary" ripple={true}>
-                            <strong>Contact</strong>
+                            <strong>{locale.t('home.contact')}</strong>
                         </AwesomeButton>
                     </LinkContainer>
-                {/* </ButtonToolbar> */}
                 </div>
             </div>
         );

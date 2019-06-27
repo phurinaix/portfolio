@@ -8,8 +8,8 @@ const languages = {
             contact: "ติดต่อ"
         },
         home: {
-            name: "ภูริณัฐ เผือกขำ",
-            portfolio: "พอร์ตโฟลิโอ",
+            name: "PHURINAT PUEKKHAM",
+            portfolio: "PORTFOLIO",
             contact: "ติดต่อ"
         },
         about: {
@@ -214,7 +214,7 @@ const languages = {
         home: {
             name: "PHURINAT PUEKKHAM",
             portfolio: "PORTFOLIO",
-            contact: "CONTACT ME"
+            contact: "Contact"
         },
         about: {
             topic: "ABOUT ME",
