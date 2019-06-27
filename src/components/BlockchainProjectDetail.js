@@ -50,9 +50,9 @@ const BlockchainProjectDetail = (props) => {
                     <p className="img-description"><small>All application that used in this system</small></p>
 
                     <h5>{detail.resourcesTopic}</h5>
-                    <p>- Website for request credential source code: <small><a href="https://github.com/phurinaix/blockchain-project" target="_blank" rel="noopener noreferrer">https://github.com/phurinaix/blockchain-project</a></small></p>
+                    <p>- Website to request credential source code: <small><a href="https://github.com/phurinaix/blockchain-project" target="_blank" rel="noopener noreferrer">https://github.com/phurinaix/blockchain-project</a></small></p>
                     <p>- Website to verification credential source code: <small><a href="https://github.com/phurinaix/verification-website" target="_blank" rel="noopener noreferrer">https://github.com/phurinaix/verification-website</a></small></p>
-                    <p>- Tool for issues blockchain credentials to blockchain: <small><a href="https://github.com/blockchain-certificates/cert-issuer" target="_blank" rel="noopener noreferrer">https://github.com/blockchain-certificates/cert-issuer</a></small></p>
+                    <p>- A tool for issues blockchain credentials to blockchain: <small><a href="https://github.com/blockchain-certificates/cert-issuer" target="_blank" rel="noopener noreferrer">https://github.com/blockchain-certificates/cert-issuer</a></small></p>
                     <p>- Blockcerts wallet application for Android: <small><a href="https://play.google.com/store/apps/details?id=com.learningmachine.android.app&hl=en" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=com.learningmachine.android.app</a></small></p>
                     <p>- Blockcerts wallet application for iOS: <small><a href="https://apps.apple.com/us/app/blockcerts-wallet/id1146921514" target="_blank" rel="noopener noreferrer">https://apps.apple.com/us/app/blockcerts-wallet/id1146921514</a></small></p>
                 </div>

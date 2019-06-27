@@ -21,7 +21,7 @@ class About extends Component {
                 <p>{locale.t('about.detail')}</p>
                 {/* <p>I love being a web developer.</p> */}
                 <br/>
-                <Button href={resumePDF} target = "_blank">{locale.t('about.resume')}</Button>
+                {/* <Button href={resumePDF} target = "_blank">{locale.t('about.resume')}</Button> */}
             </div>
         );
     }

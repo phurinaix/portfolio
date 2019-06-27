@@ -18,7 +18,7 @@ const languages = {
             detail: `ผมกำลังศึกษาอยู่ชั้นปีที่ 4 คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยธรรมศาสตร์
                     ผมชอบศึกษาและเรียนรู้การเขียนโปรแกรมคอมพิวเตอร์ เนื่องจากช่วยฝึกตรรกะและการคิด โดยด้านที่ผมสนใจเป็นพิเศษคือ 
                     Web Development งานอดิเรกจึงเป็นการเขียนโปรแกรมคอมพิวเตอร์ ส่วนงานอดิเรกอื่นๆนั้นก็มี เล่นหมากรุกสากล 
-                    อ่านหนังสือ เล่นเกมส์ เป็นต้น ส่วนรายละเอียดข้อมูลเพิ่มเติมสามารถดูได้จาก Resume ด้านล่างนี้ครับ`,
+                    อ่านหนังสือ เล่นเกมส์ เป็นต้น`,
             resume: 'ดู Resume'
         },
         skills: {
@@ -219,10 +219,9 @@ const languages = {
         about: {
             topic: "ABOUT ME",
             name: 'Hello, my name is Phurinat Puekkham.',
-            detail: `I am a fourth year student, Faculty of engineering, Software engineering, Thammasat University.
-                I like learning programming because it helps to practice logic and thinking. The special aspect that 
-                I'm interested in is Web development. My hobby is coding, play chess, play computer games and read a books.
-                For more information, please see in the resume by click at the button below.`,
+            detail: `I am a fourth-year student, Faculty of engineering, Software engineering, Thammasat University.
+                I like learning to program because it helps to practice logic and thinking. The special aspect that 
+                I'm interested in is Web development. My hobby is coding, play chess, play computer games and read a book.`,
             resume: 'See Resume'
         },
         skills: {
@@ -266,7 +265,7 @@ const languages = {
                         link: "room-secret-chat.herokuapp.com",
                         github: "github.com/phurinaix/Room-Secret-Chat",
                         description: "Web chat application",
-                        detail: "Web application for communicate with each other. You can create chat room and invite friend to the room."
+                        detail: "Web application to communicate with each other. You can create a chat room and invite friends to the room."
                     },
                     {
                         id: "3",
@@ -284,8 +283,8 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/university-website",
                         description: `Thammasat University website`,
-                        detail: `Thammasat University website includes admin page and user page. For admin page the main function is 
-                                add, edit, delete news, activities, staff and other content.`
+                        detail: `Thammasat University website includes the admin page and user page. For the admin page the main function is 
+                                added, edit, delete news, activities, staff and other content.`
                     },
                     {
                         id: "5",
@@ -294,7 +293,7 @@ const languages = {
                         link: "",
                         github: "github.com/peterparkers/transportation-and-parking",
                         description: "The Million Years Stone Park",
-                        detail: `This website introduce the million years stone park in Pattaya. The user can also book parking.`
+                        detail: `This website introduces the million years stone park in Pattaya. The user can also book parking.`
                     },
                     {
                         id: "6",
@@ -312,7 +311,7 @@ const languages = {
                         link: "",
                         github: "github.com/phpinproject/piyaproject",
                         description: "Website for keep files",
-                        detail: `Website for keep the images from user. The Users can share the images to the other.`
+                        detail: `Website to keep the images from the user. Users can share the images with the other.`
                     },
                     {
                         id: "8",
@@ -321,8 +320,8 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/pattaya-food",
                         description: "Pattaya Food Restaurant & Bar",
-                        detail: `This one is the first project that I was created (11 October 2016). It contain 
-                                the information of restaurant near the Thammasat university Pattaya campus.`
+                        detail: `This one is the first project that I was created (11 October 2016). It contains 
+                                the information of the restaurant near the Thammasat university Pattaya campus.`
                     },
                     {
                         id: "9",
@@ -331,7 +330,7 @@ const languages = {
                         link: "",
                         github: "github.com/phurinaix/Cubetrainer",
                         description: "Mobile application for iOS",
-                        detail: `The user can train to play rubik's cube with timer and user can also read the rubik's cube 
+                        detail: `The user can train to play Rubik's cube with timer and the user can also read the Rubik's cube 
                                 information in this application.`
                     }
                 ],
@@ -360,7 +359,7 @@ const languages = {
                 blockchain: [
                     {
                         id: "1",
-                        topic: "A secure and trusted publishing systems for university diplomas and transcripts",
+                        topic: "A secure and trusted publishing system for university diplomas and transcripts",
                         description: "Graduation project",
                         detail: {
                             aboutProjectTopic: "About this project",
@@ -371,31 +370,29 @@ const languages = {
                             systemWorkflowTopic: "System workflow",
                             applicationTopic: "Application",
                             resourcesTopic: "Resources",
-                            aboutProject: `Students who are going to graduate, apply for jobs in a large number of companies 
-                                        for jobs, All students must provide academic transcripts from the university they have 
-                                        studied for the job application.The company confirms that the student has actually graduated 
-                                        from the university. Confirming the authenticity of the documents diploma and transcripts 
-                                        is a manual and slow process. So the students have to wait the result of this slow process.
-                                        Moreover this process is also costly and inefficient.The proposed system can help students 
-                                        and employers a fast and secure way of exchanging academic credentials.It avoids forgery and 
-                                        brings trust to the process.`,
-                            objectives: `The objective of this study is to improve the service quality and security of the system i.e., 
-                                        the registrar’s office that handles the transcript and diploma in the Thammasat university. 
-                                        It will also avoid transcript and diploma fraud.Moreover, it delivers the student credentials 
-                                        to employers in a fast and efficient manner.`,
+                            aboutProject: `Students who are going to graduate, apply for jobs in a large number of companies. 
+                                        All students must provide academic transcripts from the university they have studied for the job application. 
+                                        The company confirms that the student has actually graduated from the university. 
+                                        Confirming the authenticity of the documents, diploma and transcripts is a manual and slow process. 
+                                        So the students have to wait for the result of this slow process. Moreover, 
+                                        this process is also costly and inefficient. The proposed system can help students and employers a fast and secure 
+                                        way of exchanging academic credentials. It avoids forgery and brings trust to the process.`,
+                            objectives: `The objective of this study is to improve the service quality and security of the registrar’s office that handles 
+                                        the transcript and diploma at Thammasat University. It will also avoid transcript and diploma fraud. Moreover, 
+                                        it delivers student credentials to employers in a fast and efficient manner.`,
                             significance: `For any university providing copies of diplomas and transcripts is a major service. 
                                         Providing these document in a fast manner and securely are a vital requirement for any school. 
                                         Moreover, preventing transcript fraud and diploma fraud are also an important requirement. 
                                         Transcript fraud is the alteration of a transcript issued by a legitimate school or university or the 
-                                        forgery of completely fake transcripts. Transcript fraud is a growing problem for both educational 
-                                        institutions and employers. Providing a secure solution is a worthy objective for the universities.`,
-                            currentSystem: `The current system is slow, inefficient and based on manual control of various steps.`,
-                            proposedSystem: `This System is a program that helps to certify student transcripts that are efficient, fast 
-                                        and more secure. It reduce the time and procedure of checking the academic transcript of the 
-                                        university by an employer or a third party.`,
+                                        forgery of completely fake transcripts. Transcript fraud is a growing problem for both educational institutions 
+                                        and employers. Providing a secure solution is a worthy objective for universities.`,
+                            currentSystem: `It is the current system. It is slow, inefficient and based on manual control of various steps.`,
+                            proposedSystem: `This System is an application that helps to certify student transcripts. 
+                                        It is efficient, fast and more secure. It reduces the time and procedure of checking the academic transcript of 
+                                        the university by an employer or a third party.`,
                             systemWorkflow: ["Add issuer step", "Request credentials step", "Create credentials step", "Issue credentials step", "Verification step"],
-                            application: `It will be difficult without an interface to interact with user. So the developer created 
-                                        an interface to interact with user and use third-party application.`
+                            application: `It will be difficult without an interface to interact with the system by a user. 
+                                        So we created an interface to interact with the users and we use third-party applications.`
                         }
                     }
                 ]
@@ -403,7 +400,7 @@ const languages = {
         },
         contact: {
             topic: "CONTACT",
-            description: "If you have any question, please contact me at phurinaix@gmail.com or contact using form below...",
+            description: "If you have any questions, please contact me at phurinaix@gmail.com or contact me using the form below...",
             form: {
                 name: "Name",
                 email: "Email",
