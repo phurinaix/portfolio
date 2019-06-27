@@ -28,17 +28,18 @@ const languages = {
             topic: {
                 project1: {
                     topic: "ด้านซอฟต์แวร์",
-                    description: "เว็บแอพพลิเคชั่นและโปรแกรมเดสก์ท็อป",
+                    description: "เว็บแอพพลิเคชั่น",
                 },
                 project2: {
                     topic: "ด้านการออกแบบ",
                     description: "โปสเตอร์",
                 },
                 project3: {
-                    topic: "ด้านบล็อกเช็น",
-                    description: "บิตคอยและอีเทอเรียม",
+                    topic: "ด้านบล็อกเชน",
+                    description: "บิตคอยและอีเธอเรียม",
                 }
             },
+            viewDetail: 'ดูรายละเอียด',
             moreDetail: 'ดูข้อมูลเพิ่มเติม',
             detailTopic: {
                 aboutProject: 'เกี่ยวกับโปรเจค',
@@ -160,7 +161,7 @@ const languages = {
                     {
                         id: "1",
                         topic: "ระบบการเผยแพร่ที่มีความน่าเชื่อถือและความปลอดภัยสำหรับประกาศนียบัตรและใบแสดงผลการศึกษา",
-                        description: "โปรเจคจบ",
+                        description: "โปรเจคบล็อกเชน",
                         detail: {
                             aboutProjectTopic: "เกี่ยวกับโปรเจค",
                             objectivesTopic: "วัตถุประสงค์",
@@ -231,7 +232,7 @@ const languages = {
             topic: {
                 project1: {
                     topic: "SOFTWARE PROJECT",
-                    description: "Web Application and Desktop Application",
+                    description: "Web Application",
                 },
                 project2: {
                     topic: "DESIGN PROJECT",
@@ -242,6 +243,7 @@ const languages = {
                     description: "Bitcoin and Ethereum",
                 }
             },
+            viewDetail: 'View details',
             moreDetail: 'MORE DETAIL',
             detailTopic: {
                 aboutProject: 'About this project',
@@ -360,7 +362,7 @@ const languages = {
                     {
                         id: "1",
                         topic: "A secure and trusted publishing system for university diplomas and transcripts",
-                        description: "Graduation project",
+                        description: "Blockchain project",
                         detail: {
                             aboutProjectTopic: "About this project",
                             objectivesTopic: "Objectives",

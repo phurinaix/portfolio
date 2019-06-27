@@ -33,11 +33,16 @@ a {
     background-color: #ede5aa;
 }
 .navbar-link a:hover {
-    color: white !important;
+    // color: white !important;
+    // background: yellow;
+    background-color: rgb(231, 34, 76);
 }
 .active-link {
-    /* color: white !important; */
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
+    // background-color: rgb(212, 30, 100);
+    background-color: rgb(231, 34, 76);
+
+
 }
 
 /* Loading Bar */
@@ -168,28 +173,28 @@ a {
     font-size: 0.9em;
 }
 .workcard {
-    background-color: #fcf9cf !important;
+    background-color: #ffffff !important;
     z-index: 100;
-    cursor: pointer;
+    // cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     animation: scaleIn ease 0.5s;
 }
 .workcard img {
     height: 159px;
 }
-.workcard:hover {
-    background-color: #f7f1a4 !important;    
-}
-.workcard:hover img{
-    filter: brightness(50%);
-}
 .workcard-title {
     font-family: $font-primary;
     font-weight: bolder;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    text-align: left;
 }
 .workcard-text {
     font-family: $font-primary;
-    font-size: 0.8em;
+    // font-weight: bold;
+    font-size: 0.9em;
+    color: rgb(201, 27, 15);
+    text-align: left;
+    padding: 0;
 }
 
 /* Project */

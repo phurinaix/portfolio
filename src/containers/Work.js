@@ -151,9 +151,9 @@ class Work extends Component {
                     <div className="row justify-content-center">
                         {this.state.projectType === "" ?
                             <React.Fragment>
-                                <WorkCard title={locale.t('portfolio.topic.project1.topic')} text={locale.t('portfolio.topic.project1.description')} image={SoftwareImage} click={this.projectHandle}/>
-                                <WorkCard title={locale.t('portfolio.topic.project2.topic')} text={locale.t('portfolio.topic.project2.description')} image={DesignImage} click={this.projectHandle}/>
-                                <WorkCard title={locale.t('portfolio.topic.project3.topic')} text={locale.t('portfolio.topic.project3.description')} image={BlockchainImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project1.topic')} text={locale.t('portfolio.topic.project1.description')} detail={locale.t('portfolio.viewDetail')} image={SoftwareImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project2.topic')} text={locale.t('portfolio.topic.project2.description')} detail={locale.t('portfolio.viewDetail')} image={DesignImage} click={this.projectHandle}/>
+                                <WorkCard title={locale.t('portfolio.topic.project3.topic')} text={locale.t('portfolio.topic.project3.description')} detail={locale.t('portfolio.viewDetail')} image={BlockchainImage} click={this.projectHandle}/>
                             </React.Fragment>
                         :
                             <ProjectBoard 

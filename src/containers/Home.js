@@ -16,10 +16,11 @@ class Home extends Component {
                 <h2>{locale.t('home.portfolio')}</h2>
                 <div className="text-center">
                     <LinkContainer to="/contact">
-                        {/* <Button variant="outline-warning" className="contact-button">{locale.t('home.contact')}</Button> */}
-                        <AwesomeButton type="primary" ripple={true}>
-                            <strong>{locale.t('home.contact')}</strong>
-                        </AwesomeButton>
+                        <div>
+                            <AwesomeButton type="primary" ripple={true}>
+                                <strong>{locale.t('home.contact')}</strong>
+                            </AwesomeButton>
+                        </div>
                     </LinkContainer>
                 </div>
             </div>
