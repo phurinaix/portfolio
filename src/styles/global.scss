@@ -131,6 +131,7 @@ a {
 .home-section {
     margin-top: 200px;
     margin-bottom: 200px;
+    animation: scaleIn ease 0.5s;
 }
 .home-section h2 {
     @include home-text(#f4f677, 7em);
