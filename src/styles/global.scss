@@ -625,11 +625,15 @@ a {
     .project-body {
         padding: 0 !important;
     }
+    .home-section {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
     .home-section h2 {
-        @include home-text(#f4f677, 2.8em);
+        @include home-text(#f4f677, 4.1em);
     }
     .home-section h4 {
-        @include home-text(#ffffff, 1.5em);
+        @include home-text(#ffffff, 1.9em);
     }
     .toggle-btn h6 {
         letter-spacing: 0;
