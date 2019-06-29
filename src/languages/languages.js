@@ -19,7 +19,25 @@ const languages = {
                     ผมชอบศึกษาและเรียนรู้การเขียนโปรแกรมคอมพิวเตอร์ เนื่องจากช่วยฝึกตรรกะและการคิด โดยด้านที่ผมสนใจเป็นพิเศษคือ 
                     Web Development งานอดิเรกจึงเป็นการเขียนโปรแกรมคอมพิวเตอร์ ส่วนงานอดิเรกอื่นๆนั้นก็มี เล่นหมากรุกสากล 
                     อ่านหนังสือ เล่นเกมส์ เป็นต้น`,
-            resume: 'ดู Resume'
+            resume: 'ดู Resume',
+            education: {
+                topic: 'การศึกษา',
+                university: {
+                    title: 'มหาวิทยาลัยธรรมศาสตร์',
+                    subTitle: 'ระดับปริญญาตรี',
+                    date: '2015 - ปัจจุบัน'
+                },
+                highSchool: {
+                    title: 'โรงเรียนศรียาภัย',
+                    subTitle: 'ระดับมัธยมศึกษา',
+                    date: '2009 - 2015'
+                },
+                elementarySchool: {
+                    title: 'โรงเรียนนิรมลชุมพร',
+                    subTitle: 'ระดับประถมศึกษา',
+                    date: '2003 - 2009'
+                }
+            }
         },
         skills: {
             topic: "ทักษะ ความสามารถ"
@@ -223,7 +241,25 @@ const languages = {
             detail: `I am a fourth-year student, Faculty of engineering, Software engineering, Thammasat University.
                 I like learning to program because it helps to practice logic and thinking. The special aspect that 
                 I'm interested in is Web development. My hobby is coding, play chess, play computer games and read a book.`,
-            resume: 'See Resume'
+            resume: 'See Resume',
+            education: {
+                topic: 'EDUCATION',
+                university: {
+                    title: 'Thammasat University',
+                    subTitle: 'B.A.',
+                    date: '2015 - Present'
+                },
+                highSchool: {
+                    title: 'Sriyapai School',
+                    subTitle: 'High School',
+                    date: '2009 - 2015'
+                },
+                elementarySchool: {
+                    title: 'Niramon Chumphon School',
+                    subTitle: 'Elementary School',
+                    date: '2003 - 2009'
+                }
+            }
         },
         skills: {
             topic: "SKILLS"

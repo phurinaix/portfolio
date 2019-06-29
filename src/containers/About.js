@@ -19,7 +19,11 @@ class About extends Component {
                     </div>
                 </div>
                 <p>{locale.t('about.detail')}</p>
-                {/* <Timeline /> */}
+                <br/><br/>
+                <h3>{locale.t('about.education.topic')}</h3>
+                <div className="col-md-6 mx-auto">
+                    <Timeline education={locale.t('about.education')}/>
+                </div>
             </div>
         );
     }
