@@ -22,7 +22,9 @@ a {
 }
 .navbar-header {
     background-color: rgb(10,10,43);
-    z-index: 100;
+    z-index: 10000;
+    position: sticky;
+    top: 0;
 }
 .navbar-logo {
     font-family: $font-logo;
@@ -628,6 +630,7 @@ a {
     .home-section {
         margin-top: 150px;
         margin-bottom: 150px;
+        // padding-bottom: 200px;
     }
     .home-section h2 {
         @include home-text(#f4f677, 4.1em);
