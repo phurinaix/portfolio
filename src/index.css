@@ -20,7 +20,7 @@ body {
   -moz-overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   font-family: 'Montserrat', sans-serif;
-  animation: changeColor 60s infinite;
+  /* animation: changeColor 60s infinite; */
 }
 
 .cube {

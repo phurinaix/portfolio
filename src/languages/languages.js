@@ -339,12 +339,12 @@ const languages = {
                 design: [
                     {
                         id: "1",
-                        topic: "Thammasat University Poster",
+                        topic: "TU Poster",
                         description: "Thammasat University Pattaya Campus poster"
                     },
                     {
                         id: "2",
-                        topic: "Thammasat University Poster",
+                        topic: "TU Poster",
                         description: "Thammasat University Pattaya Campus poster"
                     },
                     {

@@ -125,7 +125,7 @@ class ProjectBoard extends Component {
                     </div>
                 </div>
             );
-        } else if (type === 'blockchain project' || type === "ด้านบล็อกเช็น") {
+        } else if (type === 'blockchain project' || type === "ด้านบล็อกเชน") {
             const projectList = Object.values(projects['blockchain']);
             return (
                 <div className="project-container mb-5">

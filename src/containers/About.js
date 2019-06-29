@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import withLoading from './withLoading';
 import { connect } from 'react-redux';
 // import Pdf from '../assets/pdf/resume.pdf';
-import resumePDF from '../assets/pdf/phurinat_puekkham_resume.pdf';
+import Timeline from '../components/Timeline';
 
 const locale = require('react-redux-i18n').I18n;
 
@@ -19,9 +19,7 @@ class About extends Component {
                     </div>
                 </div>
                 <p>{locale.t('about.detail')}</p>
-                {/* <p>I love being a web developer.</p> */}
-                <br/>
-                {/* <Button href={resumePDF} target = "_blank">{locale.t('about.resume')}</Button> */}
+                {/* <Timeline /> */}
             </div>
         );
     }
