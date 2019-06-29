@@ -133,7 +133,6 @@ a {
 .home-section {
     margin-top: 200px;
     margin-bottom: 200px;
-    animation: scaleIn ease 0.5s;
 }
 .home-section h2 {
     @include home-text(#f4f677, 7em);
@@ -322,8 +321,33 @@ a {
 /* --------------------End Project-------------------------*/
 
 .about-section {
-    @include section(80px, 30px, $grey-color);
+    @include section(30px, 30px, #fff, false);
     // width: 100%;
+}
+.about-image {
+    // background-image: url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height: 300px;
+    position: relative;
+    margin-bottom: 80px;
+}
+.about-bg-image {
+    object-fit: cover;
+}
+.about-profile-image {
+    position: absolute;
+    // background-image: url('https://avatars0.githubusercontent.com/u/34346470?s=460&v=4');
+    // background-size: cover;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(253, 252, 252);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-section-content {
     padding: 20px;
 }
 .about-section h3 {
@@ -332,7 +356,7 @@ a {
 }
 .about-section p {
     @include far-text($black-color, $font-primary, normal);
-    text-align: left;
+    // text-align: left;
     line-height: 2em;
     letter-spacing: 0;
 }
@@ -347,6 +371,12 @@ a {
     background-color: #e8eb27 !important;
     color: $black-color !important;
 }
+.about-education {
+    // background: $grey-color;
+    background-image: url('https://images.pexels.com/photos/159621/open-book-library-education-read-159621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+// Contact
 .contact-section {
     @include section(10px, 30px, $grey-color);
     padding: 50px 10px;
@@ -540,6 +570,7 @@ a {
       opacity: 1;
     }
 }
+
 @keyframes blink {
     from, to { 
         border-color: transparent 
@@ -696,5 +727,8 @@ a {
     .contact-section form input, .contact-section form textarea {
         letter-spacing: 0;
         font-size: 0.9em;
+    }
+    .about-image {
+        height: 200px;
     }
 }

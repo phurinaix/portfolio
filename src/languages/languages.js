@@ -125,25 +125,6 @@ const languages = {
                     },
                     {
                         id: "7",
-                        topic: "Folder Locked",
-                        technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
-                        link: "",
-                        github: "github.com/phpinproject/piyaproject",
-                        description: "เว็บไซต์บริการเก็บไฟล์",
-                        detail: "เป็นเว็บไซต์สำหรับเก็บไฟล์รูปภาพ สามารถแชร์รูปภาพได้"
-                    },
-                    {
-                        id: "8",
-                        topic: "Pattaya Food",
-                        technologies: ["HTML5", "CSS3"],
-                        link: "",
-                        github: "github.com/phurinaix/pattaya-food",
-                        description: "เว็บไซต์แนะนำร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์ ศูนย์พัทยา",
-                        detail: `เป็นโปรเจคแรกที่ผมได้ทำเมื่อตอนปี 2016 โดยเป็นเว็บไซต์แนะนำเมนูและร้านอาหารบริเวณมหาวิทยาลัยธรรมศาสตร์
-                                ศูนย์พัทยา`
-                    },
-                    {
-                        id: "9",
                         topic: "Cube trainer",
                         technologies: ["Swift"],
                         link: "",
@@ -344,25 +325,6 @@ const languages = {
                     },
                     {
                         id: "7",
-                        topic: "Folder Locked",
-                        technologies: ["PHP", "MySQL", "HTML5", "CSS3", "Javascript"],
-                        link: "",
-                        github: "github.com/phpinproject/piyaproject",
-                        description: "Website for keep files",
-                        detail: `Website to keep the images from the user. Users can share the images with the other.`
-                    },
-                    {
-                        id: "8",
-                        topic: "Pattaya Food",
-                        technologies: ["HTML5", "CSS3"],
-                        link: "",
-                        github: "github.com/phurinaix/pattaya-food",
-                        description: "Pattaya Food Restaurant & Bar",
-                        detail: `This one is the first project that I was created (11 October 2016). It contains 
-                                the information of the restaurant near the Thammasat university Pattaya campus.`
-                    },
-                    {
-                        id: "9",
                         topic: "Cube trainer",
                         technologies: ["Swift"],
                         link: "",

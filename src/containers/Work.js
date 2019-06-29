@@ -20,15 +20,15 @@ import softwareImage11 from '../assets/img/software/11.jpg';
 import softwareImage12 from '../assets/img/software/12.jpg';
 import softwareImage13 from '../assets/img/software/13.jpg';
 import softwareImage14 from '../assets/img/software/14.jpg';
-import softwareImage15 from '../assets/img/software/15.jpg';
-import softwareImage16 from '../assets/img/software/16.jpg';
-import softwareImage17 from '../assets/img/software/17.jpg';
-import softwareImage18 from '../assets/img/software/18.jpg';
-import softwareImage19 from '../assets/img/software/19.jpg';
+// import softwareImage15 from '../assets/img/software/15.jpg';
+// import softwareImage16 from '../assets/img/software/16.jpg';
+// import softwareImage17 from '../assets/img/software/17.jpg';
+// import softwareImage18 from '../assets/img/software/18.jpg';
+// import softwareImage19 from '../assets/img/software/19.jpg';
 import softwareImage20 from '../assets/img/software/20.jpg';
 import softwareImage21 from '../assets/img/software/21.jpg';
 import softwareImage22 from '../assets/img/software/22.jpg';
-import softwareImage23 from '../assets/img/software/23.jpg';
+// import softwareImage23 from '../assets/img/software/23.jpg';
 import softwareImage24 from '../assets/img/software/24.jpg';
 import softwareImage25 from '../assets/img/software/25.jpg';
 import softwareImage26 from '../assets/img/software/26.jpg';
@@ -38,10 +38,10 @@ import softwareImage29 from '../assets/img/software/29.jpg';
 import softwareImage30 from '../assets/img/software/30.jpg';
 import softwareImage31 from '../assets/img/software/31.jpg';
 import softwareImage32 from '../assets/img/software/32.jpg';
-import softwareImage33 from '../assets/img/software/33.jpg';
-import softwareImage34 from '../assets/img/software/34.jpg';
-import softwareImage35 from '../assets/img/software/35.jpg';
-import softwareImage36 from '../assets/img/software/36.jpg';
+// import softwareImage33 from '../assets/img/software/33.jpg';
+// import softwareImage34 from '../assets/img/software/34.jpg';
+// import softwareImage35 from '../assets/img/software/35.jpg';
+// import softwareImage36 from '../assets/img/software/36.jpg';
 import softwareImage37 from '../assets/img/software/37.jpg';
 import softwareImage38 from '../assets/img/software/38.jpg';
 import softwareImage39 from '../assets/img/software/39.jpg';
@@ -73,8 +73,8 @@ class Work extends Component {
             softwareImage1,
             softwareImage24,
             softwareImage21,
-            softwareImage23,
-            softwareImage15,
+            // softwareImage23,
+            // softwareImage15,
             softwareImage20
         ],
         designPreviewImage: [
@@ -113,14 +113,6 @@ class Work extends Component {
             },
             {
                 id: "7",
-                images: [softwareImage23, softwareImage33, softwareImage34, softwareImage35, softwareImage36]
-            },
-            {
-                id: "8",
-                images: [softwareImage15, softwareImage16, softwareImage17, softwareImage18, softwareImage19]
-            },
-            {
-                id: "9",
                 images: [softwareImage20, softwareImage37, softwareImage38, softwareImage39, softwareImage40, softwareImage41]
             }
         ],

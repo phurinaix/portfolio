@@ -6,13 +6,15 @@
     margin: 0;
 }
 
-@mixin section($margin-top, $margin-bottom, $background) {
+@mixin section($margin-top, $margin-bottom, $background, $animation: true) {
     position: relative;
     z-index: 100;
     margin-top: $margin-top;
     margin-bottom: $margin-bottom;
     background-color: $background;
-    animation: scaleIn ease 0.3s;
+    @if $animation == true {
+        animation: scaleIn ease 0.3s;        
+    }
 }
 
 @mixin home-text($color, $size) {
