@@ -62,7 +62,7 @@ class App extends Component {
               </Layout>
             </BrowserRouter>
             <div className="icon-bar">
-              <a href="https://www.facebook.com/phurinat.puekkham.1" className="github" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithub }/></a>
+              <a href="https://github.com/phurinaix" className="github" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faGithub }/></a>
               <a href="https://stackoverflow.com/users/12040768/phurinat-puekkham" className="stackoverflow" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faStackOverflow }/></a> 
               <a href="https://www.linkedin.com/in/phurinat-puekkham-333a9615a/" className="linkedin" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faLinkedinIn }/></a>
               <a href="https://medium.com/@phurinatz" className="medium" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ faMedium }/></a>
