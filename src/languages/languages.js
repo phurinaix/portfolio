@@ -8,7 +8,7 @@ const languages = {
             contact: "ติดต่อ"
         },
         home: {
-            name: "PHURINAT PUEKKHAM",
+            name: "PHURINAT PUEKKHAM 'S",
             portfolio: "PORTFOLIO",
             contact: "ติดต่อ"
         },
@@ -212,7 +212,7 @@ const languages = {
             contact: "CONTACT"
         },
         home: {
-            name: "PHURINAT PUEKKHAM",
+            name: "PHURINAT PUEKKHAM 's",
             portfolio: "PORTFOLIO",
             contact: "Contact"
         },
