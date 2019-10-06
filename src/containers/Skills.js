@@ -19,6 +19,7 @@ import Docker from '../assets/img/icon/docker.svg';
 import Git from '../assets/img/icon/git.svg';
 import Sass from '../assets/img/icon/sass.png';
 import Bootstrap from '../assets/img/icon/bootstrap.svg';
+import Heroku from '../assets/img/icon/heroku.svg';
 import Photoshop from '../assets/img/icon/photoshop.svg';
 
 const locale = require('react-redux-i18n').I18n;
@@ -43,6 +44,7 @@ class Skills extends Component {
             { name: 'Git', logo: Git },
             { name: 'Sass', logo: Sass },
             { name: 'Bootstrap', logo: Bootstrap },
+            { name: 'Heroku', logo: Heroku },
             { name: 'Photoshop', logo: Photoshop }
         ]
     }
