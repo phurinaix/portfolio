@@ -9,17 +9,17 @@ const withLoading = (WrappedComponent) => {
             this.props = nextProps;
         }
         componentDidMount () {
-            let visited = sessionStorage.getItem('visited');
-            if (visited === 'true') {
-                this.setState({
-                    isLoading: true
-                });
-                setTimeout(() => { 
-                    this.setState(prevState => ({
-                        isLoading: !prevState.isLoading,
-                    }));
-                }, 800);
-            }
+            // let visited = sessionStorage.getItem('visited');
+            // if (visited === 'true') {
+            //     this.setState({
+            //         isLoading: true
+            //     });
+            //     setTimeout(() => { 
+            //         this.setState(prevState => ({
+            //             isLoading: !prevState.isLoading,
+            //         }));
+            //     }, 800);
+            // }
         }
 
         render() {
